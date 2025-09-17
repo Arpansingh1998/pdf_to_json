@@ -44,7 +44,7 @@ def process_pdf_with_donut(pdf_path):
             pixel_values = pixel_values.to(device)
 
             # Create the prompt and its attention mask separately
-            prompt_text = "<s_data_extraction>"
+            prompt_text = "<s_custom>"
             decoder_input_ids = processor.tokenizer(
                 prompt_text, add_special_tokens=False, return_tensors="pt"
             ).input_ids
