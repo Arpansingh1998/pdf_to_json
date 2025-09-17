@@ -42,27 +42,22 @@ def process_pdf_with_donut(pdf_path):
 
             print(f"Processing page {page_num + 1}...")
 
-            # Prepare the image for the model with a prompt to guide generation
-            # This is crucial for telling the model what kind of output to produce.
-            # Use the same prompt token you used during training.
-            prompt = "<s_data_extraction>"
-            
+            # Prepare the image for the model
+            # This returns a dictionary with 'pixel_values' and 'attention_mask'
             inputs = processor(
                 image, 
-                text=prompt,
                 return_tensors="pt"
             )
 
-            # Explicitly pass attention_mask to avoid the warning and ensure proper generation
+            # Explicitly extract and move both tensors to the device
             pixel_values = inputs["pixel_values"].to(device)
-            attention_mask = inputs["attention_mask"].to(device)
-            
-            # Generate the output from the model
+            attention_mask = inputs["attention_mask"].to(device) # <--- ADD THIS LINE
+
+            # Generate the output from the model, passing both tensors
             outputs = model.generate(
-                pixel_values,
-                attention_mask=attention_mask,
+                pixel_values, 
+                attention_mask=attention_mask, # <--- PASS THE ATTENTION MASK HERE
                 max_length=256,
-                # It's good practice to set these for reliable generation
                 pad_token_id=processor.tokenizer.pad_token_id,
                 eos_token_id=processor.tokenizer.eos_token_id
             )
@@ -76,7 +71,6 @@ def process_pdf_with_donut(pdf_path):
                 print("✅ Extracted JSON successfully.")
             except json.JSONDecodeError:
                 print("⚠️ Could not decode output as JSON. Storing as a string.")
-                # This is a key line: if the model fails, we want to see the *text* it did generate
                 page_json = {"raw_output": pred_string}
             
             # Append the result for this page
@@ -91,7 +85,6 @@ def process_pdf_with_donut(pdf_path):
 
     # Return the combined JSON data
     return {"document_data": all_page_data}
-
 
 # -----------------------------
 # Step 3 & 4: Run the process and print output
