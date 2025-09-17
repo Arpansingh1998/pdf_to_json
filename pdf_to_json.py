@@ -39,28 +39,34 @@ def process_pdf_with_donut(pdf_path):
 
             print(f"Processing page {page_num + 1}...")
 
-            # Prepare the image and get the attention mask
-            # Pass a prompt to guide the model's generation (recommended for fine-tuned models)
-            inputs = processor(
-                image, 
-                text="<s_data_extraction>", # You may need to change this prompt to match your training
-                return_tensors="pt"
-            )
+            # Prepare the image and a text prompt for the model
+            pixel_values = processor(image, return_tensors="pt").pixel_values
+            pixel_values = pixel_values.to(device)
 
-            # Explicitly extract both tensors and move them to the device
-            pixel_values = inputs["pixel_values"].to(device)
-            attention_mask = inputs["attention_mask"].to(device)
+            # Create the prompt and its attention mask separately
+            prompt_text = "<s_data_extraction>"
+            decoder_input_ids = processor.tokenizer(
+                prompt_text, add_special_tokens=False, return_tensors="pt"
+            ).input_ids
+            
+            # Since the prompt is a single token, no padding is needed.
+            # The attention mask will be generated implicitly by the model during generation.
 
-            # Generate the output, making sure to pass the attention_mask
+            # Generate the output from the model
             outputs = model.generate(
-                pixel_values,
-                attention_mask=attention_mask,
-                max_length=256,
+                pixel_values.to(device),
+                decoder_input_ids=decoder_input_ids.to(device),
+                max_length=model.config.max_position_embeddings,
                 pad_token_id=processor.tokenizer.pad_token_id,
-                eos_token_id=processor.tokenizer.eos_token_id
+                eos_token_id=processor.tokenizer.eos_token_id,
+                use_cache=True,
+                num_beams=1,
+                bad_words_ids=[[processor.tokenizer.unk_token_id]],
+                return_dict_in_generate=True,
             )
-
-            pred_string = processor.batch_decode(outputs, skip_special_tokens=True)[0]
+            
+            # Decode the output to a string
+            pred_string = processor.tokenizer.decode(outputs.sequences[0], skip_special_tokens=True)
 
             try:
                 page_json = json.loads(pred_string)
