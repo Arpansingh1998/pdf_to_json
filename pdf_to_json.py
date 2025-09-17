@@ -84,10 +84,9 @@ final_json_output = process_pdf_with_donut(pdf_file_path)
 # Step 4: Save or print the final JSON
 # -----------------------------
 if final_json_output:
-    output_filename = "extracted_data.json"
-    with open(output_filename, "w", encoding="utf-8") as f:
-        json.dump(final_json_output, f, ensure_ascii=False, indent=4)
-    
-    print(f"\nFinal JSON output saved to '{output_filename}'")
-    # Optional: print the full JSON to the console
-    # print(json.dumps(final_json_output, ensure_ascii=False, indent=4))
+    # Use json.dumps to format the dictionary as a JSON string
+    # The 'indent=4' makes the output human-readable
+    print(json.dumps(final_json_output, ensure_ascii=False, indent=4))
+    print("\nJSON data printed to the console.")
+else:
+    print("No data was extracted from the PDF.")
