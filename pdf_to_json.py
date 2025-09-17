@@ -22,6 +22,8 @@ model.to(device)
 # -----------------------------
 # Step 2: Define PDF processing function
 # -----------------------------
+# ... (rest of your imports and setup code) ...
+
 def process_pdf_with_donut(pdf_path):
     """
     Converts a PDF to images, processes each image with the Donut model,
@@ -37,26 +39,27 @@ def process_pdf_with_donut(pdf_path):
             page = pdf_document.load_page(page_num)
 
             # Convert page to a high-resolution PIL image
-            pix = page.get_pixmap(matrix=fitz.Matrix(300 / 72, 300 / 72)) # Set DPI to 300 for higher quality
+            pix = page.get_pixmap(matrix=fitz.Matrix(300 / 72, 300 / 72))
             image = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
 
             print(f"Processing page {page_num + 1}...")
 
             # Prepare the image for the model
-            # This returns a dictionary with 'pixel_values' and 'attention_mask'
+            # Note: A prompt is necessary for fine-tuned models to guide generation
             inputs = processor(
                 image, 
+                text="<s_data_extraction>", 
                 return_tensors="pt"
             )
 
-            # Explicitly extract and move both tensors to the device
+            # Explicitly extract both the pixel values and the attention mask
             pixel_values = inputs["pixel_values"].to(device)
-            attention_mask = inputs["attention_mask"].to(device) # <--- ADD THIS LINE
+            attention_mask = inputs["attention_mask"].to(device)
 
-            # Generate the output from the model, passing both tensors
+            # Generate the output from the model
             outputs = model.generate(
                 pixel_values, 
-                attention_mask=attention_mask, # <--- PASS THE ATTENTION MASK HERE
+                attention_mask=attention_mask, # Pass the attention mask here
                 max_length=256,
                 pad_token_id=processor.tokenizer.pad_token_id,
                 eos_token_id=processor.tokenizer.eos_token_id
@@ -83,9 +86,9 @@ def process_pdf_with_donut(pdf_path):
         print(f"An error occurred: {e}")
         return None
 
-    # Return the combined JSON data
     return {"document_data": all_page_data}
 
+# ... (rest of your script) ...
 # -----------------------------
 # Step 3 & 4: Run the process and print output
 # -----------------------------
