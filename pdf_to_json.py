@@ -42,12 +42,30 @@ def process_pdf_with_donut(pdf_path):
 
             print(f"Processing page {page_num + 1}...")
 
-            # Prepare the image for the model
-            pixel_values = processor(image, return_tensors="pt").pixel_values
-            pixel_values = pixel_values.to(device)
+            # Prepare the image for the model with a prompt to guide generation
+            # This is crucial for telling the model what kind of output to produce.
+            # Use the same prompt token you used during training.
+            prompt = "<s_data_extraction>"
+            
+            inputs = processor(
+                image, 
+                text=prompt,
+                return_tensors="pt"
+            )
 
+            # Explicitly pass attention_mask to avoid the warning and ensure proper generation
+            pixel_values = inputs["pixel_values"].to(device)
+            attention_mask = inputs["attention_mask"].to(device)
+            
             # Generate the output from the model
-            outputs = model.generate(pixel_values, max_length=256)
+            outputs = model.generate(
+                pixel_values,
+                attention_mask=attention_mask,
+                max_length=256,
+                # It's good practice to set these for reliable generation
+                pad_token_id=processor.tokenizer.pad_token_id,
+                eos_token_id=processor.tokenizer.eos_token_id
+            )
 
             # Decode the output to a string
             pred_string = processor.batch_decode(outputs, skip_special_tokens=True)[0]
@@ -58,6 +76,7 @@ def process_pdf_with_donut(pdf_path):
                 print("✅ Extracted JSON successfully.")
             except json.JSONDecodeError:
                 print("⚠️ Could not decode output as JSON. Storing as a string.")
+                # This is a key line: if the model fails, we want to see the *text* it did generate
                 page_json = {"raw_output": pred_string}
             
             # Append the result for this page
@@ -75,17 +94,12 @@ def process_pdf_with_donut(pdf_path):
 
 
 # -----------------------------
-# Step 3: Run the process on your PDF file
+# Step 3 & 4: Run the process and print output
 # -----------------------------
 pdf_file_path = "ram.pdf"  # 📌 Change this to your PDF file path
 final_json_output = process_pdf_with_donut(pdf_file_path)
 
-# -----------------------------
-# Step 4: Save or print the final JSON
-# -----------------------------
 if final_json_output:
-    # Use json.dumps to format the dictionary as a JSON string
-    # The 'indent=4' makes the output human-readable
     print(json.dumps(final_json_output, ensure_ascii=False, indent=4))
     print("\nJSON data printed to the console.")
 else:
