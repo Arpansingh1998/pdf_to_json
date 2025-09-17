@@ -48,23 +48,23 @@ def process_pdf_with_donut(pdf_path):
             decoder_input_ids = processor.tokenizer(
                 prompt_text, add_special_tokens=False, return_tensors="pt"
             ).input_ids
-            
-            # Since the prompt is a single token, no padding is needed.
-            # The attention mask will be generated implicitly by the model during generation.
 
             # Generate the output from the model
             outputs = model.generate(
-            pixel_values.to(device),
-            decoder_input_ids=decoder_input_ids.to(device),
-            max_length=model.decoder.config.max_position_embeddings, # <-- Corrected line
-            pad_token_id=processor.tokenizer.pad_token_id,
-            eos_token_id=processor.tokenizer.eos_token_id,
-            use_cache=True,
-            num_beams=1,
-            bad_words_ids=[[processor.tokenizer.unk_token_id]],
-            return_dict_in_generate=True,
+                pixel_values.to(device),
+                decoder_input_ids=decoder_input_ids.to(device),
+                max_length=model.decoder.config.max_position_embeddings,
+                pad_token_id=processor.tokenizer.pad_token_id,
+                eos_token_id=processor.tokenizer.eos_token_id,
+                use_cache=True,
+                num_beams=1,
+                bad_words_ids=[[processor.tokenizer.unk_token_id]],
+                return_dict_in_generate=True,
+                # These parameters prevent repetitive outputs
+                no_repeat_ngram_size=2,
+                early_stopping=True,
             )
-            
+
             # Decode the output to a string
             pred_string = processor.tokenizer.decode(outputs.sequences[0], skip_special_tokens=True)
 
@@ -84,7 +84,6 @@ def process_pdf_with_donut(pdf_path):
         return None
 
     return {"document_data": all_page_data}
-
 
 # -----------------------------
 # Step 3 & 4: Run the process and print output
