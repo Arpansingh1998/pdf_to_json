@@ -77,7 +77,7 @@ def process_pdf_with_donut(pdf_path):
 # -----------------------------
 # Step 3: Run the process on your PDF file
 # -----------------------------
-pdf_file_path = "your_document.pdf"  # 📌 Change this to your PDF file path
+pdf_file_path = "ram.pdf"  # 📌 Change this to your PDF file path
 final_json_output = process_pdf_with_donut(pdf_file_path)
 
 # -----------------------------
