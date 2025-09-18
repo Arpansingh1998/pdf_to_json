@@ -7,7 +7,9 @@ import torch
 # -----------------------------
 # Step 1: Load model and processor (Last Resort Memory Correction)
 # -----------------------------
-model_id = "naver-clova-ix/donut-base"
+# model_id = "naver-clova-ix/donut-base"
+
+model_id = "naver-clova-ix/donut-base-finetuned-cord-v2"
  
 # **Final Correction: Extreme image resolution reduction.**
 # This is the last resort to make it fit into memory. Performance will be impacted.
@@ -106,7 +108,7 @@ trainer = Seq2SeqTrainer(
     train_dataset=processed_dataset["train"],
     eval_dataset=processed_dataset["validation"],
     data_collator=donut_data_collator,
-    tokenizer=processor.tokenizer
+    processing_class=processor
 )
  
  
