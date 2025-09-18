@@ -1,4 +1,4 @@
-import fitz
+import fitz 
 from PIL import Image
 from transformers import DonutProcessor, VisionEncoderDecoderModel
 import torch
@@ -49,10 +49,18 @@ def process_pdf_with_donut(pdf_path):
                 prompt_text, add_special_tokens=False, return_tensors="pt"
             ).input_ids
 
+            # Create the prompt and its attention mask together
+            prompt_inputs = processor.tokenizer(
+                prompt_text, 
+                add_special_tokens=False, 
+                return_tensors="pt"
+            )
+
             # Generate the output from the model
             outputs = model.generate(
                 pixel_values.to(device),
-                decoder_input_ids=decoder_input_ids.to(device),
+                decoder_input_ids=prompt_inputs.input_ids.to(device),
+                decoder_attention_mask=prompt_inputs.attention_mask.to(device), # ADD THIS LINE
                 max_length=model.decoder.config.max_position_embeddings,
                 pad_token_id=processor.tokenizer.pad_token_id,
                 eos_token_id=processor.tokenizer.eos_token_id,
@@ -60,7 +68,6 @@ def process_pdf_with_donut(pdf_path):
                 num_beams=1,
                 bad_words_ids=[[processor.tokenizer.unk_token_id]],
                 return_dict_in_generate=True,
-                # These parameters prevent repetitive outputs
                 no_repeat_ngram_size=2,
                 early_stopping=True,
             )
