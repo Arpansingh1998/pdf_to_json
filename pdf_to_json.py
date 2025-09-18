@@ -52,13 +52,11 @@ def process_pdf_with_donut(pdf_path):
                 return_tensors="pt"
             )
 
-            # Generate the output from the model
-            # Note: The `early_stopping` parameter is not effective for greedy search (`num_beams=1`)
             outputs = model.generate(
                 pixel_values.to(device),
                 decoder_input_ids=prompt_inputs.input_ids.to(device),
                 decoder_attention_mask=prompt_inputs.attention_mask.to(device),
-                max_length=model.decoder.config.max_position_embeddings,
+                max_length=512,   # match training length
                 pad_token_id=processor.tokenizer.pad_token_id,
                 eos_token_id=processor.tokenizer.eos_token_id,
                 use_cache=True,
@@ -68,11 +66,13 @@ def process_pdf_with_donut(pdf_path):
                 no_repeat_ngram_size=2,
             )
 
-            # Decode the output to a string
-            pred_string = processor.tokenizer.decode(outputs.sequences[0], skip_special_tokens=True)
-            
-            # Use regex to clean up the output string before attempting to parse JSON
-            pred_string = re.sub(r'<\/?s_custom>', '', pred_string).strip()
+            pred_string = processor.tokenizer.decode(
+                outputs.sequences[0],
+                skip_special_tokens=True
+            ).strip()
+
+            # Remove the wrappers <s_custom> ... </s_custom>
+            pred_string = re.sub(r"^<s_custom>|<\/s_custom>$", "", pred_string).strip()
 
             try:
                 page_json = json.loads(pred_string)
