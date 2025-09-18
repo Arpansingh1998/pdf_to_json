@@ -98,7 +98,7 @@ pdf_file_path = "sydney2.pdf"
 final_json_output = process_pdf_with_donut(pdf_file_path)
 
 if final_json_output:
-    print(filter)
+    print(final_json_output)
     print("1"*50)
     print(json.dumps(final_json_output, ensure_ascii=False, indent=4))
     print("\nJSON data printed to the console.")
