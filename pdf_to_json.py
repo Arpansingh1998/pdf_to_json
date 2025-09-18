@@ -1,8 +1,9 @@
-import fitz 
+import fitz
 from PIL import Image
 from transformers import DonutProcessor, VisionEncoderDecoderModel
 import torch
 import json
+import re
 
 # -----------------------------
 # Step 1: Load fine-tuned model and processor
@@ -43,24 +44,20 @@ def process_pdf_with_donut(pdf_path):
             pixel_values = processor(image, return_tensors="pt").pixel_values
             pixel_values = pixel_values.to(device)
 
-            # Create the prompt and its attention mask separately
+            # Create the prompt and its attention mask
             prompt_text = "<s_custom>"
-            decoder_input_ids = processor.tokenizer(
-                prompt_text, add_special_tokens=False, return_tensors="pt"
-            ).input_ids
-
-            # Create the prompt and its attention mask together
             prompt_inputs = processor.tokenizer(
-                prompt_text, 
-                add_special_tokens=False, 
+                prompt_text,
+                add_special_tokens=False,
                 return_tensors="pt"
             )
 
             # Generate the output from the model
+            # Note: The `early_stopping` parameter is not effective for greedy search (`num_beams=1`)
             outputs = model.generate(
                 pixel_values.to(device),
                 decoder_input_ids=prompt_inputs.input_ids.to(device),
-                decoder_attention_mask=prompt_inputs.attention_mask.to(device), # ADD THIS LINE
+                decoder_attention_mask=prompt_inputs.attention_mask.to(device),
                 max_length=model.decoder.config.max_position_embeddings,
                 pad_token_id=processor.tokenizer.pad_token_id,
                 eos_token_id=processor.tokenizer.eos_token_id,
@@ -69,11 +66,13 @@ def process_pdf_with_donut(pdf_path):
                 bad_words_ids=[[processor.tokenizer.unk_token_id]],
                 return_dict_in_generate=True,
                 no_repeat_ngram_size=2,
-                early_stopping=True,
             )
 
             # Decode the output to a string
             pred_string = processor.tokenizer.decode(outputs.sequences[0], skip_special_tokens=True)
+            
+            # Use regex to clean up the output string before attempting to parse JSON
+            pred_string = re.sub(r'<\/?s_custom>', '', pred_string).strip()
 
             try:
                 page_json = json.loads(pred_string)
