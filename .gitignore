@@ -1,6 +1,6 @@
-train_pdf
-val_pdf
-venv
-val_images
-train_images
+train_pdf/
+val_pdf/
+venv/
+val_images/
+train_images/
 donut-finetuned/
