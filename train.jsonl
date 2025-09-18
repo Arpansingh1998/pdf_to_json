@@ -1,10 +1,316 @@
-{"image": "pdf_images/order_fortress.png", "ground_truth": "<s_custom>{\"order_id\": \"050925-JQb3a9\", \"items\": [{\"name\": \"Granny Smith Apple\", \"qty\": \"5\", \"uom\": \"Kg\"}, {\"name\": \"HERB BASIL PREMIUM\", \"qty\": \"5\", \"uom\": \"0.05Kg\"}, {\"name\": \"CAULIFLOWER\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"ONION SLICED BROWN BAG\", \"qty\": \"1\", \"uom\": \"5Kg\"}], \"total\": \"78.150 AUD\"}"}
-{"image": "pdf_images/Picking_Slip_F44103999.png", "ground_truth": "<s_custom>{\"slip_id\": \"F44103999\", \"location\": \"Builders Arms Hotel\", \"items\": [{\"name\": \"Beetroot - Candy\", \"qty\": \"5\", \"uom\": \"Kg\"}, {\"name\": \"Onions - Red\", \"qty\": \"5\", \"uom\": \"Kg\"}, {\"name\": \"Broccoli\", \"qty\": \"1\", \"uom\": \"Box\"}]}"}
-{"image": "pdf_images/PO-159897.png", "ground_truth": "<s_custom>{\"order_id\": \"788963\", \"vendor\": \"Provincial Produce Australia\", \"items\": [{\"name\": \"AVOCADOS RIPE\", \"qty\": \"6\", \"uom\": \"EA\"}, {\"name\": \"CAPSICUM GREEN FIELD\", \"qty\": \"2\", \"uom\": \"KG\"}, {\"name\": \"EGGS 55's\", \"qty\": \"2\", \"uom\": \"BX\"}], \"total\": \"315.10 AUD\"}"}
-{"image": "pdf_images/ram.png", "ground_truth": "<s_custom>{\"slip_id\": \"F44103999\", \"location\": \"Builders Arms Hotel\", \"items\": [{\"name\": \"Beetroot - Golden\", \"qty\": \"5\", \"uom\": \"Kg\"}, {\"name\": \"Oranges\", \"qty\": \"5\", \"uom\": \"Kg\"}, {\"name\": \"Garlic - Peeled\", \"qty\": \"5\", \"uom\": \"Bag\"}]}"}
-{"image": "pdf_images/98A2.png", "ground_truth": "<s_custom>{\"order_id\": \"20250904220958\", \"location\": \"Roccella Melbourne\", \"items\": [{\"name\": \"Avocado premium large\", \"qty\": \"1\", \"uom\": \"TRAY\"}, {\"name\": \"Herb basil premium\", \"qty\": \"10\", \"uom\": \"BUNCH\"}, {\"name\": \"Onion sliced brown\", \"qty\": \"1\", \"uom\": \"Bag\"}]}"}
-{"image": "pdf_images/Picking_Slip_F43983833.png", "ground_truth": "<s_custom>{\"slip_id\": \"F43983833\", \"location\": \"Builders Arms Hotel\", \"items\": [{\"name\": \"Broccoli\", \"qty\": \"1\", \"uom\": \"Box\"}, {\"name\": \"Potatoes - Dutch Cream\", \"qty\": \"10\", \"uom\": \"Kg\"}, {\"name\": \"Juice - Lemon\", \"qty\": \"5\", \"uom\": \"Btle\"}]}"}
-{"image": "pdf_images/Picking_Slip_F43986279.png", "ground_truth": "<s_custom>{\"slip_id\": \"F43986279\", \"location\": \"Supernormal\", \"items\": [{\"name\": \"Artichokes - Jerusalem\", \"qty\": \"2\", \"uom\": \"Kg\"}, {\"name\": \"Lettuce - Baby Cos\", \"qty\": \"2\", \"uom\": \"Box\"}, {\"name\": \"Eggplant\", \"qty\": \"1\", \"uom\": \"Box\"}]}"}
-{"image": "pdf_images/Picking_Slip_F43987629.png", "ground_truth": "<s_custom>{\"slip_id\": \"F43987629\", \"location\": \"Cutler and Co\", \"items\": [{\"name\": \"Bay Leaves\", \"qty\": \"1\", \"uom\": \"Punnet\"}, {\"name\": \"Onions - White\", \"qty\": \"5\", \"uom\": \"Kg\"}, {\"name\": \"Tomatoes - Roma\", \"qty\": \"2\", \"uom\": \"Kg\"}]}"}
-{"image": "pdf_images/PO-159897-788963-tbnbhlt3.png", "ground_truth": "<s_custom>{\"order_id\": \"788963\", \"items\": [{\"name\": \"CUCUMBER - CONTINENTAL\", \"qty\": \"3\", \"uom\": \"EA\"}, {\"name\": \"POTATOES PEELED\", \"qty\": \"2\", \"uom\": \"BG\"}, {\"name\": \"ONIONS RED/SPANISH\", \"qty\": \"2\", \"uom\": \"KG\"}]}"}
-{"image": "pdf_images/Picking_Slip_F43987155.png", "ground_truth": "<s_custom>{\"slip_id\": \"F43987155\", \"location\": \"Cumulus Inc\", \"items\": [{\"name\": \"Chervil\", \"qty\": \"4\", \"uom\": \"Bunch\"}, {\"name\": \"Eggs - Free Range\", \"qty\": \"1\", \"uom\": \"Box\"}, {\"name\": \"Tomatoes - Gourmet\", \"qty\": \"2\", \"uom\": \"Kg\"}]}"}
+[{
+  "image": "train_images/2_e8hj46I_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"F39304259\", \"customer\": \"Gabriel\", \"contact\": \"Chef Gabriel 0450446294, 187 Gertrude Street, Fitzroy VIC, Australia\", \"items\": [{\"name\": \"Avocados\", \"qty\": \"1\", \"uom\": \"Tray\"}, {\"name\": \"Bananas\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Beetroot\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Carrots\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Chillies - Jalapeno\", \"qty\": \"0.1\", \"uom\": \"Kg\"}, {\"name\": \"Chives\", \"qty\": \"1\", \"uom\": \"Bunch\"}, {\"name\": \"Coriander\", \"qty\": \"7\", \"uom\": \"Bunch\"}, {\"name\": \"Garlic - Peeled\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Ginger\", \"qty\": \"0.2\", \"uom\": \"Kg\"}, {\"name\": \"Mint\", \"qty\": \"4\", \"uom\": \"Bunch\"}, {\"name\": \"Mushrooms - Swiss Brown (Cups)\", \"qty\": \"1\", \"uom\": \"Box\"}, {\"name\": \"Shallots - Banana\", \"qty\": \"2\", \"uom\": \"Kg\"}, {\"name\": \"Spring Onions\", \"qty\": \"4\", \"uom\": \"Bunch\"}, {\"name\": \"Tomatoes - Cooking\", \"qty\": \"2\", \"uom\": \"Kg\"}]}"
+},
+{
+  "image": "train_images/6_zUNnU0L_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"F39279830\", \"customer\": \"The Botanical Hotel\", \"contact\": \"Michael Flemming, 169 Domain Road, South Yarra VIC 3141\", \"items\": [{\"name\": \"Beef O'Connor Intercostals\", \"qty\": \"1\", \"uom\": \"Box\", \"unit_price\": \"22.90\", \"price\": \"22.90\"}, {\"name\": \"Meat Glue\", \"qty\": \"1\", \"uom\": \"Kg\", \"unit_price\": \"270.00\", \"price\": \"270.00\"}], \"total\": \"292.90 AUD\"}"
+},
+{
+  "image": "train_images/04E71002125B9B9A900F6543715B881A_WC3HtMN_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"1747740583404\", \"customer\": \"Red Cow Hotel\", \"contact\": \"9 Station St, Penrith NSW 2750, Australia, Phone: (02) 4721 5666, Email: greg.greenup@falcone.au, Mobile: 0450930041\", \"supplier\": \"Sydney Freezers Food Distributors, Building 4B, Murray Jones Drive, Bankstown Airport, NSW 2200, Contact: Danielle Carrasco, Email: orders@sydneyfreezers.com, Phone: 02 9599 6963\", \"items\": [{\"name\": \"Buttermilk 600ml Dairy Farmers\", \"qty\": \"8\", \"uom\": \"each\"}, {\"name\": \"Cheese Mozzarella Shredded 2x6kg Perfect\", \"qty\": \"1\", \"uom\": \"ctn\"}, {\"name\": \"Cream Cooking 5lt Bulla\", \"qty\": \"1\", \"uom\": \"each\"}, {\"name\": \"Dressing Italian 3lt M/Food\", \"qty\": \"2\", \"uom\": \"each\"}, {\"name\": \"Sauce Sweet Chilli 5150gm Royal Line\", \"qty\": \"1\", \"uom\": \"each\"}]} </s_custom>"
+},
+{
+  "image": "train_images/04E71002125B9B9A900F6543715B881A_WC3HtMN_page2.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"1747740583404\", \"customer\": \"Red Cow Hotel\", \"supplier\": \"Sydney Freezers Food Distributors\", \"items\": [{\"name\": \"Mayonnaise Whole Egg 14kg\", \"qty\": \"1\", \"uom\": \"unit\"}, {\"name\": \"Cheese Mozzarella Buffalo\", \"qty\": \"2\", \"uom\": \"unit\"}, {\"name\": \"Peppercorns Green 800gm Sandhurst\", \"qty\": \"1\", \"uom\": \"each\"}, {\"name\": \"Peppercorns Pink (in Brine) 700gm Sandhurst\", \"qty\": \"1\", \"uom\": \"each\"}, {\"name\": \"Prawn Cutlet Crumbed (10/15) 1kg\", \"qty\": \"1\", \"uom\": \"unit\"}]} </s_custom>"
+},
+{
+  "image": "train_images/742D12720D71A63CAE724E35AABFFD6B_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"1751890983230\", \"customer\": \"Roccella\", \"contact\": \"Bundoora Kitchen Staff, Bundoora@roccellaitalian.com.au, Roccella@cookingthebooks.com.au\", \"items\": [{\"name\": \"Shallots peeled bag\", \"qty\": \"2\", \"uom\": \"grams\"}, {\"name\": \"Rocket wild\", \"qty\": \"1\", \"uom\": \"BOX\"}, {\"name\": \"Raspberry punnet\", \"qty\": \"4\", \"uom\": \"PUNNNE T\"}, {\"name\": \"Onion sliced brown bag\", \"qty\": \"3\", \"uom\": \"grams\"}, {\"name\": \"Mushroom sliced ***2.5KG white prince\", \"qty\": \"2\", \"uom\": \"PKT\"}, {\"name\": \"Herb parsley continental bunch\", \"qty\": \"1\", \"uom\": \"BUNCH\"}, {\"name\": \"Eggs free range 330 box (15doz)\", \"qty\": \"1\", \"uom\": \"BOX\"}, {\"name\": \"Broccolini ****perfection****box (12)\", \"qty\": \"2\", \"uom\": \"BOX\"}, {\"name\": \"Blueberry punnet(125gm)\", \"qty\": \"4\", \"uom\": \"PUNNNE T\"}, {\"name\": \"Blackberry punnet (125gm)\", \"qty\": \"4\", \"uom\": \"PUNNNE T\"}]}"
+},
+{
+  "image": "train_images/7_beUl2iE_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"F39279997\", \"customer\": \"Gordon Espresso\", \"contact\": \"Pete Blake 0423492890, 71 Coventry Street Southbank VIC 3006\", \"items\": [{\"name\": \"Avocados Soft plz\", \"qty\": \"2\", \"uom\": \"Tray\"}, {\"name\": \"Basil\", \"qty\": \"1\", \"uom\": \"Bunch\"}, {\"name\": \"Broccolini\", \"qty\": \"2\", \"uom\": \"Bunch\"}, {\"name\": \"Lemons\", \"qty\": \"2\", \"uom\": \"Each\"}, {\"name\": \"Parsley - Continental\", \"qty\": \"2\", \"uom\": \"Bunch\"}, {\"name\": \"Potatoes - Chats\", \"qty\": \"1\", \"uom\": \"Bag (5kg)\"}, {\"name\": \"Rocket - Wild\", \"qty\": \"1\", \"uom\": \"Box (1.5kg)\"}, {\"name\": \"Sweet Potatoes\", \"qty\": \"2\", \"uom\": \"Kg\"}, {\"name\": \"Tomatoes\", \"qty\": \"2\", \"uom\": \"Kg\"}]}"
+},
+{
+  "image": "train_images/32D86B37BA3635CB3E2664D79F7CDF1B (2)_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"1751869634496\", \"customer\": \"Via Porta Bakehouse\", \"contact\": \"Simon Casentino, simon@viaporta.com.au, viaporta@cookingthebooks.com.au\", \"items\": [{\"name\": \"MUSHROOM SLICED ***2.5KG WHITE PRINCE\", \"qty\": \"4\", \"uom\": \"grams\"}, {\"name\": \"ONION PEELED BROWN **** DICED **** 10MM KG\", \"qty\": \"5\", \"uom\": \"kilogram\"}, {\"name\": \"Juice lemon 1lt bottle millas\", \"qty\": \"6\", \"uom\": \"BOTTLE\"}, {\"name\": \"Garlic peeled 1kg bag\", \"qty\": \"1\", \"uom\": \"BAG\"}]}"
+},
+{
+  "image": "train_images/45CE5E96C2EB8A7BD3B9DE1483ED0F2C (2)_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"1751868982088\", \"customer\": \"Via Porta Pty Ltd\", \"contact\": \"Shohal Urs, shohal@viaporta.com.au, viaporta1@cookingthebooks.com.au\", \"items\": [{\"name\": \"Herb mint bunch\", \"qty\": \"1\", \"uom\": \"BUNCH\"}, {\"name\": \"MUSHROOM SLICED ***2.5KG WHITE PRINCE\", \"qty\": \"2\", \"uom\": \"grams\"}, {\"name\": \"MUSHROOM SWISS BROWN CUP BOX\", \"qty\": \"1\", \"uom\": \"BOX\"}, {\"name\": \"Herb dill bunch\", \"qty\": \"1\", \"uom\": \"BUNCH\"}, {\"name\": \"Herb chive bunch\", \"qty\": \"1\", \"uom\": \"BUNCH\"}, {\"name\": \"Garlic peeled 1kg bag\", \"qty\": \"1\", \"uom\": \"BAG\"}, {\"name\": \"Potato sweet large kg\", \"qty\": \"6\", \"uom\": \"KG\"}, {\"name\": \"Tomato premium gourmet kg\", \"qty\": \"2\", \"uom\": \"KG\"}, {\"name\": \"Herb basil premium bunch\", \"qty\": \"4\", \"uom\": \"BUNCH\"}, {\"name\": \"Spinach baby triwash box 1.5kg (hussey)\", \"qty\": \"2\", \"uom\": \"BOX\"}, {\"name\": \"Eggplant field box\", \"qty\": \"2\", \"uom\": \"BOX\"}, {\"name\": \"Leek large each\", \"qty\": \"2\", \"uom\": \"EACH\"}, {\"name\": \"HERB SAGE BUNCH\", \"qty\": \"1\", \"uom\": \"BUNCH\"}, {\"name\": \"STRAWBERRY MEDIUM PUNNETS\", \"qty\": \"1\", \"uom\": \"PUNNN T\"}]}"
+},
+{
+  "image": "train_images/9262E67922744907474F301837A5549D (1)_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"1751890226036\", \"customer\": \"Gimlet at Cavendish House\", \"contact\": \"Kitchen, kitchen@gimlet.melbourne\", \"items\": [{\"name\": \"APPLE PINK LADY PREMIUM KG\", \"qty\": \"4\", \"uom\": \"kilogram\"}, {\"name\": \"AVOCADO EACH\", \"qty\": \"6\", \"uom\": \"EACH\"}, {\"name\": \"CELERY BOX (10)\", \"qty\": \"1\", \"uom\": \"BOX\"}, {\"name\": \"BROCCOLI **RAPPI** BUNCH\", \"qty\": \"20\", \"uom\": \"BUNCH\"}, {\"name\": \"EGGS 700GM DOZEN BOX (15DOZ)\", \"qty\": \"1\", \"uom\": \"BOX\"}, {\"name\": \"GARLIC PEELED 1KG BAG\", \"qty\": \"2\", \"uom\": \"BAG\"}, {\"name\": \"GARLIC PREMIUM KG\", \"qty\": \"2\", \"uom\": \"kilogram\"}, {\"name\": \"JUICE ORANGE 2LT MILLAS\", \"qty\": \"2\", \"uom\": \"EACH\"}, {\"name\": \"LEMONS PREMIUM *****SMALL***** BOX (15KG)\", \"qty\": \"0.5\", \"uom\": \"BOX\"}, {\"name\": \"LETTUCE BUTTER BOX\", \"qty\": \"2\", \"uom\": \"BOX\"}, {\"name\": \"LETTUCE GREEN OAK BOX\", \"qty\": \"2\", \"uom\": \"BOX\"}, {\"name\": \"LETTUCE ICEBERG EACH\", \"qty\": \"2\", \"uom\": \"EACH\"}, {\"name\": \"SHALLOTS ***BANA** BOX (5KG)\", \"qty\": \"2\", \"uom\": \"BOX\"}, {\"name\": \"SPINACH BABY 1.5KG BOX B/MARSH\", \"qty\": \"1\", \"uom\": \"BOX\"}, {\"name\": \"CHARD RAINBOW BUNCH\", \"qty\": \"10\", \"uom\": \"BUNCH\"}, {\"name\": \"POTATO DUTCH CREAM BOX\", \"qty\": \"1\", \"uom\": \"BOX\"}, {\"name\": \"RASPBERRY PUNNET\", \"qty\": \"2\", \"uom\": \"PUNNET\"}, {\"name\": \"TOMATO CHERRY TRUSS BULK **S.A** TRAY\", \"qty\": \"2\", \"uom\": \"TRAY\"}]}"
+},
+{
+  "image": "train_images/202504291410_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"202504291410\", \"customer\": \"Rolld Corporate Group A Pty Ltd\", \"contact\": \"Rolld - Hawthorn, +610401063263\", \"items\": [{\"name\": \"AVOCADO EACH\", \"qty\": \"8\", \"uom\": \"Each\"}, {\"name\": \"CABBAGE GREEN SHREDDED 5MM**4KG** BAG\", \"qty\": \"1\", \"uom\": \"Bag\"}, {\"name\": \"CABBAGE RED SHREDDED 5MM **4KG** BAG\", \"qty\": \"1\", \"uom\": \"Bag\"}, {\"name\": \"HERB CORRIANDER TRIMMED 1KG (DICKY BILL)\", \"qty\": \"1\", \"uom\": \"Box\"}, {\"name\": \"HERB MINT BUNCH\", \"qty\": \"12\", \"uom\": \"Bunch\"}, {\"name\": \"SPRING ONION BUNCH\", \"qty\": \"4\", \"uom\": \"Bunch\"}]}"
+},
+{
+  "image": "train_images/202507020742 (2)_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"202507020742\", \"customer\": \"Rolld Corporate Group A Pty Ltd\", \"contact\": \"Rolld - Melbourne Central, Becky Nguyen +610402600633\", \"items\": [{\"name\": \"BEANSHOOT 4 KG BAG\", \"qty\": \"2\", \"uom\": \"Bag\"}, {\"name\": \"CABBAGE GREEN SHREDDED 5MM**4KG** BAG\", \"qty\": \"1\", \"uom\": \"Bag\"}, {\"name\": \"CABBAGE RED SHREDDED 5MM **4KG** BAG\", \"qty\": \"1\", \"uom\": \"Bag\"}, {\"name\": \"CUCUMBER CONTINENTAL ***X/L** BAG\", \"qty\": \"6\", \"uom\": \"Bag\"}, {\"name\": \"HERB CORRIANDER TRIMMED 1KG (DICKY BILL)\", \"qty\": \"2\", \"uom\": \"Box\"}, {\"name\": \"LEMON PREMIUM KG\", \"qty\": \"1\", \"uom\": \"Kilogram\"}, {\"name\": \"LETTUCE SHREDDED 2.5KG BAG\", \"qty\": \"1\", \"uom\": \"Bag\"}, {\"name\": \"ONION RED KG\", \"qty\": \"2\", \"uom\": \"Kilogram\"}, {\"name\": \"SPRING ONION BUNCH\", \"qty\": \"5\", \"uom\": \"Bunch\"}]}"
+},
+{
+  "image": "train_images/02072025090915-0001_page1.png",
+  "ground_truth": "<s_custom>{\"customer\": \"HOMESTYLE ROWVILLE MANOR\", \"items\": [{\"name\": \"Apple Royal Gala\", \"qty\": \"3kg\"}, {\"name\": \"Banana Small Box\", \"qty\": \"8kg\"}, {\"name\": \"Grapes Red seedless\", \"qty\": \"2kg\"}, {\"name\": \"Grapes Green seedless\", \"qty\": \"2kg\"}, {\"name\": \"Honeydew\", \"qty\": \"1ea\"}, {\"name\": \"Kiwifruit\", \"qty\": \"2kg\"}, {\"name\": \"Lemons\", \"qty\": \"2kg\"}, {\"name\": \"Mandarins\", \"qty\": \"3kg\"}, {\"name\": \"Oranges\", \"qty\": \"2kg\"}, {\"name\": \"Pear Packham\", \"qty\": \"6kg\"}, {\"name\": \"Pineapple\", \"qty\": \"2ea\"}, {\"name\": \"Rock melon\", \"qty\": \"3ea\"}, {\"name\": \"Strawberry (15 pun)\", \"qty\": \"14\"}, {\"name\": \"Watermelon seedless\", \"qty\": \"2ea\"}, {\"name\": \"Lettuce Cos Twin\", \"qty\": \"2\"}, {\"name\": \"Broccoli florets (5KG)\", \"qty\": \"2kg\"}, {\"name\": \"Cauliflower florets (5KG)\", \"qty\": \"4x5kg\"}, {\"name\": \"Grated carrot (5KG)\", \"qty\": \"1x10kg\"}, {\"name\": \"Peeled carrots (10 kg)\", \"qty\": \"1kg\"}, {\"name\": \"Peeled Brown Onion (10Kg)\", \"qty\": \"2kg\"}, {\"name\": \"Peeled parsnip (5KG)\", \"qty\": \"3kg\"}, {\"name\": \"Peeled potato (10KG)\", \"qty\": \"3x10kg\"}, {\"name\": \"Peeled sweet potato (5kg)\", \"qty\": \"2x5kg\"}, {\"name\": \"Peeled Pumpkin (5 kg)\", \"qty\": \"1kg\"}, {\"name\": \"Peeled swede (5KG)\", \"qty\": \"2x5kg\"}, {\"name\": \"Basil\", \"qty\": \"2bunch\"}, {\"name\": \"Rosemary\", \"qty\": \"3bunch\"}, {\"name\": \"Coriander\", \"qty\": \"4bunch\"}, {\"name\": \"Soup Mix (5KG)\", \"qty\": \"2box\"}, {\"name\": \"Avocado EA\", \"qty\": \"1ea\"}, {\"name\": \"Broccoli KG\", \"qty\": \"2kg\"}, {\"name\": \"Cabbage green EA\", \"qty\": \"1ea\"}, {\"name\": \"Cabbage Red EA\", \"qty\": \"1ea\"}, {\"name\": \"Capsicum green KG\", \"qty\": \"1kg\"}, {\"name\": \"Capsicum red KG\", \"qty\": \"1kg\"}, {\"name\": \"Capsicum yellow KG\", \"qty\": \"2kg\"}, {\"name\": \"Cauliflower\", \"qty\": \"1ea\"}, {\"name\": \"Celery\", \"qty\": \"2ea\"}, {\"name\": \"Cucumber continental\", \"qty\": \"3ea\"}, {\"name\": \"Leeks\", \"qty\": \"3ea\"}, {\"name\": \"Lettuce iceberg\", \"qty\": \"2ea\"}, {\"name\": \"Mushroom button (4kg)\", \"qty\": \"2kg\"}, {\"name\": \"Onions Red (10kg)\", \"qty\": \"1kg\"}, {\"name\": \"Onions Brown (20kg)\", \"qty\": \"2kg\"}, {\"name\": \"Potato chat (5kg)\", \"qty\": \"3kg\"}, {\"name\": \"Potato sweet (10kg)\", \"qty\": \"2kg\"}, {\"name\": \"Salad Mix 1.5kg\", \"qty\": \"1bag\"}, {\"name\": \"Spinach baby 1.5 kg\", \"qty\": \"1kg\"}, {\"name\": \"Spring onion\", \"qty\": \"2bunch\"}, {\"name\": \"Snow pea\", \"qty\": \"3kg\"}, {\"name\": \"Tomato Cherry (15 pun)\", \"qty\": \"1pun\"}, {\"name\": \"Tomato Gourmet 10kg\", \"qty\": \"1kg\"}, {\"name\": \"Zucchini 10kg\", \"qty\": \"1kg\"}, {\"name\": \"Squash Yellow 5kg\", \"qty\": \"2kg\"}, {\"name\": \"Mint\", \"qty\": \"2bunch\"}, {\"name\": \"Dill\", \"qty\": \"2bunch\"}, {\"name\": \"Continental Parsley\", \"qty\": \"4bunch\"}, {\"name\": \"Brussel Sprouts\", \"qty\": \"1kg\"}, {\"name\": \"Rhubarb\", \"qty\": \"6 Bunch\"}]}"
+},
+{
+  "image": "train_images/145440DE509E587E190EFE6DDA8C2987_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"1745934702108\", \"customer\": \"SUPERNORMAL\", \"contact\": \"Anthony Nguyen, anthony.nguyen@supernormal.net.au\", \"items\": [{\"name\": \"CABBAGE ****GREEN**** EACH\", \"qty\": \"3\", \"uom\": \"EACH\"}, {\"name\": \"CUCUMBER CONTINENTAL BAG 15S\", \"qty\": \"1\", \"uom\": \"grams\"}, {\"name\": \"CUCUMBER LEBANESE JUICING BOX (16 KG)\", \"qty\": \"1\", \"uom\": \"BOX\"}, {\"name\": \"EGGPLANT LEBANESE LARGE 6KG BOX\", \"qty\": \"1\", \"uom\": \"BOX\"}, {\"name\": \"HERB CHIVE BUNCH\", \"qty\": \"5\", \"uom\": \"BUNCH\"}, {\"name\": \"HERB MINT BUNCH\", \"qty\": \"1\", \"uom\": \"BUNCH\"}, {\"name\": \"LEMON VERBENA BUNCH\", \"qty\": \"5\", \"uom\": \"BUNCH\"}, {\"name\": \"LETTUCE COS TWIN BOX ( GAZZOLA)\", \"qty\": \"1\", \"uom\": \"BOX\"}, {\"name\": \"SNOW PEA KG\", \"qty\": \"1\", \"uom\": \"kilogram\"}, {\"name\": \"SUGAR SNAP PEA KG\", \"qty\": \"1\", \"uom\": \"kilogram\"}, {\"name\": \"SPINACH BABY****COOKING**** BOX 4KG\", \"qty\": \"1\", \"uom\": \"BOX\"}, {\"name\": \"WASABI LEAVES PACKET\", \"qty\": \"1\", \"uom\": \"PUNNNE T\"}, {\"name\": \"WATERCRESS BUNCH\", \"qty\": \"6\", \"uom\": \"BUNCH\"}, {\"name\": \"ZUCCHINI PREMIUM GREEN KG\", \"qty\": \"2\", \"uom\": \"kilogram\"}, {\"name\": \"ZUCCHINI LEBANESE (WHITE) KG\", \"qty\": \"2\", \"uom\": \"kilogram\"}]}"
+},
+{
+  "image": "train_images/2416253 (2)_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"2416253\", \"customer\": \"Coffee Club The Coffee Club Plenty Valley\", \"contact\": \"TCC - Plenty Valley MC, PlentyValley@coffeeclub.com.au\", \"items\": [{\"name\": \"AVOCADO PREMIUM LARGE TRAY\", \"qty\": \"1\", \"uom\": \"TRAY\"}, {\"name\": \"LEMON PREMIUM KG\", \"qty\": \"1\", \"uom\": \"KG\"}, {\"name\": \"MUSHROOM BUTTON SMALL BOX(4KG)\", \"qty\": \"1\", \"uom\": \"BOX\"}, {\"name\": \"SALAD MIX TRI WASH BOX 1.5KG (HUSSEY)\", \"qty\": \"1\", \"uom\": \"BOX\"}, {\"name\": \"SPINACH BABY TRI WASH BOX 1.5KG (HUSSEY)\", \"qty\": \"1\", \"uom\": \"BOX\"}, {\"name\": \"CUCUMBER CONTINENTAL EACH\", \"qty\": \"3\", \"uom\": \"EACH\"}]}"
+},
+{
+  "image": "train_images/Picking Slip F39396595_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"F39396595\", \"customer\": \"Cumulus Inc\", \"contact\": \"Chef 0400000000, 45 Flinders Lane, Melbourne VIC 3000\", \"items\": [{\"name\": \"Beans - Green (Hand Picked)\", \"qty\": \"3\", \"uom\": \"Kg\"}, {\"name\": \"Beetroot - Baby Golden\", \"qty\": \"12\", \"uom\": \"Bunch\"}, {\"name\": \"Carrots - Baby Mix\", \"qty\": \"4\", \"uom\": \"Each\"}, {\"name\": \"Chicory - Green\", \"qty\": \"2\", \"uom\": \"Bunch\"}, {\"name\": \"Chives\", \"qty\": \"3\", \"uom\": \"Bunch\"}, {\"name\": \"Coriander\", \"qty\": \"1\", \"uom\": \"Bunch\"}, {\"name\": \"Dill\", \"qty\": \"1\", \"uom\": \"Bunch\"}, {\"name\": \"Fennel - Large\", \"qty\": \"3\", \"uom\": \"Each\"}, {\"name\": \"Figs\", \"qty\": \"1\", \"uom\": \"Tray (2Kg)\"}, {\"name\": \"Grapes - Red\", \"qty\": \"2\", \"uom\": \"Kg\"}, {\"name\": \"Lettuce - Radicchio\", \"qty\": \"1\", \"uom\": \"Box (10)\"}, {\"name\": \"Mint\", \"qty\": \"4\", \"uom\": \"Bunch\"}, {\"name\": \"Mushrooms - Button\", \"qty\": \"2\", \"uom\": \"Kg\"}, {\"name\": \"Nasturtium Leaves\", \"qty\": \"3\", \"uom\": \"Punnet\"}, {\"name\": \"Onions - Brown\", \"qty\": \"2\", \"uom\": \"Kg\"}, {\"name\": \"Parsley - Continental\", \"qty\": \"1\", \"uom\": \"Bunch\"}, {\"name\": \"Potatoes - Dutch Cream\", \"qty\": \"6\", \"uom\": \"Kg\"}, {\"name\": \"Shallots - Peeled\", \"qty\": \"2\", \"uom\": \"Kg\"}, {\"name\": \"Spring Onions\", \"qty\": \"5\", \"uom\": \"Bunch\"}, {\"name\": \"Tarragon\", \"qty\": \"1\", \"uom\": \"Bunch\"}, {\"name\": \"Thyme\", \"qty\": \"1\", \"uom\": \"Bunch\"}, {\"name\": \"Tomatoes - Cherry Truss\", \"qty\": \"2\", \"uom\": \"Punnet\"}, {\"name\": \"Witlof - White\", \"qty\": \"6\", \"uom\": \"Punnet\"}]}"
+},
+{
+  "image": "train_images/2416288 (1)_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"2416288\", \"customer\": \"Coffee Club The Coffee Club Watergardens\", \"contact\": \"TCC - Watergardens MC, Watergardens@coffeeclub.com.au\", \"items\": [{\"name\": \"AVOCADO PREMIUM LARGE TRAY\", \"qty\": \"2\", \"uom\": \"TRAY\"}, {\"name\": \"CUCUMBER CONTINENTAL EACH\", \"qty\": \"4\", \"uom\": \"EACH\"}, {\"name\": \"MUSHROOM BUTTON SMALL BOX(4KG)\", \"qty\": \"2\", \"uom\": \"BOX\"}, {\"name\": \"HERB PARSLEY CONTINENTAL BUNCH\", \"qty\": \"1\", \"uom\": \"BUNCH\"}, {\"name\": \"LEMON PREMIUM KG\", \"qty\": \"2\", \"uom\": \"KG\"}, {\"name\": \"SALAD MIX TRI WASH BOX 1.5KG (HUSSEY)\", \"qty\": \"1\", \"uom\": \"BOX\"}, {\"name\": \"SPINACH BABY TRI WASH BOX 1.5KG (HUSSEY)\", \"qty\": \"1\", \"uom\": \"BOX\"}, {\"name\": \"TOMATO PREMIUM GOURMET KG\", \"qty\": \"4\", \"uom\": \"KG\"}, {\"name\": \"TOMATO CHERRY PUNNET\", \"qty\": \"8\", \"uom\": \"PUNNET\"}]}"
+},
+{
+  "image": "train_images/PO#F37497194_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"F37497194\", \"customer\": \"Gabriel\", \"contact\": \"Chef Gabriel 0450446294, 187 Gertrude Street, Fitzroy VIC, Australia\", \"items\": [{\"name\": \"Avocados\", \"qty\": \"1\", \"uom\": \"Tray\"}, {\"name\": \"Bananas\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Dill\", \"qty\": \"1\", \"uom\": \"Bunch\"}, {\"name\": \"Onions - Brown\", \"qty\": \"2\", \"uom\": \"Kg\"}, {\"name\": \"Rocket - Wild\", \"qty\": \"4\", \"uom\": \"Pkt\"}, {\"name\": \"Spring Onions\", \"qty\": \"1\", \"uom\": \"Bunch\"}, {\"name\": \"Thyme\", \"qty\": \"1\", \"uom\": \"Bunch\"}, {\"name\": \"Tomatoes - Cherry\", \"qty\": \"5\", \"uom\": \"Punnet\"}, {\"name\": \"Tomatoes - Cherry\", \"qty\": \"1\", \"uom\": \"Tray (12 Punnet)\"}, {\"name\": \"Tomatoes - Cherry Medley\", \"qty\": \"13\", \"uom\": \"Pn\"}]}"
+},
+{
+  "image": "train_images/PO#F37497257_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"F37497257\", \"customer\": \"Verbano\", \"contact\": \"Marisa Betti 0423640219, 31 Chessell Street, Southbank VIC, Australia\", \"items\": [{\"name\": \"Fior di Latte 'That's Amore Cheese' 1kg\", \"qty\": \"3\", \"uom\": \"Bucket (1kg)\"}, {\"name\": \"Stracciatella 'That's Amore Cheese' 2kg\", \"qty\": \"1\", \"uom\": \"Bucket (2kg)\"}]}"
+},
+{
+  "image": "train_images/Picking Slip F39397983_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"F39397983\", \"customer\": \"Cutler and Co\", \"contact\": \"Cutler Shun 0432 498 909, Jorge 0405 375 652, 55-57 Gertrude Street, Fitzroy VIC 3065\", \"items\": [{\"name\": \"Lettuce - Radicchio\", \"qty\": \"1\", \"uom\": \"Box (10)\"}]}"
+},
+{
+  "image": "train_images/Picking Slip F41617014_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"F41617014\", \"customer\": \"Marion Wine Bar\", \"contact\": \"Shun or Davy Shun 0432498909 or Davy 0420220866, 55-57 Gertrude Street, Fitzroy VIC 3065, Australia\", \"items\": [{\"name\": \"Bok Choy\", \"qty\": \"7\", \"uom\": \"Each\"}, {\"name\": \"Eggplant\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Spring Onions\", \"qty\": \"2\", \"uom\": \"Bunch\"}]}"
+},
+{
+  "image": "train_images/PO#F37498852_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"F37498852\", \"customer\": \"San Telmo\", \"contact\": \"Chris, Glenn, Oliver Gould, San Telmo, Steve 0410 201 782, 0487811454, 613 9650 5525, 61433 395 338, orders@beefcorp.com.au, 14 Meyers Pl, Melbourne VIC 3000\", \"items\": [{\"name\": \"Rump Cap F1 MS 9+\", \"qty\": \"1\", \"uom\": \"CTN\"}]}"
+},
+{
+  "image": "train_images/PO#F37498086_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"F37498086\", \"customer\": \"Lincoln Hotel\", \"contact\": \"The Lincoln 0433553623, 91 Cardigan Street, Carlton VIC 3053\", \"items\": [{\"name\": \"Dim Sim - Little Picket x Wild Pie 'Little Dimmi' (40g)\", \"qty\": \"5\", \"uom\": \"Box (50 Pack)\"}]}"
+},
+{
+  "image": "train_images/Picking Slip F41821761 (2)_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"F41821761\", \"customer\": \"Supernormal\", \"contact\": \"Supernormal +61410350347, 180 Flinders Ln, Melbourne VIC 3000\", \"items\": [{\"name\": \"Artichokes - Jerusalem\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Cabbage - Savoy\", \"qty\": \"4\", \"uom\": \"Each\"}, {\"name\": \"Carrots\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Chives\", \"qty\": \"2\", \"uom\": \"Bunch\"}, {\"name\": \"Cucumber - Continental\", \"qty\": \"1\", \"uom\": \"Bag (15)\"}, {\"name\": \"Cucumber - Lebanese\", \"qty\": \"2\", \"uom\": \"Box\"}, {\"name\": \"Eggplant - Lebanese\", \"qty\": \"1\", \"uom\": \"Box\"}, {\"name\": \"Eggs - Free Range1\", \"qty\": \"1\", \"uom\": \"Box (15 Doz)\"}, {\"name\": \"Leeks\", \"qty\": \"5\", \"uom\": \"Bunch\"}, {\"name\": \"Lettuce - Baby Cos (Twin Pack)\", \"qty\": \"1\", \"uom\": \"Box (10)\"}, {\"name\": \"Peas - Sugar Snap\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Snowpeas\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Spinach - Baby (Cooking)\", \"qty\": \"2\", \"uom\": \"Box (4kg)\"}, {\"name\": \"Wasabi - Leaves\", \"qty\": \"1\", \"uom\": \"Pkt (50)\"}, {\"name\": \"Watercress 'Flow'\", \"qty\": \"4\", \"uom\": \"Pkt\"}]}"
+},
+{
+  "image": "train_images/PO#F37497587_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"F37497587\", \"customer\": \"Verbano\", \"contact\": \"Marisa Betti 0423640219, 31 Chessell Street, Southbank VIC, Australia\", \"items\": [{\"name\": \"Chicken Thigh Fillet - Skin Off\", \"qty\": \"15\", \"uom\": \"Kg\"}, {\"name\": \"Ham - Heritage Sliced 'Casalingo'\", \"qty\": \"2\", \"uom\": \"Kg\"}]}"
+},
+{
+  "image": "train_images/Picking Slip F41783672 (3)_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"F41783672\", \"customer\": \"Marion Wine Bar\", \"contact\": \"Davy 0420220866, 55-57 Gertrude Street, Fitzroy VIC 3065, Australia\", \"items\": [{\"name\": \"Apples - Pink Lady\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Carrots\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Carrots - Baby\", \"qty\": \"1\", \"uom\": \"Bunch\"}, {\"name\": \"Chives\", \"qty\": \"5\", \"uom\": \"Bunch\"}, {\"name\": \"Cime Di Rapa\", \"qty\": \"25\", \"uom\": \"Bunch\"}, {\"name\": \"Cucumber - Qukes\", \"qty\": \"7\", \"uom\": \"Punnet (250g)\"}, {\"name\": \"Dill\", \"qty\": \"1\", \"uom\": \"Bunch\"}, {\"name\": \"Eggs 700g\", \"qty\": \"1\", \"uom\": \"Box\"}, {\"name\": \"Garlic (China)\", \"qty\": \"0.2\", \"uom\": \"Kg\"}, {\"name\": \"Mint\", \"qty\": \"2\", \"uom\": \"Bunch\"}, {\"name\": \"Mushrooms - Button\", \"qty\": \"0.5\", \"uom\": \"Kg\"}, {\"name\": \"Onions - Brown\", \"qty\": \"1\", \"uom\": \"Bag (10kg)\"}, {\"name\": \"Oregano\", \"qty\": \"5\", \"uom\": \"Bunch\"}, {\"name\": \"Parsley - Continental\", \"qty\": \"7\", \"uom\": \"Bunch\"}, {\"name\": \"Potatoes - Washed\", \"qty\": \"2\", \"uom\": \"Kg\"}, {\"name\": \"Radish - Red\", \"qty\": \"2\", \"uom\": \"Bunch\"}, {\"name\": \"Salad Mix - Premium\", \"qty\": \"1\", \"uom\": \"Box (1.5kg)\"}, {\"name\": \"Shallots - Banana\", \"qty\": \"1\", \"uom\": \"Bag (5kg)\"}, {\"name\": \"Thyme\", \"qty\": \"1\", \"uom\": \"Bunch\"}, {\"name\": \"Tomatoes - Gourmet\", \"qty\": \"2\", \"uom\": \"Kg\"}]}"
+},
+{
+  "image": "train_images/Picking Slip F39397588_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"F39397588\", \"customer\": \"Supernormal\", \"contact\": \"Nabil Ansari 0470126105, 180 Flinders Ln, Melbourne VIC 3000\", \"items\": [{\"name\": \"Garlic - Black\", \"qty\": \"2\", \"uom\": \"Punnet\"}, {\"name\": \"Lotus Root\", \"qty\": \"1\", \"uom\": \"Kg\"}]}"
+},
+{
+  "image": "train_images/7_beUl2iE_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"F39279997\", \"customer\": \"Gordon Espresso\", \"contact\": \"Pete Blake 0423492890, 71 Coventry Street Southbank VIC 3006\", \"items\": [{\"name\": \"Avocados Soft plz\", \"qty\": \"2\", \"uom\": \"Tray\"}, {\"name\": \"Basil\", \"qty\": \"1\", \"uom\": \"Bunch\"}, {\"name\": \"Broccolini\", \"qty\": \"2\", \"uom\": \"Bunch\"}, {\"name\": \"Lemons\", \"qty\": \"2\", \"uom\": \"Each\"}, {\"name\": \"Parsley - Continental\", \"qty\": \"2\", \"uom\": \"Bunch\"}, {\"name\": \"Potatoes - Chats\", \"qty\": \"1\", \"uom\": \"Bag (5kg)\"}, {\"name\": \"Rocket - Wild\", \"qty\": \"1\", \"uom\": \"Box (1.5kg)\"}, {\"name\": \"Sweet Potatoes\", \"qty\": \"2\", \"uom\": \"Kg\"}, {\"name\": \"Tomatoes\", \"qty\": \"2\", \"uom\": \"Kg\"}]}"
+},
+{
+  "image": "train_images/PO#F37503727_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"F37503727\", \"customer\": \"Spread Eagle Hotel\", \"contact\": \"Jong Hyuk Yoon 0430301553, 372 Bridge Road, Richmond VIC 3121\", \"items\": [{\"name\": \"Beans - Green (Hand Picked)\", \"qty\": \"2\", \"uom\": \"Kg\"}, {\"name\": \"Passionfruit\", \"qty\": \"5\", \"uom\": \"Each\"}, {\"name\": \"Potatoes - Sebago Washed\", \"qty\": \"1\", \"uom\": \"Box\"}, {\"name\": \"Rocket - Wild\", \"qty\": \"5\", \"uom\": \"Box (1.5kg)\"}, {\"name\": \"Salad Mix\", \"qty\": \"1\", \"uom\": \"Box (1.5kg)\"}]}"
+},
+{
+  "image": "train_images/PO#F37500665_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"F37500665\", \"customer\": \"Verbano\", \"contact\": \"Marisa Betti 0423640219, 31 Chessell Street, Southbank VIC, Australia\", \"items\": [{\"name\": \"Avocados\", \"qty\": \"8\", \"uom\": \"Each\"}, {\"name\": \"Broccolini\", \"qty\": \"1\", \"uom\": \"Box\"}, {\"name\": \"Honeydew Melon\", \"qty\": \"1\", \"uom\": \"Each\"}, {\"name\": \"Radish - Breakfast\", \"qty\": \"4\", \"uom\": \"Bunch\"}, {\"name\": \"Rockmelon\", \"qty\": \"1\", \"uom\": \"Each\"}, {\"name\": \"Tomatoes - Cherry Heirloom\", \"qty\": \"6\", \"uom\": \"Punnet\"}, {\"name\": \"Tomatoes - Roma\", \"qty\": \"3\", \"uom\": \"Kg\"}]}"
+},
+{
+  "image": "train_images/PO#F37503570_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"F37503570\", \"customer\": \"Spread Eagle Hotel\", \"contact\": \"Jong Hyuk Yoon 0430301553, 372 Bridge Road, Richmond VIC 3121\", \"items\": [{\"name\": \"Beef - Eye Fillet Great Southern MSA YP 250g (5 Pkt)\", \"qty\": \"4\", \"uom\": \"Kg\"}, {\"name\": \"Veal - Scallopini Bobby Large\", \"qty\": \"6\", \"uom\": \"Kg\"}]}"
+},
+{
+  "image": "train_images/32D86B37BA3635CB3E2664D79F7CDF1B (2)_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"1751869634496\", \"customer\": \"Via Porta Bakehouse\", \"contact\": \"Simon Casentino, simon@viaporta.com.au, viaporta@cookingthebooks.com.au\", \"items\": [{\"name\": \"MUSHROOM SLICED ***2.5KG WHITE PRINCE\", \"qty\": \"4\", \"uom\": \"grams\"}, {\"name\": \"ONION PEELED BROWN **** DICED **** 10MM KG\", \"qty\": \"5\", \"uom\": \"kilogram\"}, {\"name\": \"Juice lemon 1lt bottle millas\", \"qty\": \"6\", \"uom\": \"BOTTLE\"}, {\"name\": \"Garlic peeled 1kg bag\", \"qty\": \"1\", \"uom\": \"BAG\"}]}"
+},
+
+{
+  "image": "train_images/PO#F37499617_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"F37499617\", \"customer\": \"The Hardware Societe - Katherine Place\", \"contact\": \"Xianmei XUE 0421852415, 10 Katherine Place, Melbourne VIC 3000\", \"items\": [{\"name\": \"Pork Belly Bone Out Murray Val\", \"qty\": \"1\", \"uom\": \"Box\"}]}"
+},
+{"image": "train_images/PO#F37503549_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"F37503549\", \"customer\": \"Spread Eagle Hotel\", \"contact\": \"Jong Hyuk Yoon 0430301553, 372 Bridge Road, Richmond VIC 3121\", \"items\": [{\"name\": \"Chicken Schnitzel Breast Full - Panko\", \"qty\": \"2\", \"uom\": \"Box (30)\"}]}"
+},
+{
+  "image": "train_images/PO#F37499220_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"F37499220\", \"customer\": \"48 Eastment\", \"contact\": \"48 Eastment, Louise Goold, Thomas 0415 267 336, 61402 112 243, 48 Eastment St, Northcote VIC 3070\", \"items\": [{\"name\": \"Bacon - Streaky\", \"qty\": \"10\", \"uom\": \"Kg\"}, {\"name\": \"Chicken Liver\", \"qty\": \"4\", \"uom\": \"Kg\"}]}"
+},
+{
+  "image": "train_images/PO#F37503470_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"F37503470\", \"customer\": \"The Hardware Societe - Katherine Place\", \"contact\": \"Xianmei XUE 0421852415, 10 Katherine Place, Melbourne VIC 3000\", \"items\": [{\"name\": \"Capsicums - Red\", \"qty\": \"1\", \"uom\": \"Box\"}, {\"name\": \"Carrots\", \"qty\": \"3\", \"uom\": \"Kg\"}, {\"name\": \"Cauliflower\", \"qty\": \"3\", \"uom\": \"Each\"}, {\"name\": \"Eggplant\", \"qty\": \"1\", \"uom\": \"Box\"}, {\"name\": \"Ginger\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Onions - Brown\", \"qty\": \"2\", \"uom\": \"Kg\"}, {\"name\": \"Onions - Red\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Pears - Corella\", \"qty\": \"4\", \"uom\": \"Kg\"}]}"
+},
+{
+  "image": "train_images/PO#F37503470_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"F37503470\", \"customer\": \"The Hardware Societe - Katherine Place\", \"contact\": \"Xianmei XUE 0421852415, 10 Katherine Place, Melbourne VIC 3000\", \"items\": [{\"name\": \"Capsicums - Red\", \"qty\": \"1\", \"uom\": \"Box\"}, {\"name\": \"Carrots\", \"qty\": \"3\", \"uom\": \"Kg\"}, {\"name\": \"Cauliflower\", \"qty\": \"3\", \"uom\": \"Each\"}, {\"name\": \"Eggplant\", \"qty\": \"1\", \"uom\": \"Box\"}, {\"name\": \"Ginger\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Onions - Brown\", \"qty\": \"2\", \"uom\": \"Kg\"}, {\"name\": \"Onions - Red\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Pears - Corella\", \"qty\": \"4\", \"uom\": \"Kg\"}]}"
+},
+{
+  "image": "train_images/PO#F37500901_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"F37500901\", \"customer\": \"JollyGood Diner & Bar\", \"contact\": \"Raphael Exton Pery 0412709814, 27 Johnston Street, Collingwood VIC, Australia\", \"items\": [{\"name\": \"Bay Leaves - Bunch\", \"qty\": \"1\", \"uom\": \"Bunch\"}, {\"name\": \"Cabbage - Green\", \"qty\": \"1\", \"uom\": \"Unit\"}, {\"name\": \"Carrots - Large - Biofarms\", \"qty\": \"1.5\", \"uom\": \"Kg\"}, {\"name\": \"Celery\", \"qty\": \"1\", \"uom\": \"Unit\"}, {\"name\": \"Dill\", \"qty\": \"1\", \"uom\": \"Unit\"}, {\"name\": \"Mushrooms - Swiss Brown Cups\", \"qty\": \"0.1\", \"uom\": \"Kg\"}, {\"name\": \"Onions - Brown\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Onions - White\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Sage\", \"qty\": \"1\", \"uom\": \"Unit\"}, {\"name\": \"Sprouts - Alfalfa\", \"qty\": \"1\", \"uom\": \"Punnet\"}, {\"name\": \"Tomatoes - Roma\", \"qty\": \"0.2\", \"uom\": \"Kg\"}, {\"name\": \"Watercress\", \"qty\": \"2\", \"uom\": \"Unit\"}]}"
+},
+{
+  "image": "train_images/PO#F37502861_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"F37502861\", \"customer\": \"Lumberjack\", \"contact\": \"Irene Stavrakakis 0411 534 054, 484 Bridge Rd, Richmond VIC 3121\", \"items\": [{\"name\": \"Eggplant\", \"qty\": \"3\", \"uom\": \"Each\"}, {\"name\": \"Mint\", \"qty\": \"2\", \"uom\": \"Bunch\"}, {\"name\": \"Mushrooms - Button\", \"qty\": \"1\", \"uom\": \"Box (4kg)\"}, {\"name\": \"Oranges\", \"qty\": \"2\", \"uom\": \"Kg\"}, {\"name\": \"Parsley - Flat Leaf\", \"qty\": \"3\", \"uom\": \"Bunch\"}, {\"name\": \"Rocket - Coolibah\", \"qty\": \"2\", \"uom\": \"Punnet\"}, {\"name\": \"Spinach - Baby\", \"qty\": \"1\", \"uom\": \"Box (1.5kg)\"}, {\"name\": \"Tomatoes - Roma\", \"qty\": \"2\", \"uom\": \"Kg\"}]}"
+},
+{
+  "image": "train_images/PO#F37503639_page1.png",
+  "ground_truth": "<s_custom>{\"order_id\": \"F37503639\", \"customer\": \"Spread Eagle Hotel\", \"contact\": \"Jong Hyuk Yoon 0430301553, 372 Bridge Road, Richmond VIC 3121\", \"items\": [{\"name\": \"Scotch Fillet O'Connor Grain Fed Green Lid\", \"qty\": \"1\", \"uom\": \"Box\"}]}"
+},
+{
+"image": "train_images/PO#F37522149_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F37522149\", \"customer\": \"The Que Club\", \"contact\": \"Andrew, The Que Club 0400 111 853, 613 9489 278, 613 9489 2783, 3-7 Syme St, Brunswick VIC, Australia\", \"items\": [{\"name\": \"Pork Belly Bone In\", \"qty\": \"8\", \"uom\": \"Each\"}, {\"name\": \"Pork Belly Boneless Rind On\", \"qty\": \"2\", \"uom\": \"Each\"}, {\"name\": \"Pork Ribs - Meaty Baby Back\", \"qty\": \"18\", \"uom\": \"Kg\"}]}"
+},
+{
+"image": "train_images/PO#F37505911_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F37505911\", \"customer\": \"Amazon State\", \"contact\": \"tom 0401580429, 329 Burwood Rd, Hawthorn VIC 3122\", \"items\": [{\"name\": \"Beef - Tomahawk 150-DAY Grain Fed (Portions)\", \"qty\": \"6\", \"uom\": \"Kg\"}]}"
+},
+{
+"image": "train_images/PO#F37524181_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F37524181\", \"customer\": \"Mark Rivington\", \"contact\": \"Mark Rivington mark rivington\", \"items\": [{\"name\": \"Beef Mince\", \"qty\": \"1\", \"uom\": \"Kg\"}]}"
+},
+{
+"image": "train_images/PO#F37520061_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F37520061\", \"customer\": \"The Botanical Hotel\", \"contact\": \"Blake Werner, The Botanical Hotel 0478029655, 169 Domain Road, South Yarra VIC 3141\", \"items\": [{\"name\": \"Bug Moreton Bay Whole Medium Raw\", \"qty\": \"1.5\", \"uom\": \"Kg\"}]}"
+},
+{
+"image": "train_images/PO#F37523726_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F37523726\", \"customer\": \"Gabriel\", \"contact\": \"Chef Gabriel 0450446294, 187 Gertrude Street, Fitzroy VIC, Australia\", \"items\": [{\"name\": \"Eggs - Free Range 700's\", \"qty\": \"2\", \"uom\": \"Box\"}]}"
+},
+{
+"image": "train_images/PO#F37504350_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F37504350\", \"customer\": \"Spread Eagle Hotel\", \"contact\": \"Jong Hyuk Yoon 0430301553, 372 Bridge Road, Richmond VIC 3121\", \"items\": [{\"name\": \"Spring Onions\", \"qty\": \"1\", \"uom\": \"Bunch\"}]}"
+},
+{
+"image": "train_images/PO#F37505651_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F37505651\", \"customer\": \"Mount Erica Hotel\", \"contact\": \"Mount Erica Kitchen 0491122384, 420 High St, Prahran VIC 3181\", \"items\": [{\"name\": \"Beef - Striploin 'Southern Rangers Plus'\", \"qty\": \"1\", \"uom\": \"Box\"}, {\"name\": \"Beef Rump Caps - 'Grain-Fed'\", \"qty\": \"4\", \"uom\": \"Each\"}, {\"name\": \"Burgers Beef - Chuck + Brisket Blend 150g\", \"qty\": \"2\", \"uom\": \"Box (40 x 150g)\"}, {\"name\": \"Chicken Thigh - Skin Off, Medium\", \"qty\": \"6\", \"uom\": \"Kg\"}]}"
+},
+{
+"image": "train_images/PO#F37507864_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F37507864\", \"customer\": \"Taquito\", \"contact\": \"Ben 0422202257, 350 Drummond St, Carlton VIC 3053\", \"items\": [{\"name\": \"Blue Grenadier Fillets Skin On\", \"qty\": \"2\", \"uom\": \"Kg\"}, {\"name\": \"Ocean Trout Portions\", \"qty\": \"2\", \"uom\": \"Each (120g)\"}, {\"name\": \"Prawns Imp Cutlet 16/20 Raw\", \"qty\": \"2\", \"uom\": \"Bag\"}]}"
+},
+{
+"image": "train_images/PO#F37506585_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F37506585\", \"customer\": \"Lincoln Hotel\", \"contact\": \"The Lincoln 0433553623, 91 Cardigan Street, Carlton VIC 3053\", \"items\": [{\"name\": \"Celery\", \"qty\": \"1\", \"uom\": \"Unit\"}]}"
+},
+{
+"image": "train_images/PO#F37510806_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F37510806\", \"customer\": \"Mount Erica Hotel\", \"contact\": \"Matthew Combes, Mount Erica Hotel, Richard Sheldon 0491122384, 613 9529 5770, 420 High St, Prahran VIC 3181\", \"items\": [{\"name\": \"Tomatoes - Heirloom\", \"qty\": \"1\", \"uom\": \"Tray (5kg)\"}]}"
+},
+{
+"image": "train_images/PO#F39280100_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F39280100\", \"customer\": \"The Hardware Societe - Katherine Place\", \"contact\": \"Xianmei XUE 0421852415, 10 Katherine Place, Melbourne VIC 3000\", \"items\": [{\"name\": \"Bananas\", \"qty\": \"3\", \"uom\": \"Kg\"}, {\"name\": \"Blackberries\", \"qty\": \"6\", \"uom\": \"Pn\"}, {\"name\": \"Blueberries\", \"qty\": \"3\", \"uom\": \"Punnet\"}, {\"name\": \"Celery\", \"qty\": \"1\", \"uom\": \"Each\"}, {\"name\": \"Chives\", \"qty\": \"1\", \"uom\": \"Bunch\"}, {\"name\": \"Flowers Edible Viola\", \"qty\": \"4\", \"uom\": \"Pn\"}, {\"name\": \"Leeks\", \"qty\": \"1\", \"uom\": \"Bunch\"}, {\"name\": \"Micro Lemon Balm\", \"qty\": \"3\", \"uom\": \"Pn\"}, {\"name\": \"Mushrooms - Enoki\", \"qty\": \"10\", \"uom\": \"Pn\"}, {\"name\": \"Mushrooms - King Brown\", \"qty\": \"2\", \"uom\": \"Box\"}, {\"name\": \"Mushrooms - Portobello\", \"qty\": \"2\", \"uom\": \"Box\"}, {\"name\": \"Mushrooms - Shiitake 'Otway'\", \"qty\": \"1\", \"uom\": \"Box (2kg)\"}, {\"name\": \"Mushrooms - Shimeji\", \"qty\": \"10\", \"uom\": \"Pn\"}, {\"name\": \"Mushrooms - Swiss Brown (Cups)\", \"qty\": \"2\", \"uom\": \"Box\"}, {\"name\": \"Raspberries\", \"qty\": \"2\", \"uom\": \"Pn\"}, {\"name\": \"Spinach - Baby\", \"qty\": \"2\", \"uom\": \"Box (1.5kg)\"}, {\"name\": \"Sweetcorn\", \"qty\": \"12\", \"uom\": \"Each\"}]}"
+},
+{
+"image": "train_images/PO#F39279830_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F39279830\", \"customer\": \"The Botanical Hotel\", \"contact\": \"Michael Flemming, 169 Domain Road, South Yarra VIC 3141\", \"items\": [{\"name\": \"Beef O'Connor Intercostals\", \"qty\": \"1\", \"uom\": \"Box\"}, {\"name\": \"Meat Glue\", \"qty\": \"1\", \"uom\": \"Kg\"}]}"
+},
+{
+"image": "train_images/PO#F39279717_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F39279717\", \"customer\": \"Mesa Verde\", \"contact\": \"Jacob Green 0413119740, Curtin House, 252 Swanston Street, Melbourne VIC 3000, Australia\", \"items\": [{\"name\": \"Chillies - Habanero\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Natives - Saltbush\", \"qty\": \"1\", \"uom\": \"Bunch (500g)\"}, {\"name\": \"Rocket - Wild 'Flow'\", \"qty\": \"2\", \"uom\": \"Pn (100g)\"}, {\"name\": \"Tomatillo\", \"qty\": \"3\", \"uom\": \"Kg\"}]}"
+},
+{
+"image": "train_images/PO#F37525544_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F37525544\", \"customer\": \"The Childrens Centre\", \"contact\": \"Tendo 85617480, Cnr Wellington & Jacksons Road Mulgrave VIC 3171\", \"items\": [{\"name\": \"Apples - Red\", \"qty\": \"1\", \"uom\": \"Box (12kg)\"}, {\"name\": \"Bananas\", \"qty\": \"1\", \"uom\": \"Box\"}, {\"name\": \"Blueberries\", \"qty\": \"1\", \"uom\": \"Tray\"}, {\"name\": \"Broccoli\", \"qty\": \"1\", \"uom\": \"Box\"}, {\"name\": \"Carrots - Peeled\", \"qty\": \"1\", \"uom\": \"Bag (10kg)\"}, {\"name\": \"Cauliflower\", \"qty\": \"5\", \"uom\": \"Each\"}, {\"name\": \"Cucumber - Continental\", \"qty\": \"1\", \"uom\": \"Bag\"}, {\"name\": \"Eggs - Caged 600's (Fillers)\", \"qty\": \"1\", \"uom\": \"Box\"}, {\"name\": \"Grapes - Green\", \"qty\": \"1\", \"uom\": \"Box (10kg)\"}, {\"name\": \"Honeydew Melon\", \"qty\": \"1\", \"uom\": \"Box\"}, {\"name\": \"Mint\", \"qty\": \"2\", \"uom\": \"Bunch\"}, {\"name\": \"Oranges Premium\", \"qty\": \"1\", \"uom\": \"Box\"}, {\"name\": \"Rockmelon\", \"qty\": \"1\", \"uom\": \"Box\"}]}"
+},
+{
+"image": "train_images/PO#F37526070_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F37526070\", \"customer\": \"Verbano\", \"contact\": \"Marisa Betti 0423640219, 31 Chessell Street, Southbank VIC, Australia\", \"items\": [{\"name\": \"Blueberries\", \"qty\": \"2\", \"uom\": \"Punnet (125g)\"}, {\"name\": \"Carrots Grated\", \"qty\": \"2\", \"uom\": \"Kg\"}, {\"name\": \"Coleslaw - Salad Dryslaw\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Cucumber - Continental\", \"qty\": \"3\", \"uom\": \"Each\"}, {\"name\": \"Lemons\", \"qty\": \"2\", \"uom\": \"Kg\"}, {\"name\": \"Lettuce - Baby Cos (Loose)\", \"qty\": \"2\", \"uom\": \"Box (1.5kg)\"}, {\"name\": \"Lettuce - Elk Red\", \"qty\": \"1\", \"uom\": \"Punnet\"}, {\"name\": \"Mushrooms - Swiss Brown (Flats)\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Rocket - Wild 'Coolibah'\", \"qty\": \"2\", \"uom\": \"Box (1.5kg)\"}]}"
+},
+{
+"image": "train_images/PO#F39279774_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F39279774\", \"customer\": \"Mesa Verde\", \"contact\": \"Jacob Green 0413119740, Curtin House, 252 Swanston Street, Melbourne VIC 3000, Australia\", \"items\": [{\"name\": \"Cactus - Tender 'Carey'\", \"qty\": \"2\", \"uom\": \"Each (3kg)\"}, {\"name\": \"Tomatillo - Whole 'Carey'\", \"qty\": \"8\", \"uom\": \"Each (2.8kg)\"}]}"
+},
+{
+"image": "train_images/PO#F37526132_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F37526132\", \"customer\": \"The Hardware Societe - Katherine Place\", \"contact\": \"The Hardware Societe - Katherine Place 613 9078 5992, 10 Katherine Place, Melbourne VIC 3000\", \"items\": [{\"name\": \"Bacon - Middle Whole\", \"qty\": \"6\", \"uom\": \"PCE\"}]}"
+},
+{
+"image": "train_images/PO#F39280638_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F39280638\", \"customer\": \"Welcome To Thornbury\", \"contact\": \"laura 0434816778, 520 High Street, Northcote VIC 3070\", \"items\": [{\"name\": \"Chicken - Thigh Fillet Skin On 150g\", \"qty\": \"10\", \"uom\": \"Kg\"}, {\"name\": \"Chicken Thigh Skin Off Diced\", \"qty\": \"6\", \"uom\": \"Kg\"}, {\"name\": \"Chicken Whole Bird size 12\", \"qty\": \"2\", \"uom\": \"Each\"}]}"
+},
+{
+"image": "train_images/PO#F39280643_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F39280643\", \"customer\": \"Welcome To Thornbury\", \"contact\": \"laura 0434816778, 520 High Street, Northcote VIC 3070\", \"items\": [{\"name\": \"Beef - Black Angus Burgers\", \"qty\": \"100\", \"uom\": \"Each (110g)\"}]}"
+},
+{
+"image": "train_images/PO#F39279997_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F39279997\", \"customer\": \"Gordon Espresso\", \"contact\": \"Pete Blake 0423492890, 71 Coventry Street Southbank VIC 3006\", \"items\": [{\"name\": \"Avocados\", \"qty\": \"2\", \"uom\": \"Tray\"}, {\"name\": \"Basil\", \"qty\": \"1\", \"uom\": \"Bunch\"}, {\"name\": \"Broccolini\", \"qty\": \"2\", \"uom\": \"Bunch\"}, {\"name\": \"Lemons\", \"qty\": \"2\", \"uom\": \"Each\"}, {\"name\": \"Parsley - Continental\", \"qty\": \"2\", \"uom\": \"Bunch\"}, {\"name\": \"Potatoes - Chats\", \"qty\": \"1\", \"uom\": \"Bag (5kg)\"}, {\"name\": \"Rocket - Wild\", \"qty\": \"1\", \"uom\": \"Box (1.5kg)\"}, {\"name\": \"Sweet Potatoes\", \"qty\": \"2\", \"uom\": \"Kg\"}, {\"name\": \"Tomatoes\", \"qty\": \"2\", \"uom\": \"Kg\"}]}"
+},
+{
+"image": "train_images/PO#F39301365_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F39301365\", \"customer\": \"The Hardware Societe - Katherine Place\", \"contact\": \"Xianmei XUE 0421852415, 10 Katherine Place, Melbourne VIC 3000\", \"items\": [{\"name\": \"Beetroot\", \"qty\": \"3\", \"uom\": \"Kg\"}, {\"name\": \"Blueberries\", \"qty\": \"1\", \"uom\": \"Punnet\"}, {\"name\": \"Capsicums - Red\", \"qty\": \"2\", \"uom\": \"Kg\"}, {\"name\": \"Carrots\", \"qty\": \"5\", \"uom\": \"Kg\"}, {\"name\": \"Chives\", \"qty\": \"2\", \"uom\": \"Bunch\"}, {\"name\": \"Corn - Baby\", \"qty\": \"12\", \"uom\": \"Pn\"}, {\"name\": \"Grapefruit - Ruby\", \"qty\": \"1\", \"uom\": \"Box\"}, {\"name\": \"Lettuce - Frisee\", \"qty\": \"1\", \"uom\": \"Box (1.5kg)\"}, {\"name\": \"Lettuce - Radicchio\", \"qty\": \"2\", \"uom\": \"Each\"}, {\"name\": \"Mushrooms - Swiss Brown (Cups)\", \"qty\": \"1\", \"uom\": \"Box\"}, {\"name\": \"Onions - Brown\", \"qty\": \"3\", \"uom\": \"Kg\"}, {\"name\": \"Potatoes - Washed\", \"qty\": \"1\", \"uom\": \"Bag\"}, {\"name\": \"Raspberries\", \"qty\": \"2\", \"uom\": \"Pn\"}, {\"name\": \"Silverbeet\", \"qty\": \"6\", \"uom\": \"Bunch\"}, {\"name\": \"Snow Pea Tendrils\", \"qty\": \"1\", \"uom\": \"Box (1.5kg)\"}, {\"name\": \"Spinach - Baby\", \"qty\": \"1\", \"uom\": \"Box (1.5kg)\"}, {\"name\": \"Thyme\", \"qty\": \"2\", \"uom\": \"Bunch\"}, {\"name\": \"Tomatoes - Cherry\", \"qty\": \"3\", \"uom\": \"Punnet\"}]}"
+},
+{
+"image": "train_images/PO#F39299984_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F39299984\", \"customer\": \"Loop Roof\", \"contact\": \"Evan 0431861821, 3/23 Meyers Place, Melbourne VIC 3000\", \"items\": [{\"name\": \"Basil\", \"qty\": \"2\", \"uom\": \"Bunch\"}, {\"name\": \"Broccoli\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Broccolini\", \"qty\": \"2\", \"uom\": \"Bunch\"}, {\"name\": \"Capsicums - Red\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Cauliflower\", \"qty\": \"7\", \"uom\": \"Each\"}, {\"name\": \"Coriander\", \"qty\": \"2\", \"uom\": \"Bunch\"}, {\"name\": \"Corn - Sweet\", \"qty\": \"10\", \"uom\": \"Each\"}, {\"name\": \"Cucumber - Continental\", \"qty\": \"1\", \"uom\": \"Bag\"}, {\"name\": \"Eggplant\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Eggs - Cage 'D'Alberto'\", \"qty\": \"3\", \"uom\": \"Doz (700g)\"}, {\"name\": \"Fennel - Large\", \"qty\": \"6\", \"uom\": \"Each\"}, {\"name\": \"Garlic - Peeled\", \"qty\": \"1\", \"uom\": \"Packet (1Kg)\"}, {\"name\": \"Ginger\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Kale\", \"qty\": \"1\", \"uom\": \"Bunch\"}, {\"name\": \"Lettuce - Radicchio\", \"qty\": \"3\", \"uom\": \"Each\"}, {\"name\": \"Milk - Full Cream 'Procal'\", \"qty\": \"1\", \"uom\": \"Each (1L)\"}, {\"name\": \"Milklab Lactose Free Milk\", \"qty\": \"2\", \"uom\": \"Each (1L)\"}, {\"name\": \"Mushrooms - Shimeji\", \"qty\": \"3\", \"uom\": \"Pkt\"}, {\"name\": \"Parsley - Continental\", \"qty\": \"2\", \"uom\": \"Bunch\"}, {\"name\": \"Parsley - Curly\", \"qty\": \"2\", \"uom\": \"Bunch\"}, {\"name\": \"Potatoes - Desiree\", \"qty\": \"1\", \"uom\": \"Bag (5kg)\"}, {\"name\": \"Radish - Red\", \"qty\": \"7\", \"uom\": \"Bunch\"}, {\"name\": \"Radish - White Daikon\", \"qty\": \"2\", \"uom\": \"Kg\"}, {\"name\": \"Salad Mix\", \"qty\": \"6\", \"uom\": \"Each (100g)\"}]}"
+},
+{
+"image": "train_images/PO#F39299984_page2.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F39299984\", \"customer\": \"Loop Roof\", \"contact\": \"Evan 0431861821, 3/23 Meyers Place, Melbourne VIC 3000\", \"items\": [{\"name\": \"Sweet Potatoes - Large\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Tomatoes - Cherry\", \"qty\": \"5\", \"uom\": \"Punnet\"}, {\"name\": \"Tomatoes - Gourmet\", \"qty\": \"1\", \"uom\": \"Kg\"}]}"
+},
+{
+"image": "train_images/PO#F39297050_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F39297050\", \"customer\": \"Rustica Sourdough South Yarra\", \"contact\": \"Sidney Tor 0449932372, 501 Chapel Street, South Yarra VIC 3141\", \"items\": [{\"name\": \"Chicken - Breast Fillet Skin Off 'Flinders Select' (2KG MINIMUM)\", \"qty\": \"2\", \"uom\": \"CTN\"}, {\"name\": \"Chicken - Whole #10 'Flinders Select' (2KG MINIMUM)\", \"qty\": \"5\", \"uom\": \"Each\"}, {\"name\": \"Ham - Virginian Sliced 'Flinders Select'\", \"qty\": \"1\", \"uom\": \"CTN\"}, {\"name\": \"Salami - Sopressa Mild (Sliced) 'Flinders Select Casa'\", \"qty\": \"3\", \"uom\": \"Pack\"}]}"
+},
+{
+"image": "train_images/PO#F39296428_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F39296428\", \"customer\": \"The Botanical Hotel\", \"contact\": \"Michael Flemming, 169 Domain Road, South Yarra VIC 3141\", \"items\": [{\"name\": \"Veal Glace\", \"qty\": \"1\", \"uom\": \"Box\"}]}"
+},
+{
+"image": "train_images/PO#F39283405_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F39283405\", \"customer\": \"Melbourne Football club\", \"contact\": \"Angus 0407689850, 19/65 Berwick Cranbourne road Cranbourne East Casey Demons\", \"items\": [{\"name\": \"Chicken Thigh Skin Off Small\", \"qty\": \"20\", \"uom\": \"Kg\"}]}"
+},
+{
+"image": "train_images/PO#F39283572_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F39283572\", \"customer\": \"Mesa Verde\", \"contact\": \"Jacob Green 0413119740, Curtin House, 252 Swanston Street, Melbourne VIC 3000, Australia\", \"items\": [{\"name\": \"Fillets - Snapper Local\", \"qty\": \"3\", \"uom\": \"Each\"}, {\"name\": \"Frozen Corn - Kernals 2Kg Bag\", \"qty\": \"12\", \"uom\": \"Kg\"}, {\"name\": \"Oysters Live (CLOSED) - Pacific Plate\", \"qty\": \"1\", \"uom\": \"Doz\"}, {\"name\": \"Oysters Live (CLOSED) - Sydney Rock Plate\", \"qty\": \"2\", \"uom\": \"Dozen\"}]}"
+},
+{
+"image": "train_images/PO#F39283614_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F39283614\", \"customer\": \"Mesa Verde\", \"contact\": \"Jacob Green 0413119740, Curtin House, 252 Swanston Street, Melbourne VIC 3000, Australia\", \"items\": [{\"name\": \"Beef Rib Eye O'Connor 500g\", \"qty\": \"2\", \"uom\": \"Each\"}, {\"name\": \"Brisket O'Connor Grass fed Orange Lid\", \"qty\": \"2\", \"uom\": \"Box\"}, {\"name\": \"Chicken Bones\", \"qty\": \"1\", \"uom\": \"Box\"}, {\"name\": \"Chicken Maryland Fillet - Skin On\", \"qty\": \"3\", \"uom\": \"Kg\"}, {\"name\": \"Pork Shoulder Boneless Skin Off\", \"qty\": \"10\", \"uom\": \"Kg\"}]}"
+},
+{
+"image": "train_images/PO#F39304259_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F39304259\", \"customer\": \"Gabriel\", \"contact\": \"Chef Gabriel 0450446294, 187 Gertrude Street, Fitzroy VIC, Australia\", \"items\": [{\"name\": \"Avocados\", \"qty\": \"1\", \"uom\": \"Tray\"}, {\"name\": \"Bananas\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Beetroot\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Carrots\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Chillies - Jalapeno\", \"qty\": \"0.1\", \"uom\": \"Kg\"}, {\"name\": \"Chives\", \"qty\": \"1\", \"uom\": \"Bunch\"}, {\"name\": \"Coriander\", \"qty\": \"7\", \"uom\": \"Bunch\"}, {\"name\": \"Garlic - Peeled\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Ginger\", \"qty\": \"0.2\", \"uom\": \"Kg\"}, {\"name\": \"Mint\", \"qty\": \"4\", \"uom\": \"Bunch\"}, {\"name\": \"Mushrooms - Swiss Brown (Cups)\", \"qty\": \"1\", \"uom\": \"Box\"}, {\"name\": \"Shallots - Banana\", \"qty\": \"2\", \"uom\": \"Kg\"}, {\"name\": \"Spring Onions\", \"qty\": \"4\", \"uom\": \"Bunch\"}, {\"name\": \"Tomatoes - Cooking\", \"qty\": \"2\", \"uom\": \"Kg\"}]}"
+},
+{
+"image": "train_images/PO#F39297179_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F39297179\", \"customer\": \"Loop Roof\", \"contact\": \"Evan 0431861821, 3/23 Meyers Place, Melbourne VIC 3000\", \"items\": [{\"name\": \"Chicken Thigh Fillet - Skin Off\", \"qty\": \"10\", \"uom\": \"Kg\"}, {\"name\": \"Eye Fillet Josdale YP\", \"qty\": \"2\", \"uom\": \"Kg\"}, {\"name\": \"Lamb Ribs\", \"qty\": \"15\", \"uom\": \"Kg\"}, {\"name\": \"Mortadella Sliced\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Salami - Sopressa Sliced\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Salami Calabrese Sliced\", \"qty\": \"1\", \"uom\": \"Kg\"}]}"
+},
+{
+"image": "train_images/PO#F39308743_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F39308743\", \"customer\": \"Verbano\", \"contact\": \"Marisa Betti 0423640219, 31 Chessell Street, Southbank VIC, Australia\", \"items\": [{\"name\": \"Chicken Schnitzel 300g Panko\", \"qty\": \"1\", \"uom\": \"Box\"}, {\"name\": \"Chicken Thigh Fillet - Skin Off\", \"qty\": \"10\", \"uom\": \"Kg\"}]}"
+},
+{
+"image": "train_images/PO#F39308007_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F39308007\", \"customer\": \"Taquito\", \"contact\": \"Ben 0422202257, 350 Drummond St, Carlton VIC 3053\", \"items\": [{\"name\": \"Albacore Tuna Line Caught Skin On From Mooloolaba, Queensland\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Prawns Skull Island U/6 Whole\", \"qty\": \"1\", \"uom\": \"Box (3kg)\"}]}"
+},
+{
+"image": "train_images/PO#F39309520_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F39309520\", \"customer\": \"Lincoln Hotel\", \"contact\": \"The Lincoln 0433553623, 91 Cardigan Street, Carlton VIC 3053\", \"items\": [{\"name\": \"Edgell Super Crunch Ultra Fast\", \"qty\": \"1\", \"uom\": \"Each\"}, {\"name\": \"Oysters NSW Appellation\", \"qty\": \"1\", \"uom\": \"Box (5 Dozen)\"}]}"
+},
+{
+"image": "train_images/PO#F39304708_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F39304708\", \"customer\": \"The Botanical Hotel\", \"contact\": \"Michael Flemming, 169 Domain Road, South Yarra VIC 3141\", \"items\": [{\"name\": \"Beef - Brisket Grain Fed MBS + Black Market Box Buy (14-16Kg)\", \"qty\": \"4\", \"uom\": \"Kg\"}, {\"name\": \"Beef - Cube Roll Little Joe Grass Fed MSA YP MS 4-7 - Box Buy (12kg)\", \"qty\": \"24\", \"uom\": \"Kg\"}, {\"name\": \"Beef - Marrow Bones Split Frz 5Kg Box\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Beef - Rost Biff Jack's Creek GF MB2+250gm (5 Pkt)\", \"qty\": \"10\", \"uom\": \"Kg\"}, {\"name\": \"Beef - Rost Biff MB2+\", \"qty\": \"4\", \"uom\": \"Kg\"}, {\"name\": \"Beef - Striploin Little Joe Grass Fed MSA YP MS 4-7 - Box Buy (12kg)\", \"qty\": \"24\", \"uom\": \"Kg\"}, {\"name\": \"Chicken - Diced Thigh 25x25mm\", \"qty\": \"5\", \"uom\": \"Kg\"}, {\"name\": \"Chicken - Thigh Fillets S/On\", \"qty\": \"5\", \"uom\": \"Kg\"}, {\"name\": \"Lamb - Bones 5Kg Box Frz\", \"qty\": \"5\", \"uom\": \"Kg\"}, {\"name\": \"Lamb - Necks Bone In Frz\", \"qty\": \"2\", \"uom\": \"Kg\"}, {\"name\": \"Lamb - Sharks H/QTR (Approx 300-400g) 20/Box FRZ\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Pork - Schnitzel\", \"qty\": \"2\", \"uom\": \"Kg\"}, {\"name\": \"Sausage - Sausage Meat\", \"qty\": \"5\", \"uom\": \"Kg\"}, {\"name\": \"Smallgoods - Bacon Streaky (Lago) 2.5Kg/Pkt\", \"qty\": \"2\", \"uom\": \"Kg\"}, {\"name\": \"Veal - Scallopini Bobby Large\", \"qty\": \"2\", \"uom\": \"Kg\"}]}"
+},
+{
+"image": "train_images/PO#F39308524_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F39308524\", \"customer\": \"Spread Eagle Hotel\", \"contact\": \"Jong Hyuk Yoon 0430301553, 372 Bridge Road, Richmond VIC 3121\", \"items\": [{\"name\": \"Chicken - Maryland Fillet Skin On Free Range\", \"qty\": \"10\", \"uom\": \"Each\"}, {\"name\": \"Chicken - Wings Free Range\", \"qty\": \"15\", \"uom\": \"Kg\"}, {\"name\": \"Chicken Breast - Skin On Free Range\", \"qty\": \"5\", \"uom\": \"Kg\"}, {\"name\": \"Chicken Breast Fillet Free Range - Skin Off\", \"qty\": \"10\", \"uom\": \"Kg\"}]}"
+},
+{
+"image": "train_images/PO#F39306392_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F39306392\", \"customer\": \"Tetto Di Carolina\", \"contact\": \"Sam Morio 0466444896, Level 1/48 Toorak Road, South Yarra VIC 3141\", \"items\": [{\"name\": \"Chillies - Jalapeno\", \"qty\": \"2\", \"uom\": \"Kg\"}, {\"name\": \"Juice - Lemon\", \"qty\": \"2\", \"uom\": \"Btl e (2L)\"}, {\"name\": \"Juice - Lime\", \"qty\": \"2\", \"uom\": \"Btl e (2L)\"}, {\"name\": \"Kaffir Lime Leaves\", \"qty\": \"4\", \"uom\": \"Pkt\"}, {\"name\": \"Lemons\", \"qty\": \"1\", \"uom\": \"Box\"}]}"
+},
+{
+"image": "train_images/PO#F39305593_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F39305593\", \"customer\": \"Spread Eagle Hotel\", \"contact\": \"Jong Hyuk Yoon 0430301553, 372 Bridge Road, Richmond VIC 3121\", \"items\": [{\"name\": \"Beef - Eye Fillet Great Southern MSA YP 250g (5 Pkt)\", \"qty\": \"4\", \"uom\": \"Kg\"}, {\"name\": \"Beef - Striploin Great Southern MSA YP Box Approx 20-22kg\", \"qty\": \"4\", \"uom\": \"Kg\"}]}"
+},
+{
+"image": "train_images/PO#F39304873_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F39304873\", \"customer\": \"Mount Erica Hotel\", \"contact\": \"Mount Erica Kitchen 0491122384, 420 High St, Prahran VIC 3181\", \"items\": [{\"name\": \"Bocconcini 'That's Amore Cheese' 1kg\", \"qty\": \"12\", \"uom\": \"Bucket (1Kg)\"}, {\"name\": \"Fior di Latte 'That's Amore Cheese' 1kg\", \"qty\": \"2\", \"uom\": \"Bucket (1kg)\"}, {\"name\": \"Ricotta - Traditional 'That's Amore Cheese' 3kg\", \"qty\": \"1\", \"uom\": \"Tub (3kg)\"}, {\"name\": \"Stracciatella 'That's Amore Cheese' 2kg\", \"qty\": \"1\", \"uom\": \"Bucket (2kg)\"}]}"
+},
+{
+"image": "train_images/PO#F39308792_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F39308792\", \"customer\": \"Verbano\", \"contact\": \"Marisa Betti 0423640219, 31 Chessell Street, Southbank VIC, Australia\", \"items\": [{\"name\": \"Coleslaw - Salad Dryslaw\", \"qty\": \"2\", \"uom\": \"Kg\"}, {\"name\": \"Cucumber - Continental\", \"qty\": \"5\", \"uom\": \"Each\"}, {\"name\": \"Lettuce - Baby Cos (Loose)\", \"qty\": \"1\", \"uom\": \"Box (1.5kg)\"}, {\"name\": \"Lettuce - Elk Red\", \"qty\": \"2\", \"uom\": \"Punnet\"}, {\"name\": \"Onions - Brown\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Rocket - Wild 'Coolibah'\", \"qty\": \"1\", \"uom\": \"Box (1.5kg)\"}, {\"name\": \"Sweet Potatoes\", \"qty\": \"2\", \"uom\": \"Kg\"}, {\"name\": \"Tomatoes - Cherry\", \"qty\": \"4\", \"uom\": \"Punnet (250g)\"}]}"
+},
+{
+"image": "train_images/PO#F39307840_page1.png",
+"ground_truth": "<s_custom>{\"order_id\": \"F39307840\", \"customer\": \"Taquito\", \"contact\": \"Ben 0422202257, 350 Drummond St, Carlton VIC 3053\", \"items\": [{\"name\": \"Chicken Skin\", \"qty\": \"4\", \"uom\": \"Kg\"}, {\"name\": \"Kangaroo Tail\", \"qty\": \"2\", \"uom\": \"Kg\"}, {\"name\": \"Pork Shoulder Boneless Skin Off\", \"qty\": \"3\", \"uom\": \"Each\"}]}"
+}]
