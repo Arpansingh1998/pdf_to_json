@@ -1,105 +1,62 @@
+# infer_donut_fixed.py
 import fitz
 from PIL import Image
 from transformers import DonutProcessor, VisionEncoderDecoderModel
 import torch
 import json
-import re
 
-# -----------------------------
-# Step 1: Load fine-tuned model and processor
-# -----------------------------
-try:
-    processor = DonutProcessor.from_pretrained("./donut-finetuned")
-    model = VisionEncoderDecoderModel.from_pretrained("./donut-finetuned")
-except OSError:
-    print("Error: The trained model and processor were not found.")
-    print("Please ensure you have run the training script and the files are in './donut-finetuned'.")
-    exit()
-
-# Move the model to a GPU if available
+processor = DonutProcessor.from_pretrained("./donut-finetuned")
+model = VisionEncoderDecoderModel.from_pretrained("./donut-finetuned")
 device = "cuda" if torch.cuda.is_available() else "cpu"
 model.to(device)
 
-# -----------------------------
-# Step 2: Define PDF processing function
-# -----------------------------
+# ensure config tokens are consistent (in case)
+model.config.decoder_start_token_id = processor.tokenizer.bos_token_id
+model.config.eos_token_id = processor.tokenizer.eos_token_id
+model.config.pad_token_id = processor.tokenizer.pad_token_id
+
 def process_pdf_with_donut(pdf_path):
-    """
-    Converts a PDF to images, processes each image with the Donut model,
-    and returns a combined JSON output.
-    """
     all_page_data = []
+    pdf_document = fitz.open(pdf_path)
 
-    try:
-        pdf_document = fitz.open(pdf_path)
+    for page_num in range(len(pdf_document)):
+        page = pdf_document.load_page(page_num)
+        pix = page.get_pixmap(matrix=fitz.Matrix(300 / 72, 300 / 72))
+        image = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
 
-        for page_num in range(len(pdf_document)):
-            page = pdf_document.load_page(page_num)
-            pix = page.get_pixmap(matrix=fitz.Matrix(300 / 72, 300 / 72))
-            image = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
+        pixel_values = processor(image, return_tensors="pt").pixel_values.to(device)
 
-            print(f"Processing page {page_num + 1}...")
+        # Use generate() with decoder_start_token_id and eos_token_id
+        outputs = model.generate(
+            pixel_values,
+            max_length=512,
+            decoder_start_token_id=processor.tokenizer.bos_token_id,
+            eos_token_id=processor.tokenizer.eos_token_id,
+            pad_token_id=processor.tokenizer.pad_token_id,
+            num_beams=5,
+            early_stopping=True,
+            no_repeat_ngram_size=2,
+        )
 
-            # Prepare the image and a text prompt for the model
-            pixel_values = processor(image, return_tensors="pt").pixel_values
-            pixel_values = pixel_values.to(device)
+        decoded = processor.tokenizer.decode(outputs[0], skip_special_tokens=True).strip()
 
-            # Use the new custom token as the decoder prompt
-            prompt_text = "<s_custom>"
-            prompt_inputs = processor.tokenizer(
-                prompt_text,
-                add_special_tokens=False,
-                return_tensors="pt"
-            )
+        # Try to load JSON; if fails, print diagnostics
+        try:
+            page_json = json.loads(decoded)
+        except json.JSONDecodeError as e:
+            print("❗ JSON decode failed for page", page_num+1)
+            print("Decoded string (raw):\n", decoded[:1000])
+            # print token-level debug info
+            token_ids = outputs[0].tolist()
+            print("Token ids:", token_ids[:40], "...")
+            tokens = processor.tokenizer.convert_ids_to_tokens(token_ids)[:60]
+            print("Tokens:", tokens, "...")
+            page_json = {"raw_output": decoded}
+        all_page_data.append({"page": page_num + 1, "data": page_json})
 
-            outputs = model.generate(
-                pixel_values.to(device),
-                decoder_input_ids=prompt_inputs.input_ids.to(device),
-                decoder_attention_mask=prompt_inputs.attention_mask.to(device),
-                max_length=512,  # match training length
-                pad_token_id=processor.tokenizer.pad_token_id,
-                eos_token_id=processor.tokenizer.eos_token_id,
-                use_cache=True,
-                num_beams=1,
-                return_dict_in_generate=True,
-                no_repeat_ngram_size=2,
-            )
-
-            pred_string = processor.tokenizer.decode(
-                outputs.sequences[0],
-                skip_special_tokens=True
-            ).strip()
-
-            # Remove the wrappers <s_custom> ... </s_custom>
-            pred_string = re.sub(r"^<s_custom>|<\/s_custom>$", "", pred_string).strip()
-
-            try:
-                page_json = json.loads(pred_string)
-                print("✅ Extracted JSON successfully.")
-            except json.JSONDecodeError as e:
-                print(f"⚠️ Could not decode output as JSON. Storing as a string. Error: {e}")
-                page_json = {"raw_output": pred_string}
-            
-            all_page_data.append({"page": page_num + 1, "data": page_json})
-
-        pdf_document.close()
-
-    except Exception as e:
-        print(f"An error occurred: {e}")
-        return None
-
+    pdf_document.close()
     return {"document_data": all_page_data}
 
-# -----------------------------
-# Step 3 & 4: Run the process and print output
-# -----------------------------
-pdf_file_path = "sydney2.pdf"
-final_json_output = process_pdf_with_donut(pdf_file_path)
-
-if final_json_output:
-    print(final_json_output)
-    print("1"*50)
-    print(json.dumps(final_json_output, ensure_ascii=False, indent=4))
-    print("\nJSON data printed to the console.")
-else:
-    print("No data was extracted from the PDF.")
+if __name__ == "__main__":
+    out = process_pdf_with_donut("sydney2.pdf")
+    print(json.dumps(out, ensure_ascii=False, indent=2))
