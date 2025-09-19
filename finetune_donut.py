@@ -56,7 +56,10 @@ new_tokens = list(all_ground_truth_keys)
 print(f"Adding {len(new_tokens)} new tokens to the tokenizer.")
 
 processor.tokenizer.add_tokens(new_tokens)
-model.resize_token_embeddings(len(processor.tokenizer))
+
+# Corrected line to resize token embeddings on the decoder
+model.decoder.resize_token_embeddings(len(processor.tokenizer))
+
 
 # -----------------------------
 # Step 4: Preprocessing function
