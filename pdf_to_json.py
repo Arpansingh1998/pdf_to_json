@@ -44,9 +44,19 @@ def process_pdf_with_donut(pdf_path):
             pixel_values = processor(image, return_tensors="pt").pixel_values
             pixel_values = pixel_values.to(device)
 
-            # Generate output from the model (no prompt needed)
+            # Create a prompt for the model
+            prompt_text = "{"
+            prompt_inputs = processor.tokenizer(
+                prompt_text,
+                add_special_tokens=False,
+                return_tensors="pt"
+            )
+
+            # Generate output from the model
             outputs = model.generate(
                 pixel_values.to(device),
+                decoder_input_ids=prompt_inputs.input_ids.to(device),
+                decoder_attention_mask=prompt_inputs.attention_mask.to(device),
                 max_length=512,  # match training length
                 pad_token_id=processor.tokenizer.pad_token_id,
                 eos_token_id=processor.tokenizer.eos_token_id,
