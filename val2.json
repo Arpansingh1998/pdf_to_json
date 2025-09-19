@@ -1417,7 +1417,7 @@
 },
 
 {
-  "image": "val_images/Purchase-Order-13418242_page1.png",
+  "image": "val_images/Purchase Order #13418242_page1.png",
   "ground_truth": {
     "po_number": "13418242",
     "customer_info": "Horsham (FD Ampol Retail)",
