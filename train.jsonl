@@ -1,6 +1,6 @@
-[{
+{
   "image": "train_images/2_e8hj46I_page1.png",
-  "ground_truth": "<s_custom>{\"order_id\": \"F39304259\", \"customer\": \"Gabriel\", \"contact\": \"Chef Gabriel 0450446294, 187 Gertrude Street, Fitzroy VIC, Australia\", \"items\": [{\"name\": \"Avocados\", \"qty\": \"1\", \"uom\": \"Tray\"}, {\"name\": \"Bananas\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Beetroot\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Carrots\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Chillies - Jalapeno\", \"qty\": \"0.1\", \"uom\": \"Kg\"}, {\"name\": \"Chives\", \"qty\": \"1\", \"uom\": \"Bunch\"}, {\"name\": \"Coriander\", \"qty\": \"7\", \"uom\": \"Bunch\"}, {\"name\": \"Garlic - Peeled\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Ginger\", \"qty\": \"0.2\", \"uom\": \"Kg\"}, {\"name\": \"Mint\", \"qty\": \"4\", \"uom\": \"Bunch\"}, {\"name\": \"Mushrooms - Swiss Brown (Cups)\", \"qty\": \"1\", \"uom\": \"Box\"}, {\"name\": \"Shallots - Banana\", \"qty\": \"2\", \"uom\": \"Kg\"}, {\"name\": \"Spring Onions\", \"qty\": \"4\", \"uom\": \"Bunch\"}, {\"name\": \"Tomatoes - Cooking\", \"qty\": \"2\", \"uom\": \"Kg\"}]}"
+  "ground_truth": "<s_custom>{\"order_id\": \"F39304259\", \"customer\": \"Gabriel\", \"contact\": \"Chef Gabriel 0450446294, 187 Gertrude Street, Fitzroy VIC, Australia\", \"items\": [{\"name\": \"Avocados\", \"qty\": \"1\", \"uom\": \"Tray\"}, {\"name\": \"Bananas\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Beetroot\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Carrots\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Chillies - Jalapeno\", \"qty\": \"0.1\", \"uom\": \"Kg\"}, {\"name\": \"Chives\", \"qty\": \"1\", \"uom\": \"Bunch\"}, {\"name\": \"Coriander\", \"qty\": \"7\", \"uom\": \"Bunch\"}, {\"name\": \"Garlic - Peeled\", \"qty\": \"1\", \"uom\": \"Kg\"}, {\"name\": \"Ginger\", \"qty\": \"0.2\", \"uom\": \"Kg\"}, {\"name\": \"Mint\", \"qty\": \"4\", \"uom\": \"Bunch\"}, {\"name\": \"Mushrooms - Swiss Brown (Cups)\", \"qty\": \"1\", \"uom\": \"Box\"}, {\"name\": \"Shallots - Banana\", \"qty\": \"2\", \"uom\": \"Kg\"}, {\"name\": \"Spring Onions\", \"qty\": \"4\", \"uom\": \"Bunch\"}, {\"name\": \"Tomatoes - Cooking\", \"qty\": \"2\", \"uom\": \"Kg\"}]}</s_custom>"
 },
 {
   "image": "train_images/6_zUNnU0L_page1.png",
@@ -313,4 +313,4 @@
 {
 "image": "train_images/PO#F39307840_page1.png",
 "ground_truth": "<s_custom>{\"order_id\": \"F39307840\", \"customer\": \"Taquito\", \"contact\": \"Ben 0422202257, 350 Drummond St, Carlton VIC 3053\", \"items\": [{\"name\": \"Chicken Skin\", \"qty\": \"4\", \"uom\": \"Kg\"}, {\"name\": \"Kangaroo Tail\", \"qty\": \"2\", \"uom\": \"Kg\"}, {\"name\": \"Pork Shoulder Boneless Skin Off\", \"qty\": \"3\", \"uom\": \"Each\"}]}"
-}]
+}
