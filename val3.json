@@ -1,5 +1,5 @@
 {
-  "image": "train_images/PO#F39312646_page1.png",
+  "image": "val_images/PO#F39312725_page1.png",
   "ground_truth": "<s_custom> <po_number> F39312646 </po_number> <customer_info> Mount Erica Hotel </customer_info> <delivery_date> 2025-04-28 </delivery_date> <order_date> 2025-04-27 </order_date> <contact_email> </contact_email> <address> Mount Erica Kitchen 0491122384 420 High St, Prahran VIC 3181 </address> <contact_phone> 0491122384 </contact_phone> <additional_notes> </additional_notes> <delivery_comments> </delivery_comments> <items> <item> <Line> 1 </Line> <Description> Blue Grenadier Fillets Skin Off </Description> <Vendor_SKU> </Vendor_SKU> <Quantity> 5 </Quantity> <UOM> Kg </UOM> <Unit_Price> $21.00 </Unit_Price> <Amount> $105.00 </Amount> <product_comments> </product_comments> </item> </items> </s_custom>"
 }
 
