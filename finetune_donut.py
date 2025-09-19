@@ -35,7 +35,7 @@ raw_dataset = load_dataset(
 print("Columns in dataset:", raw_dataset["train"].column_names)
 
 # -----------------------------
-# Step 3: Remove old tokens and add new ones
+# Step 3: Add new tokens to tokenizer and model
 # -----------------------------
 def get_all_keys(data):
     keys = set()
@@ -52,40 +52,10 @@ all_ground_truth_keys = set()
 for example in raw_dataset["train"]:
     all_ground_truth_keys.update(get_all_keys(example["ground_truth"]))
 
-# Manually identify and remove CORD-specific tokens from the tokenizer's vocabulary
-cord_tokens_to_remove = [
-    "<s_menu>", "</s_menu>",
-    "<s_nm>", "</s_nm>",
-    "<s_price>", "</s_price>",
-    "<s_discountprice>", "</s_discountprice>",
-    "<s_etc>", "</s_etc>",
-    "<s_tax_price>", "</s_tax_price>",
-    "<s_num>", "</s_num>",
-    "<s_itemsubtotal>", "</s_itemsubtotal>",
-    "<s_menuqty_cnt>", "</s_menuqty_cnt>",
-    "<s_cnt>", "</s_cnt>",
-    "<s_total_price>", "</s_total_price>",
-    "<s_sub>", "</s_sub>",
-    "<s_changeprice>", "</s_changeprice>"
-]
-
-# Create a new vocabulary without the old tokens
-old_vocab = processor.tokenizer.get_vocab()
-new_vocab = {token: id for token, id in old_vocab.items() if token not in cord_tokens_to_remove}
-
-# Create a new tokenizer with the reduced vocabulary
-new_tokenizer = type(processor.tokenizer)(
-    vocab=new_vocab,
-    **processor.tokenizer.init_kwargs
-)
-
-# Add your new tokens to the new tokenizer
 new_tokens = list(all_ground_truth_keys)
 print(f"Adding {len(new_tokens)} new tokens to the tokenizer.")
-new_tokenizer.add_tokens(new_tokens)
 
-# Update the processor with the new tokenizer
-processor.tokenizer = new_tokenizer
+processor.tokenizer.add_special_tokens({"additional_special_tokens": new_tokens})
 model.decoder.resize_token_embeddings(len(processor.tokenizer))
 
 
