@@ -55,7 +55,8 @@ for example in raw_dataset["train"]:
 new_tokens = list(all_ground_truth_keys)
 print(f"Adding {len(new_tokens)} new tokens to the tokenizer.")
 
-processor.tokenizer.add_special_tokens({"additional_special_tokens": new_tokens})
+# The most robust way to add tokens and resize embeddings
+processor.tokenizer.add_special_tokens({"additional_special_tokens": ["<s_custom>"] + new_tokens})
 model.decoder.resize_token_embeddings(len(processor.tokenizer))
 
 
@@ -66,7 +67,7 @@ def preprocess(example):
     image = Image.open(example["image"]).convert("RGB")
     pixel_values = processor(image, return_tensors="pt").pixel_values.squeeze(0)
 
-    # Convert the ground_truth dictionary to a JSON string and add the special tags
+    # Convert the ground_truth dictionary to a JSON string and add the new special tags
     ground_truth_dict = example["ground_truth"]
     text = json.dumps(ground_truth_dict, ensure_ascii=False)
     text_with_tags = f"<s_custom>{text}</s_custom>"
@@ -109,7 +110,7 @@ training_args = Seq2SeqTrainingArguments(
     gradient_accumulation_steps=8,
     learning_rate=5e-5,
     warmup_steps=500,
-    num_train_epochs=10,
+    num_train_epochs=50,
     logging_dir="./logs",
     logging_strategy="steps",
     logging_steps=50,
