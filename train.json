@@ -27,8 +27,8 @@
       "order_id": "F39279830",
       "customer": "The Botanical Hotel",
       "items": [
-        { "name": "Beef O'Connor Intercostals", "qty": "1", "uom": "Box", "unit_price": "22.90", "price": "22.90" },
-        { "name": "Meat Glue", "qty": "1", "uom": "Kg", "unit_price": "270.00", "price": "270.00" }
+        { "name": "Beef O'Connor Intercostals", "qty": "1", "uom": "Box"},
+        { "name": "Meat Glue", "qty": "1", "uom": "Kg"}
       ]
     }
   },
