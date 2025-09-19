@@ -29,8 +29,7 @@
       "items": [
         { "name": "Beef O'Connor Intercostals", "qty": "1", "uom": "Box", "unit_price": "22.90", "price": "22.90" },
         { "name": "Meat Glue", "qty": "1", "uom": "Kg", "unit_price": "270.00", "price": "270.00" }
-      ],
-      "total": "292.90 AUD"
+      ]
     }
   },
   {
@@ -38,7 +37,6 @@
     "ground_truth": {
       "order_id": "1747740583404",
       "customer": "Red Cow Hotel",
-      "supplier": "Sydney Freezers Food Distributors, Building 4B, Murray Jones Drive, Bankstown Airport, NSW 2200, Contact: Danielle Carrasco, Email: orders@sydneyfreezers.com, Phone: 02 9599 6963",
       "items": [
         { "name": "Buttermilk 600ml Dairy Farmers", "qty": "8", "uom": "each" },
         { "name": "Cheese Mozzarella Shredded 2x6kg Perfect", "qty": "1", "uom": "ctn" },
@@ -53,7 +51,6 @@
     "ground_truth": {
       "order_id": "1747740583404",
       "customer": "Red Cow Hotel",
-      "supplier": "Sydney Freezers Food Distributors",
       "items": [
         { "name": "Mayonnaise Whole Egg 14kg", "qty": "1", "uom": "unit" },
         { "name": "Cheese Mozzarella Buffalo", "qty": "2", "uom": "unit" },
@@ -199,6 +196,7 @@
   {
     "image": "train_images/02072025090915-0001_page1.png",
     "ground_truth": {
+      "order_id": "17459347020250902108",
       "customer": "HOMESTYLE ROWVILLE MANOR",
       "items": [
         { "name": "Apple Royal Gala", "qty": "3kg" },

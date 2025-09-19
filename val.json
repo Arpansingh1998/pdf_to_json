@@ -4,1550 +4,1118 @@
     "image": "val_images/PO#F39312725_page1.png",
     "ground_truth": {
       "order_id": "F39312725",
-      "delivery_date": "28 April 2025",
-      "supplier": "J+R FORSTER meals",
       "customer": "Mount Erica Hotel",
       "items": [
         {
           "name": "Chicken Stock Premium",
           "qty": "2",
-          "uom": "Box",
-          "uom_price": "$13.50",
-          "price": "$27.00"
+          "uom": "Box"
         },
         {
           "name": "Veal Bones",
           "qty": "2",
-          "uom": "Box",
-          "uom_price": "$3.90",
-          "price": "$7.80"
+          "uom": "Box"
         }
-      ],
-      "total": "$34.80"
+      ]
     }
   },
   {
     "image": "val_images/PO#F39312646_page1.png",
     "ground_truth": {
       "order_id": "F39312646",
-      "delivery_date": "28 April 2025",
-      "supplier": "OCEAN MADE SEAFOOD",
       "customer": "Mount Erica Hotel",
       "items": [
         {
           "name": "Blue Grenadier Fillets Skin Off",
           "qty": "5",
-          "uom": "Kg",
-          "uom_price": "$21.00",
-          "price": "$105.00"
+          "uom": "Kg"
         },
         {
           "name": "Crab Meat Blue Swimmer WA Shark Bay",
           "qty": "1",
-          "uom": "Kg (5kg)",
-          "uom_price": "$482.00",
-          "price": "$482.00"
+          "uom": "Kg (5kg)"
         },
         {
           "name": "Squid Tubes Imported Frozen",
           "qty": "1",
-          "uom": "Box",
-          "uom_price": "$60.00",
-          "price": "$60.00"
+          "uom": "Box"
         }
-      ],
-      "total": "$647.00"
+      ]
     }
   },
   {
     "image": "val_images/PO#F39313516_page1.png",
     "ground_truth": {
       "order_id": "F39313516",
-      "delivery_date": "28 April 2025",
-      "supplier": "SCILUNA'S",
       "customer": "The Botanical Hotel",
       "items": [
         {
           "name": "Basil",
           "qty": "3",
-          "uom": "Bunch",
-          "uom_price": "$3.30",
-          "price": "$9.90"
+          "uom": "Bunch"
         },
         {
           "name": "Broccolini",
           "qty": "3",
-          "uom": "Box (12)",
-          "uom_price": "$26.00",
-          "price": "$78.00"
+          "uom": "Box (12)"
         },
         {
           "name": "Cauliflower",
           "qty": "4",
-          "uom": "Each",
-          "uom_price": "$5.60",
-          "price": "$22.40"
+          "uom": "Each"
         },
         {
           "name": "Celery",
           "qty": "2",
-          "uom": "Each",
-          "uom_price": "$4.20",
-          "price": "$8.40"
+          "uom": "Each"
         },
         {
           "name": "Chervil",
           "qty": "2",
-          "uom": "Bunch",
-          "uom_price": "$3.30",
-          "price": "$6.60"
+          "uom": "Bunch"
         },
         {
           "name": "Chillies - Long Red",
           "qty": "2",
-          "uom": "Kg",
-          "uom_price": "$25.00",
-          "price": "$50.00"
+          "uom": "Kg"
         },
         {
           "name": "Chives",
           "qty": "3",
-          "uom": "Bunch",
-          "uom_price": "$4.05",
-          "price": "$12.15"
+          "uom": "Bunch"
         },
         {
           "name": "Cucumber - Lebanese",
           "qty": "4",
-          "uom": "Kg",
-          "uom_price": "$8.60",
-          "price": "$34.40"
+          "uom": "Kg"
         },
         {
           "name": "Eggs - Free Range 600's",
           "qty": "1",
-          "uom": "Box (15 Doz)",
-          "uom_price": "$85.00",
-          "price": "$85.00"
+          "uom": "Box (15 Doz)"
         },
         {
           "name": "Fennel - Large",
           "qty": "6",
-          "uom": "Each",
-          "uom_price": "$3.50",
-          "price": "$21.00"
+          "uom": "Each"
         },
         {
           "name": "Juice - Lemon",
           "qty": "1",
-          "uom": "Btle (2L)",
-          "uom_price": "$10.00",
-          "price": "$10.00"
+          "uom": "Btle (2L)"
         },
         {
           "name": "Leeks",
           "qty": "3",
-          "uom": "Each",
-          "uom_price": "$3.40",
-          "price": "$10.20"
+          "uom": "Each"
         },
         {
           "name": "Lemons",
           "qty": "1",
-          "uom": "Box (13-15kg)",
-          "uom_price": "$39.00",
-          "price": "$39.00"
+          "uom": "Box (13-15kg)"
         },
         {
           "name": "Lettuce - Baby Cos Gem",
           "qty": "3",
-          "uom": "Box",
-          "uom_price": "$30.00",
-          "price": "$90.00"
+          "uom": "Box"
         },
         {
           "name": "Lettuce - Radicchio",
           "qty": "2",
-          "uom": "Box",
-          "uom_price": "$50.00",
-          "price": "$100.00"
+          "uom": "Box"
         },
         {
           "name": "Lovage",
           "qty": "2",
-          "uom": "Pn",
-          "uom_price": "$12.00",
-          "price": "$24.00"
+          "uom": "Pn"
         },
         {
           "name": "Potatoes - Kipfler Washed",
           "qty": "1",
-          "uom": "Box (10kg)",
-          "uom_price": "$70.00",
-          "price": "$70.00"
+          "uom": "Box (10kg)"
         },
         {
           "name": "Potatoes - Peeled",
           "qty": "1",
-          "uom": "Bag (10kg)",
-          "uom_price": "$24.00",
-          "price": "$24.00"
+          "uom": "Bag (10kg)"
         },
         {
           "name": "Sorrel - Red Vein",
           "qty": "1",
-          "uom": "Pn",
-          "uom_price": "$4.50",
-          "price": "$4.50"
+          "uom": "Pn"
         },
         {
           "name": "Thyme",
           "qty": "2",
-          "uom": "Bunch",
-          "uom_price": "$3.00",
-          "price": "$6.00"
+          "uom": "Bunch"
         },
         {
           "name": "Zucchini - Green",
           "qty": "3",
-          "uom": "Kg",
-          "uom_price": "$8.10",
-          "price": "$24.30"
+          "uom": "Kg"
         }
-      ],
-      "total": "$729.85"
+      ]
     }
   },
   {
     "image": "val_images/PO#F39312848_page2.png",
     "ground_truth": {
       "order_id": "F39312848",
-      "delivery_date": "28 April 2025",
-      "supplier": "SCILUNA'S",
       "customer": "Mount Erica Hotel",
       "items": [
         {
           "name": "Tomatoes - Cherry",
           "qty": "2",
-          "uom": "Tray (15)",
-          "uom_price": "$47.00",
-          "price": "$94.00"
+          "uom": "Tray (15)"
         },
         {
           "name": "Tomatoes - Cherry Medley",
           "qty": "1",
-          "uom": "Tray (16)",
-          "uom_price": "$57.00",
-          "price": "$57.00"
+          "uom": "Tray (16)"
         },
         {
           "name": "Wombok",
           "qty": "2",
-          "uom": "Each",
-          "uom_price": "$9.00",
-          "price": "$18.00"
+          "uom": "Each"
         },
         {
           "name": "Zucchini 'Value Range'",
           "qty": "1",
-          "uom": "Box (10kg)",
-          "uom_price": "$35.00",
-          "price": "$35.00"
+          "uom": "Box (10kg)"
         }
-      ],
-      "total": "$1082.20"
+      ]
     }
   },
   {
     "image": "val_images/PO#F39312848_page1.png",
     "ground_truth": {
       "order_id": "F39312848",
-      "delivery_date": "28 April 2025",
-      "supplier": "SCILUNA'S",
       "customer": "Mount Erica Hotel",
       "items": [
         {
           "name": "Basil",
           "qty": "10",
-          "uom": "Bunch",
-          "uom_price": "$2.75",
-          "price": "$27.50"
+          "uom": "Bunch"
         },
         {
           "name": "Capsicums - Red",
           "qty": "1",
-          "uom": "Box (5kg)",
-          "uom_price": "$41.00",
-          "price": "$41.00"
+          "uom": "Box (5kg)"
         },
         {
           "name": "Carrots",
           "qty": "5",
-          "uom": "Kg",
-          "uom_price": "$2.50",
-          "price": "$12.50"
+          "uom": "Kg"
         },
         {
           "name": "Carrots Dutch",
           "qty": "20",
-          "uom": "Bunch",
-          "uom_price": "$3.80",
-          "price": "$76.00"
+          "uom": "Bunch"
         },
         {
           "name": "Celery",
           "qty": "1",
-          "uom": "Each",
-          "uom_price": "$3.50",
-          "price": "$3.50"
+          "uom": "Each"
         },
         {
           "name": "Chives",
           "qty": "3",
-          "uom": "Bunch",
-          "uom_price": "$3.35",
-          "price": "$10.05"
+          "uom": "Bunch"
         },
         {
           "name": "Coriander",
           "qty": "4",
-          "uom": "Bunch",
-          "uom_price": "$1.90",
-          "price": "$7.60"
+          "uom": "Bunch"
         },
         {
           "name": "Cucumber - Continental",
           "qty": "1",
-          "uom": "Bag (15)",
-          "uom_price": "$31.00",
-          "price": "$31.00"
+          "uom": "Bag (15)"
         },
         {
           "name": "Eggs - Free Range 700's (Fillers)",
           "qty": "2",
-          "uom": "Box",
-          "uom_price": "$120.00",
-          "price": "$240.00"
+          "uom": "Box"
         },
         {
           "name": "Garlic - Peeled",
           "qty": "5",
-          "uom": "Bag (1kg)",
-          "uom_price": "$7.30",
-          "price": "$36.50"
+          "uom": "Bag (1kg)"
         },
         {
           "name": "Lemons - Premium",
           "qty": "1",
-          "uom": "Box (13kg)",
-          "uom_price": "$44.00",
-          "price": "$44.00"
+          "uom": "Box (13kg)"
         },
         {
           "name": "Lettuce - Baby Cos Gem",
           "qty": "2",
-          "uom": "Box",
-          "uom_price": "$26.00",
-          "price": "$52.00"
+          "uom": "Box"
         },
         {
           "name": "Lettuce - Radicchio",
           "qty": "5",
-          "uom": "Each",
-          "uom_price": "$8.00",
-          "price": "$40.00"
+          "uom": "Each"
         },
         {
           "name": "Mint",
           "qty": "2",
-          "uom": "Bunch",
-          "uom_price": "$2.45",
-          "price": "$4.90"
+          "uom": "Bunch"
         },
         {
           "name": "Parsley - Continental",
           "qty": "5",
-          "uom": "Bunch",
-          "uom_price": "$1.50",
-          "price": "$7.50"
+          "uom": "Bunch"
         },
         {
           "name": "Potatoes - Kipfler Washed",
           "qty": "1",
-          "uom": "Box (10kg)",
-          "uom_price": "$70.00",
-          "price": "$70.00"
+          "uom": "Box (10kg)"
         },
         {
           "name": "Radish - Red",
           "qty": "10",
-          "uom": "Bunch",
-          "uom_price": "$1.95",
-          "price": "$19.50"
+          "uom": "Bunch"
         },
         {
           "name": "Rocket - Wild",
           "qty": "1",
-          "uom": "Box (1.5kg)",
-          "uom_price": "$20.00",
-          "price": "$20.00"
+          "uom": "Box (1.5kg)"
         },
         {
           "name": "Rosemary",
           "qty": "3",
-          "uom": "Bunch",
-          "uom_price": "$2.75",
-          "price": "$8.25"
+          "uom": "Bunch"
         },
         {
           "name": "Salad Mix - Hussey Premium",
           "qty": "1",
-          "uom": "Box (1.5kg)",
-          "uom_price": "$16.50",
-          "price": "$16.50"
+          "uom": "Box (1.5kg)"
         },
         {
           "name": "Snow Pea Tendrils - Foliage",
           "qty": "1",
-          "uom": "Kg",
-          "uom_price": "$16.90",
-          "price": "$16.90"
+          "uom": "Kg"
         },
         {
           "name": "Snowpeas",
           "qty": "1",
-          "uom": "Box (5kg)",
-          "uom_price": "$63.00",
-          "price": "$63.00"
+          "uom": "Box (5kg)"
         },
         {
           "name": "Tarragon",
           "qty": "6",
-          "uom": "Bunch",
-          "uom_price": "$3.75",
-          "price": "$22.50"
+          "uom": "Bunch"
         },
         {
           "name": "Thyme",
           "qty": "3",
-          "uom": "Bunch",
-          "uom_price": "$2.50",
-          "price": "$7.50"
+          "uom": "Bunch"
         }
-      ],
-      "total": "$1082.20"
+      ]
     }
   },
   {
     "image": "val_images/PO#F39313653_page1.png",
     "ground_truth": {
       "order_id": "F39313653",
-      "delivery_date": "28 April 2025",
-      "supplier": "J+R FORSTER meals",
       "customer": "Lincoln Hotel",
       "items": [
         {
           "name": "Lamb Shoulder Oyster Bone In",
           "qty": "6",
-          "uom": "Each",
-          "uom_price": "$18.90",
-          "price": "$113.40"
+          "uom": "Each"
         }
-      ],
-      "total": "$113.40"
+      ]
     }
   },
   {
     "image": "val_images/PO#F39313516_page2.png",
     "ground_truth": {
       "order_id": "F39313516",
-      "delivery_date": "28 April 2025",
-      "supplier": "SCILUNA'S",
       "customer": "The Botanical Hotel",
-      "items": [],
-      "total": "$729.85"
+      "items": []
     }
   },
   {
     "image": "val_images/PO#F39312739_page1.png",
     "ground_truth": {
       "order_id": "F39312739",
-      "delivery_date": "28 April 2025",
-      "supplier": "MEAT 2 PLEASE",
       "customer": "Mount Erica Hotel",
       "items": [
         {
           "name": "Beef - Cheeks Trimmed",
           "qty": "5",
-          "uom": "Kg",
-          "uom_price": "$22.50",
-          "price": "$112.50"
+          "uom": "Kg"
         },
         {
           "name": "Beef - Cube Roll M82+ 'Southern Rangers'",
           "qty": "2",
-          "uom": "Box",
-          "uom_price": "$0.00",
-          "price": "$0.00"
+          "uom": "Box"
         },
         {
           "name": "Beef - Eye Fillet 'Southern Ranges'",
           "qty": "2",
-          "uom": "Box",
-          "uom_price": "$0.00",
-          "price": "$0.00"
+          "uom": "Box"
         },
         {
           "name": "Beef - Striploin 'Southern Rangers Plus'",
           "qty": "1",
-          "uom": "Box",
-          "uom_price": "$0.00",
-          "price": "$0.00"
+          "uom": "Box"
         },
         {
           "name": "Beef Rump Caps - 'Grain-Fed'",
           "qty": "1",
-          "uom": "Each",
-          "uom_price": "$0.00",
-          "price": "$0.00"
+          "uom": "Each"
         },
         {
           "name": "Chicken - Tenderloin",
           "qty": "3",
-          "uom": "Kg",
-          "uom_price": "$13.90",
-          "price": "$41.70"
+          "uom": "Kg"
         },
         {
           "name": "Chicken - Whole Size 14",
           "qty": "5",
-          "uom": "Each",
-          "uom_price": "$10.90",
-          "price": "$54.50"
+          "uom": "Each"
         },
         {
           "name": "Lamb Rumps Cap Off (200g - 250g)",
           "qty": "30",
-          "uom": "Each",
-          "uom_price": "$0.00",
-          "price": "$0.00"
+          "uom": "Each"
         },
         {
           "name": "Sausage Mince - Pork Chilli & Fennel",
           "qty": "5",
-          "uom": "Kg",
-          "uom_price": "$14.80",
-          "price": "$74.00"
+          "uom": "Kg"
         },
         {
           "name": "Sausage Mince Pork Italian",
           "qty": "5",
-          "uom": "Kg",
-          "uom_price": "$15.40",
-          "price": "$77.00"
+          "uom": "Kg"
         }
-      ],
-      "total": "$359.70"
+      ]
     }
   },
   {
     "image": "val_images/PO#F39315230_page1.png",
     "ground_truth": {
       "order_id": "F39315230",
-      "delivery_date": "29 April 2025",
-      "supplier": "Clamms Seafood",
       "customer": "Mesa Verde",
       "items": [
         {
           "name": "Frozen Prawns - School 2kg pack please",
           "qty": "1",
-          "uom": "Kg",
-          "uom_price": "$29.90",
-          "price": "$29.90"
+          "uom": "Kg"
         }
-      ],
-      "total": "$29.90"
+      ]
     }
   },
   {
     "image": "val_images/PO#F39313676_page1.png",
     "ground_truth": {
       "order_id": "F39313676",
-      "delivery_date": "28 April 2025",
-      "supplier": "Tim & Terry OYSTER SUPPLY",
       "customer": "The Botanical Hotel",
       "items": [
         {
           "name": "Green Prawns (RAW) - Tiger U/6",
           "qty": "5",
-          "uom": "Kg",
-          "uom_price": "$48.00",
-          "price": "$240.00"
+          "uom": "Kg"
         },
         {
           "name": "Roe / Caviar - Salmon Yarra Valley 50g",
           "qty": "3",
-          "uom": "Jar (50g)",
-          "uom_price": "$24.65",
-          "price": "$73.95"
+          "uom": "Jar (50g)"
         }
-      ],
-      "total": "$313.95"
+      ]
     }
   },
   {
     "image": "val_images/PO-159897-775472-dsxnlb40 (1)_page1.png",
     "ground_truth": {
       "order_id": "775472",
-      "delivery_date": "1/07/2025",
-      "supplier": "PROVINCIAL PRODUCE AUSTRLIA PTY LTD",
       "customer": "Regis Fawkner",
       "items": [
         {
           "name": "POTATO SWEET PEELED BAG OF 5KG",
           "qty": "1.00",
-          "uom": "BG",
-          "uom_price": "$21.25",
-          "price": "$21.25"
+          "uom": "BG"
         },
         {
           "name": "PUMPKIN PEELED 5 KG BAG",
           "qty": "1.00",
-          "uom": "BG",
-          "uom_price": "$14.50",
-          "price": "$14.50"
+          "uom": "BG"
         },
         {
           "name": "CARROTS HANDPEELED 5kg bag",
           "qty": "1.00",
-          "uom": "BG",
-          "uom_price": "$14.50",
-          "price": "$14.50"
+          "uom": "BG"
         },
         {
           "name": "BANANA SEMI COLOUR (S/M) 13kg",
           "qty": "1.00",
-          "uom": "BX",
-          "uom_price": "$38.35",
-          "price": "$38.35"
+          "uom": "BX"
         },
         {
           "name": "APPLES GALA by Kg",
           "qty": "2.00",
-          "uom": "KG",
-          "uom_price": "$3.75",
-          "price": "$7.50"
+          "uom": "KG"
         },
         {
           "name": "ORANGES 3kg BAG",
           "qty": "1.00",
-          "uom": "BG",
-          "uom_price": "$5.80",
-          "price": "$5.80"
+          "uom": "BG"
         },
         {
           "name": "CUCUMBER - CONTINENTAL each",
           "qty": "2.00",
-          "uom": "EA",
-          "uom_price": "$2.20",
-          "passwordle": "$4.40"
+          "uom": "EA"
         },
         {
           "name": "LETTUCE - ICEBERG each",
           "qty": "3.00",
-          "uom": "EA",
-          "uom_price": "$2.95",
-          "price": "$8.85"
+          "uom": "EA"
         },
         {
           "name": "ONIONS PEELED (5kg)",
           "qty": "1.00",
-          "uom": "BG",
-          "uom_price": "$14.50",
-          "price": "$14.50"
+          "uom": "BG"
         },
         {
           "name": "ONIONS RED/SPANISH 2KG BAG",
           "qty": "1.00",
-          "uom": "PK",
-          "uom_price": "$5.90",
-          "price": "$5.90"
+          "uom": "PK"
         },
         {
           "name": "ZUCCHINI - GREEN LARGE kgs",
           "qty": "1.00",
-          "uom": "KG",
-          "uom_price": "$4.65",
-          "price": "$4.65"
+          "uom": "KG"
         }
-      ],
-      "total": "$139.00"
+      ]
     }
   },
   {
     "image": "val_images/PO-159897-748074-l4y4rf01_1_eLfnsh0_8QUMrEj_page1.png",
     "ground_truth": {
       "order_id": "748074",
-      "delivery_date": "17/02/2025",
-      "supplier": "PROVINCIAL PRODUCE AUSTRLIA PTY LTD",
       "customer": "Re:is Dandenong North",
       "items": [
         {
           "name": "EGGPLANT by Kg",
           "qty": "2.00",
-          "uom": "KG",
-          "uom_price": "$4.90",
-          "price": "$9.80"
+          "uom": "KG"
         },
         {
           "name": "AVOCADOS RIPE",
           "qty": "2.00",
-          "uom": "EA",
-          "uom_price": "$3.90",
-          "price": "$7.80"
+          "uom": "EA"
         },
         {
           "name": "ZUCCHINI - GREEN LARGE kgs",
           "qty": "2.00",
-          "uom": "KG",
-          "uom_price": "$4.95",
-          "price": "$9.90"
+          "uom": "KG"
         },
         {
           "name": "ONIONS PEELED (5kg)",
           "qty": "1.00",
-          "uom": "BG",
-          "uom_price": "$14.50",
-          "price": "$14.50"
+          "uom": "BG"
         },
         {
           "name": "CORIANDER",
           "qty": "1.00",
-          "uom": "BL",
-          "uom_price": "$1.90",
-          "price": "$1.90"
+          "uom": "BL"
         },
         {
           "name": "ROSEMARY",
           "qty": "1.00",
-          "uom": "BL",
-          "uom_price": "$2.20",
-          "price": "$2.20"
+          "uom": "BL"
         }
-      ],
-      "total": "$46.10"
+      ]
     }
   },
   {
     "image": "val_images/PO-159897-773017-z0vjf0xs_page1.png",
     "ground_truth": {
       "order_id": "773017",
-      "delivery_date": "19/06/2025",
-      "supplier": "PROVINCIAL PRODUCE AUSTRLIA PTY LTD",
       "customer": "Regis Shenley Manor",
       "items": [
         {
           "name": "APPLES GALA by Kg",
           "qty": "4.00",
-          "uom": "KG",
-          "uom_price": "$3.75",
-          "price": "$15.00"
+          "uom": "KG"
         },
         {
           "name": "AVOCADOS RIPE",
           "qty": "1.00",
-          "uom": "EA",
-          "uom_price": "$1.80",
-          "price": "$1.80"
+          "uom": "EA"
         },
         {
           "name": "CUCUMBER - CONTINENTAL each",
           "qty": "4.00",
-          "uom": "EA",
-          "uom_price": "$1.15",
-          "price": "$4.60"
+          "uom": "EA"
         },
         {
           "name": "KIWIFRUIT GREEN Each",
           "qty": "32.00",
-          "uom": "EA",
-          "uom_price": "$1.15",
-          "price": "$36.80"
+          "uom": "EA"
         },
         {
           "name": "MELON HONEYDEW each",
           "qty": "4.00",
-          "uom": "EA",
-          "uom_price": "$7.75",
-          "price": "$31.00"
+          "uom": "EA"
         },
         {
           "name": "ORANGES 3kg BAG",
           "qty": "2.00",
-          "uom": "BG",
-          "uom_price": "$7.80",
-          "price": "$15.60"
+          "uom": "BG"
         },
         {
           "name": "PEARS SMALL by Kg",
           "qty": "1.00",
-          "uom": "KG",
-          "uom_price": "$3.15",
-          "price": "$3.15"
+          "uom": "KG"
         },
         {
           "name": "PINEAPPLES each",
           "qty": "8.00",
-          "uom": "EA",
-          "uom_price": "$3.90",
-          "price": "$31.20"
+          "uom": "EA"
         },
         {
           "name": "POTATOES PEELED 10 Kg",
           "qty": "2.00",
-          "uom": "BG",
-          "uom_price": "$15.90",
-          "price": "$31.80"
+          "uom": "BG"
         },
         {
           "name": "PUMPKIN PEELED 5 Kg BAG",
           "qty": "1.00",
-          "uom": "BG",
-          "uom_price": "$14.50",
-          "price": "$14.50"
+          "uom": "BG"
         },
         {
           "name": "COLESLAW DRY 2.5KG BAG",
           "qty": "1.00",
-          "uom": "BG",
-          "uom_price": "$11.50",
-          "price": "$11.50"
+          "uom": "BG"
         },
         {
           "name": "STRAWBERRIES MEDIUM",
           "qty": "8.00",
-          "uom": "TB",
-          "uom_price": "$5.95",
-          "price": "$47.60"
+          "uom": "TB"
         },
         {
           "name": "WATERMELON SEEDLESS (Ordered by KG)",
           "qty": "10.00",
-          "uom": "KG",
-          "uom_price": "$1.95",
-          "price": "$19.50"
+          "uom": "KG"
         }
-      ],
-      "total": "$566.20"
+      ]
     }
   },
   {
     "image": "val_images/PO-159897-748074-l4y4rf01_1_eLfnsh0_8QUMrEj (1)_page1.png",
     "ground_truth": {
       "order_id": "748074",
-      "delivery_date": "17/02/2025",
-      "supplier": "SAAVI MOBILE ORDERING",
       "customer": "Re:is Dandenong North",
       "items": [
         {
           "name": "EGGPLANT by Kg",
           "qty": "2.00",
-          "uom": "KG",
-          "uom_price": "$4.90",
-          "price": "$9.80"
+          "uom": "KG"
         },
         {
           "name": "AVOCADOS RIPE",
           "qty": "2.00",
-          "uom": "EA",
-          "uom_price": "$3.90",
-          "price": "$7.80"
+          "uom": "EA"
         },
         {
           "name": "ZUCCHINI - GREEN LARGE kgs",
           "qty": "2.00",
-          "uom": "KG",
-          "uom_price": "$4.95",
-          "price": "$9.90"
+          "uom": "KG"
         },
         {
           "name": "ONIONS PEELED (5kg)",
           "qty": "1.00",
-          "uom": "BG",
-          "uom_price": "$14.50",
-          "price": "$14.50"
+          "uom": "BG"
         },
         {
           "name": "CORIANDER",
           "qty": "1.00",
-          "uom": "BL",
-          "uom_price": "$1.90",
-          "price": "$1.90"
+          "uom": "BL"
         },
         {
           "name": "ROSEMARY",
           "qty": "1.00",
-          "uom": "BL",
-          "uom_price": "$2.20",
-          "price": "$2.20"
+          "uom": "BL"
         }
-      ],
-      "total": "$46.10"
+      ]
     }
   },
   {
     "image": "val_images/PO#F39324513_page1.png",
     "ground_truth": {
       "order_id": "F39324513",
-      "delivery_date": "30 April 2025",
-      "supplier": "Scottsdale Pork",
       "customer": "The Que Club",
       "items": [
         {
           "name": "Boston Butt - Rindless",
           "qty": "4",
-          "uom": "Each",
-          "uom_price": "$0.00",
-          "price": "$0.00"
+          "uom": "Each"
         },
         {
           "name": "Pork Ribs - Meaty American",
           "qty": "10",
-          "uom": "Kg",
-          "uom_price": "$19.50",
-          "price": "$195.00"
+          "uom": "Kg"
         },
         {
           "name": "Pork Ribs - Meaty Baby Back",
           "qty": "20",
-          "uom": "Kg",
-          "uom_price": "$19.90",
-          "price": "$398.00"
+          "uom": "Kg"
         },
         {
           "name": "Pork Scotch",
           "qty": "4",
-          "uom": "Each (2kg)",
-          "uom_price": "$0.00",
-          "price": "$0.00"
+          "uom": "Each (2kg)"
         }
-      ],
-      "total": "$593.00"
+      ]
     }
   },
   {
     "image": "val_images/PO-159897-773017-z0vjf0xs_page2.png",
     "ground_truth": {
       "order_id": "773017",
-      "delivery_date": "19/06/2025",
-      "supplier": "PROVINCIAL PRODUCE AUSTRLIA PTY LTD",
       "customer": "Regis Shenley Manor",
       "items": [
         {
           "name": "Eggs 55's (Box - 15 dozen)",
           "qty": "1.00",
-          "uom": "BX",
-          "uom_price": "$89.00",
-          "price": "$89.00"
+          "uom": "BX"
         },
         {
           "name": "GRAPES GREEN by Kg",
           "qty": "3.00",
-          "uom": "KG",
-          "uom_price": "$5.50",
-          "price": "$16.50"
+          "uom": "KG"
         },
         {
           "name": "GRAPES RED by Kg",
           "qty": "2.00",
-          "uom": "KG",
-          "uom_price": "$5.50",
-          "price": "$11.00"
+          "uom": "KG"
         },
         {
           "name": "LETTUCE - ICEBERG each",
           "qty": "3.00",
-          "uom": "EA",
-          "uom_price": "$2.50",
-          "price": "$7.50"
+          "uom": "EA"
         },
         {
           "name": "CARROTS HANDPEELED 5kg bag",
           "qty": "1.00",
-          "uom": "BG",
-          "uom_price": "$14.50",
-          "price": "$14.50"
+          "uom": "BG"
         },
         {
           "name": "TOMATOES -MEDIUM RIPE by Kg",
           "qty": "2.00",
-          "uom": "KG",
-          "uom_price": "$6.95",
-          "price": "$13.90"
+          "uom": "KG"
         },
         {
           "name": "ONIONS RED/SPANISH (kg)",
           "qty": "1.00",
-          "uom": "KG",
-          "uom_price": "$3.80",
-          "price": "$3.80"
+          "uom": "KG"
         },
         {
           "name": "MUSHROOMS - BUTTON by Kg",
           "qty": "4.00",
-          "uom": "KG",
-          "uom_price": "$12.50",
-          "price": "$50.00"
+          "uom": "KG"
         },
         {
           "name": "ZUCCHINI - GREEN LARGE kgs",
           "qty": "3.00",
-          "uom": "KG",
-          "uom_price": "$3.65",
-          "price": "$10.95"
+          "uom": "KG"
         },
         {
           "name": "CAPSICUM RED by Kg",
           "qty": "6.00",
-          "uom": "KG",
-          "uom_price": "$4.55",
-          "price": "$27.30"
+          "uom": "KG"
         },
         {
           "name": "EGGPLANT by Kg",
           "qty": "3.00",
-          "uom": "KG",
-          "uom_price": "$6.45",
-          "price": "$19.35"
+          "uom": "KG"
         },
         {
           "name": "BANANA SEMI COLOUR (S/M) 13kg",
           "qty": "1.00",
-          "uom": "BX",
-          "uom_price": "$38.35",
-          "price": "$38.35"
+          "uom": "BX"
         }
-      ],
-      "total": "$566.20"
+      ]
     }
   },
   {
     "image": "val_images/PO-159897-773017-z0vjf0xs_Csvt11m_page1.png",
     "ground_truth": {
       "order_id": "773017",
-      "delivery_date": "19/06/2025",
-      "supplier": "PROVINCIAL PRODUCE AUSTRLIA PTY LTD",
       "customer": "Regis Shenley Manor",
       "items": [
         {
           "name": "APPLES GALA by Kg",
           "qty": "4.00",
-          "uom": "KG",
-          "uom_price": "$3.75",
-          "price": "$15.00"
+          "uom": "KG"
         },
         {
           "name": "AVOCADOS RIPE",
           "qty": "1.00",
-          "uom": "EA",
-          "uom_price": "$1.80",
-          "price": "$1.80"
+          "uom": "EA"
         },
         {
           "name": "CUCUMBER - CONTINENTAL each",
           "qty": "4.00",
-          "uom": "EA",
-          "uom_price": "$1.15",
-          "price": "$4.60"
+          "uom": "EA"
         },
         {
           "name": "KIWIFRUIT GREEN Each",
           "qty": "32.00",
-          "uom": "EA",
-          "uom_price": "$1.15",
-          "price": "$36.80"
+          "uom": "EA"
         },
         {
           "name": "MELON HONEYDEW each",
           "qty": "4.00",
-          "uom": "EA",
-          "uom_price": "$7.75",
-          "price": "$31.00"
+          "uom": "EA"
         },
         {
           "name": "ORANGES 3kg BAG",
           "qty": "2.00",
-          "uom": "BG",
-          "uom_price": "$7.80",
-          "price": "$15.60"
+          "uom": "BG"
         },
         {
           "name": "PEARS SMALL by Kg",
           "qty": "1.00",
-          "uom": "KG",
-          "uom_price": "$3.15",
-          "price": "$3.15"
+          "uom": "KG"
         },
         {
           "name": "PINEAPPLES each",
           "qty": "8.00",
-          "uom": "EA",
-          "uom_price": "$3.90",
-          "price": "$31.20"
+          "uom": "EA"
         },
         {
           "name": "POTATOES PEELED 10 Kg",
           "qty": "2.00",
-          "uom": "BG",
-          "uom_price": "$15.90",
-          "price": "$31.80"
+          "uom": "BG"
         },
         {
           "name": "PUMPKIN PEELED 5 Kg BAG",
           "qty": "1.00",
-          "uom": "BG",
-          "uom_price": "$14.50",
-          "price": "$14.50"
+          "uom": "BG"
         },
         {
           "name": "COLESLAW DRY 2.5KG BAG",
           "qty": "1.00",
-          "uom": "BG",
-          "uom_price": "$11.50",
-          "price": "$11.50"
+          "uom": "BG"
         },
         {
           "name": "STRAWBERRIES MEDIUM",
           "qty": "8.00",
-          "uom": "TB",
-          "uom_price": "$5.95",
-          "price": "$47.60"
+          "uom": "TB"
         },
         {
           "name": "WATERMELON SEEDLESS (Ordered by KG)",
           "qty": "10.00",
-          "uom": "KG",
-          "uom_price": "$1.95",
-          "price": "$19.50"
+          "uom": "KG"
         }
-      ],
-      "total": "$566.20"
+      ]
     }
   },
   {
     "image": "val_images/PO-159897-773017-z0vjf0xs_Csvt11m_page2.png",
     "ground_truth": {
       "order_id": "773017",
-      "delivery_date": "19/06/2025",
-      "supplier": "PROVINCIAL PRODUCE AUSTRLIA PTY LTD",
       "customer": "Regis Shenley Manor",
       "items": [
         {
           "name": "Eggs 55's (Box - 15 dozen)",
           "qty": "1.00",
-          "uom": "BX",
-          "uom_price": "$89.00",
-          "price": "$89.00"
+          "uom": "BX"
         },
         {
           "name": "GRAPES GREEN by Kg",
           "qty": "3.00",
-          "uom": "KG",
-          "uom_price": "$5.50",
-          "price": "$16.50"
+          "uom": "KG"
         },
         {
           "name": "GRAPES RED by Kg",
           "qty": "2.00",
-          "uom": "KG",
-          "uom_price": "$5.50",
-          "price": "$11.00"
+          "uom": "KG"
         },
         {
           "name": "LETTUCE - ICEBERG each",
           "qty": "3.00",
-          "uom": "EA",
-          "uom_price": "$2.50",
-          "price": "$7.50"
+          "uom": "EA"
         },
         {
           "name": "CARROTS HANDPEELED 5kg bag",
           "qty": "1.00",
-          "uom": "BG",
-          "uom_price": "$14.50",
-          "price": "$14.50"
+          "uom": "BG"
         },
         {
           "name": "TOMATOES -MEDIUM RITE by Kg",
           "qty": "2.00",
-          "uom": "KG",
-          "uom_price": "$6.95",
-          "price": "$13.90"
+          "uom": "KG"
         },
         {
           "name": "ONIONS RED/SPANISH (kg)",
           "qty": "1.00",
-          "uom": "KG",
-          "uom_price": "$3.80",
-          "price": "$3.80"
+          "uom": "KG"
         },
         {
           "name": "MUSHROOMS - BUTTON by Kg",
           "qty": "4.00",
-          "uom": "KG",
-          "uom_price": "$12.50",
-          "price": "$50.00"
+          "uom": "KG"
         },
         {
           "name": "ZUCCHINI - GREEN LARGE kgs",
           "qty": "3.00",
-          "uom": "KG",
-          "uom_price": "$3.65",
-          "price": "$10.95"
+          "uom": "KG"
         },
         {
           "name": "CAPSICUM RED by Kg",
           "qty": "6.00",
-          "uom": "KG",
-          "uom_price": "$4.55",
-          "price": "$27.30"
+          "uom": "KG"
         },
         {
           "name": "EGGPLANT by Kg",
           "qty": "3.00",
-          "uom": "KG",
-          "uom_price": "$6.45",
-          "price": "$19.35"
+          "uom": "KG"
         },
         {
           "name": "BANANA SEMI COLOUR (S/M) 13kg",
           "qty": "1.00",
-          "uom": "BX",
-          "uom_price": "$38.35",
-          "price": "$38.35"
+          "uom": "BX"
         }
-      ],
-      "total": "$566.20"
+      ]
     }
   },
   {
     "image": "val_images/PO#F39321483_page1.png",
     "ground_truth": {
       "order_id": "F39321483",
-      "delivery_date": "28 April 2025",
-      "supplier": "ASH BROS FOOD SERVICES",
       "customer": "Rustica Sourdough South Yarra",
       "items": [
         {
           "name": "Fillets - Salmon Atlantic Skin On",
           "qty": "3",
-          "uom": "Each",
-          "uom_price": "$0.00",
-          "price": "$0.00"
+          "uom": "Each"
         },
         {
           "name": "Frozen - Bug Meat 'Casa'",
           "qty": "3",
-          "uom": "Kg",
-          "uom_price": "$65.00",
-          "price": "$195.00"
+          "uom": "Kg"
         },
         {
           "name": "Prawn Cutlets - Raw 16/20",
           "qty": "5",
-          "uom": "Bag (700g)",
-          "uom_price": "$20.90",
-          "price": "$104.50"
+          "uom": "Bag (700g)"
         }
-      ],
-      "total": "$299.50"
+      ]
     }
   },
   {
     "image": "val_images/PO#F39320577_page1.png",
     "ground_truth": {
       "order_id": "F39320577",
-      "delivery_date": "28 April 2025",
-      "supplier": "BILL'S FARM FOODSERVICE",
       "customer": "San Telmo",
       "items": [
         {
           "name": "Cheese - Provolone Piccante DOP",
           "qty": "4",
-          "uom": "Waxed Log (5kg) RW",
-          "uom_price": "$23.96",
-          "price": "$95.84"
+          "uom": "Waxed Log (5kg) RW"
         }
-      ],
-      "total": "$95.84"
+      ]
     }
   },
   {
     "image": "val_images/PO-159897-775506-f1axm3xt (4)_page1.png",
     "ground_truth": {
       "order_id": "775506",
-      "delivery_date": "2/07/2025",
-      "supplier": "PROVINCIAL PRODUCE AUSTRLIA PTY LTD",
       "customer": "Regis Blackburn",
       "items": [
         {
           "name": "BANANA SEMI COLOUR (S/M) 13kg",
           "qty": "2.00",
-          "uom": "BX",
-          "uom_price": "$38.35",
-          "price": "$76.70"
+          "uom": "BX"
         },
         {
           "name": "Broccoli Florets 5KG",
           "qty": "4.00",
-          "uom": "KG",
-          "uom_price": "$43.70",
-          "price": "$174.80"
+          "uom": "KG"
         },
         {
           "name": "CARROTS HANDPEELED 5kg bag",
           "qty": "2.00",
-          "uom": "BG",
-          "uom_price": "$14.50",
-          "price": "$29.00"
+          "uom": "BG"
         },
         {
           "name": "CELERY (bunch)",
           "qty": "2.00",
-          "uom": "BL",
-          "uom_price": "$2.30",
-          "price": "$4.60"
+          "uom": "BL"
         },
         {
           "name": "Eggs 55's (Box - 15 dozen)",
           "qty": "4.00",
-          "uom": "BX",
-          "uom_price": "$79.00",
-          "price": "$316.00"
+          "uom": "BX"
         },
         {
           "name": "KIWIFRUIT GREEN Each",
           "qty": "20.00",
-          "uom": "EA",
-          "uom_price": "$0.95",
-          "price": "$19.00"
+          "uom": "EA"
         },
         {
           "name": "LEEKS (each)",
           "qty": "15.00",
-          "uom": "EA",
-          "uom_price": "$2.50",
-          "price": "$37.50"
+          "uom": "EA"
         },
         {
           "name": "LETTUCE - ICEBERG each",
           "qty": "4.00",
-          "uom": "EA",
-          "uom_price": "$2.95",
-          "price": "$11.80"
+          "uom": "EA"
         },
         {
           "name": "MUSHROOMS - BUTTON 4 Kg Box",
           "qty": "1.00",
-          "uom": "BX",
-          "uom_price": "$40.50",
-          "price": "$40.50"
+          "uom": "BX"
         },
         {
           "name": "PARSLEY FLAT LEAF",
           "qty": "4.00",
-          "uom": "BL",
-          "uom_price": "$1.75",
-          "price": "$7.00"
+          "uom": "BL"
         },
         {
           "name": "POTATOES DICED (2cm) 10KG",
           "qty": "4.00",
-          "uom": "BG",
-          "uom_price": "$20.35",
-          "price": "$81.40"
+          "uom": "BG"
         },
         {
           "name": "POTATOES PEELED 10 Kg",
           "qty": "2.00",
-          "uom": "BG",
-          "uom_price": "$15.90",
-          "price": "$31.80"
+          "uom": "BG"
         }
-      ],
-      "total": "$947.20"
+      ]
     }
   },
   {
     "image": "val_images/PO-159897-775472-dsxnlb40 (1)_page2.png",
     "ground_truth": {
       "order_id": "775472",
-      "delivery_date": "1/07/2025",
-      "supplier": "PROVINCIAL PRODUCE AUSTRLIA PTY LTD",
       "customer": "Regis Fawkner",
       "items": [
         {
           "name": "CAULIFLOWER each",
           "qty": "1.00",
-          "uom": "EA",
-          "uom_price": "$3.95",
-          "price": "$3.95"
+          "uom": "EA"
         },
         {
           "name": "LEEKS (each)",
           "qty": "2.00",
-          "uom": "EA",
-          "uom_price": "$2.50",
-          "price": "$5.00"
+          "uom": "EA"
         },
         {
           "name": "TOMATOES -MEDIUM RIPE 10 Kg Box",
           "qty": "1.00",
-          "uom": "BX",
-          "uom_price": "$62.00",
-          "price": "$62.00"
+          "uom": "BX"
         },
         {
           "name": "POTATOES PEELED 10 Kg",
           "qty": "2.00",
-          "uom": "BG",
-          "uom_price": "$15.90",
-          "price": "$31.80"
+          "uom": "BG"
         },
         {
           "name": "LEMONS by Kg",
           "qty": "1.00",
-          "uom": "KG",
-          "uom_price": "$3.95",
-          "price": "$3.95"
+          "uom": "KG"
         },
         {
           "name": "Mandarins by KG",
           "qty": "2.00",
-          "uom": "KG",
-          "uom_price": "$3.50",
-          "price": "$7.00"
+          "uom": "KG"
         }
-      ],
-      "total": "$253.90"
+      ]
     }
   },
   {
     "image": "val_images/PO-159897-775506-f1axm3xt (4)_page2.png",
     "ground_truth": {
       "order_id": "775506",
-      "delivery_date": "2/07/2025",
-      "supplier": "PROVINCIAL PRODUCE AUSTRLIA PTY LTD",
       "customer": "Regis Blackburn",
       "items": [
         {
           "name": "PUMPKIN PEELED 5 KG BAG",
           "qty": "5.00",
-          "uom": "BG",
-          "uom_price": "$14.50",
-          "price": "$72.50"
+          "uom": "BG"
         },
         {
           "name": "SPINACH - BABY STANDARD (1.5 kgs)",
           "qty": "1.00",
-          "uom": "BX",
-          "uom_price": "$14.85",
-          "price": "$14.85"
+          "uom": "BX"
         },
         {
           "name": "Strawberries by TB (SEASONAL)",
           "qty": "5.00",
-          "uom": "TB",
-          "uom_price": "$5.95",
-          "price": "$29.75"
+          "uom": "TB"
         }
-      ],
-      "total": "$947.20"
+      ]
     }
   },
   {
     "image": "val_images/Purchase Order #13205466_page1.png",
     "ground_truth": {
       "order_id": "13205466",
-      "delivery_date": "06/05/2025",
-      "supplier": "PROVINCIAL PRODUCE AUSTRALIA(DRCT)",
       "customer": "Winchelsea (FD Ampol Retail)",
       "items": [
         {
           "name": "COS LETTUCE TWIN BOX",
           "qty": "3",
-          "uom": "Each",
-          "uom_price": "103.5000",
-          "price": "103.5"
+          "uom": "Each"
         },
         {
           "name": "KEANS EGGS 700G FILLER FREE",
           "qty": "1",
-          "uom": "Each",
-          "uom_price": "95.0000",
-          "price": "95"
+          "uom": "Each"
         },
         {
           "name": "TOMATO GOURMET BOX 10KG",
           "qty": "2",
-          "uom": "Each",
-          "uom_price": "76.0000",
-          "price": "76"
+          "uom": "Each"
         }
-      ],
-      "total": "274.5"
+      ]
     }
   },
   {
     "image": "val_images/PO-159897-776690-1t14ztxd (2)_page1.png",
     "ground_truth": {
       "order_id": "776690",
-      "delivery_date": "8/07/2025",
-      "supplier": "PROVINCIAL PRODUCE AUSTRLIA PTY LTD",
       "customer": "Regis Brighton",
       "items": [
         {
           "name": "Broccoli Florets 5KG",
           "qty": "3.00",
-          "uom": "KG",
-          "uom_price": "$43.70",
-          "price": "$131.10"
+          "uom": "KG"
         }
-      ],
-      "total": "$131.10"
+      ]
     }
   },
   {
     "image": "val_images/Purchase Order #13418242_page1.png",
     "ground_truth": {
       "order_id": "13418242",
-      "delivery_date": "09/07/2025",
-      "supplier": "PROVINCIAL PRODUCE AUSTRALIA(DRCT)",
       "customer": "Horsham (FD Ampol Retail)",
       "items": [
         {
           "name": "KEANS EGGS 700G FILLER FREE",
           "qty": "2",
-          "uom": "Each",
-          "uom_price": "190.0000",
-          "price": "190"
+          "uom": "Each"
         },
         {
           "name": "LETTUCE ICEBERG",
           "qty": "1",
-          "uom": "Each",
-          "uom_price": "98.0000",
-          "price": "98"
+          "uom": "Each"
         },
         {
           "name": "TOMATO GOURMET BOX 10KG",
           "qty": "1",
-          "uom": "Each",
-          "uom_price": "45.0000",
-          "price": "45"
+          "uom": "Each"
         }
-      ],
-      "total": "333"
+      ]
     }
   },
 
@@ -1555,52 +1123,38 @@
     "image": "val_images/PO-159897-776690-1t14ztxd (2)_page1.png",
     "ground_truth": {
       "order_id": "776690",
-      "delivery_date": "8/07/2025",
-      "supplier": "PROVINCIAL PRODUCE AUSTRLIA PTY LTD",
       "customer": "Regis Brighton",
       "items": [
         {
           "name": "Broccoli Florets 5KG",
           "qty": "3.00",
-          "uom": "KG",
-          "uom_price": "$43.70",
-          "price": "$131.10"
+          "uom": "KG"
         }
-      ],
-      "total": "$131.10"
+      ]
     }
   },
   {
     "image": "val_images/Purchase Order #13418242_page1.png",
     "ground_truth": {
       "order_id": "13418242",
-      "delivery_date": "09/07/2025",
-      "supplier": "PROVINCIAL PRODUCE AUSTRALIA(DRCT)",
       "customer": "Horsham (FD Ampol Retail)",
       "items": [
         {
           "name": "KEANS EGGS 700G FILLER FREE",
           "qty": "2",
-          "uom": "Each",
-          "uom_price": "190.0000",
-          "price": "190"
+          "uom": "Each"
         },
         {
           "name": "LETTUCE ICEBERG",
           "qty": "1",
-          "uom": "Each",
-          "uom_price": "98.0000",
-          "price": "98"
+          "uom": "Each"
         },
         {
           "name": "TOMATO GOURMET BOX 10KG",
           "qty": "1",
-          "uom": "Each",
-          "uom_price": "45.0000",
-          "price": "45"
+          "uom": "Each"
         }
-      ],
-      "total": "333"
+      ]
     }
   }
 ]
