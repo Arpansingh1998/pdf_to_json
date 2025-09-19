@@ -40,19 +40,18 @@ def process_pdf_with_donut(pdf_path):
 
             print(f"Processing page {page_num + 1}...")
 
-            # Prepare the image for the model
+            # Prepare the image and a text prompt for the model
             pixel_values = processor(image, return_tensors="pt").pixel_values
             pixel_values = pixel_values.to(device)
 
-            # Create a prompt for the model
-            prompt_text = "{"
+            # Use the new custom token as the decoder prompt
+            prompt_text = "<s_custom>"
             prompt_inputs = processor.tokenizer(
                 prompt_text,
                 add_special_tokens=False,
                 return_tensors="pt"
             )
 
-            # Generate output from the model
             outputs = model.generate(
                 pixel_values.to(device),
                 decoder_input_ids=prompt_inputs.input_ids.to(device),
@@ -62,7 +61,6 @@ def process_pdf_with_donut(pdf_path):
                 eos_token_id=processor.tokenizer.eos_token_id,
                 use_cache=True,
                 num_beams=1,
-                bad_words_ids=[[processor.tokenizer.unk_token_id]],
                 return_dict_in_generate=True,
                 no_repeat_ngram_size=2,
             )
@@ -72,11 +70,14 @@ def process_pdf_with_donut(pdf_path):
                 skip_special_tokens=True
             ).strip()
 
+            # Remove the wrappers <s_custom> ... </s_custom>
+            pred_string = re.sub(r"^<s_custom>|<\/s_custom>$", "", pred_string).strip()
+
             try:
                 page_json = json.loads(pred_string)
                 print("✅ Extracted JSON successfully.")
-            except json.JSONDecodeError:
-                print("⚠️ Could not decode output as JSON. Storing as a string.")
+            except json.JSONDecodeError as e:
+                print(f"⚠️ Could not decode output as JSON. Storing as a string. Error: {e}")
                 page_json = {"raw_output": pred_string}
             
             all_page_data.append({"page": page_num + 1, "data": page_json})

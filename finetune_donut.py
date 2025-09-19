@@ -1,8 +1,10 @@
-from transformers import DonutProcessor, VisionEncoderDecoderModel, Seq2SeqTrainer, Seq2SeqTrainingArguments
+import json
+import re
 from datasets import load_dataset
 from PIL import Image
 import torch
-import json
+from transformers import DonutProcessor, VisionEncoderDecoderModel, Seq2SeqTrainer, Seq2SeqTrainingArguments
+
 # -----------------------------
 # Step 1: Load model and processor
 # -----------------------------
@@ -33,27 +35,53 @@ raw_dataset = load_dataset(
 print("Columns in dataset:", raw_dataset["train"].column_names)
 
 # -----------------------------
-# Step 3: Preprocessing function
+# Step 3: Add new tokens to tokenizer and model
+# -----------------------------
+def get_all_keys(data):
+    keys = set()
+    if isinstance(data, dict):
+        for k, v in data.items():
+            keys.add(k)
+            keys.update(get_all_keys(v))
+    elif isinstance(data, list):
+        for item in data:
+            keys.update(get_all_keys(item))
+    return keys
+
+all_ground_truth_keys = set()
+for example in raw_dataset["train"]:
+    all_ground_truth_keys.update(get_all_keys(example["ground_truth"]))
+
+new_tokens = list(all_ground_truth_keys)
+print(f"Adding {len(new_tokens)} new tokens to the tokenizer.")
+
+# The most robust way to add tokens and resize embeddings
+processor.tokenizer.add_special_tokens({"additional_special_tokens": ["<s_custom>"] + new_tokens})
+model.decoder.resize_token_embeddings(len(processor.tokenizer))
+
+
+# -----------------------------
+# Step 4: Preprocessing function
 # -----------------------------
 def preprocess(example):
     image = Image.open(example["image"]).convert("RGB")
     pixel_values = processor(image, return_tensors="pt").pixel_values.squeeze(0)
 
-    # The ground_truth is now a dictionary, convert it to a string
+    # Convert the ground_truth dictionary to a JSON string and add the new special tags
     ground_truth_dict = example["ground_truth"]
     text = json.dumps(ground_truth_dict, ensure_ascii=False)
+    text_with_tags = f"<s_custom>{text}</s_custom>"
 
     labels = processor.tokenizer(
-        text,
+        text_with_tags,
         truncation=True,
-        max_length=512,  # allow longer JSON
+        max_length=512,
         return_tensors="pt"
     ).input_ids.squeeze(0)
 
     return {"pixel_values": pixel_values, "labels": labels}
 
-
-# ✅ FIX: actually preprocess the dataset
+# Actually preprocess the dataset
 processed_dataset = raw_dataset.map(
     preprocess,
     remove_columns=raw_dataset["train"].column_names
@@ -61,7 +89,7 @@ processed_dataset = raw_dataset.map(
 print("Final dataset columns:", processed_dataset["train"].column_names)
 
 # -----------------------------
-# Step 4: Data collator
+# Step 5: Data collator
 # -----------------------------
 def donut_data_collator(features):
     pixel_values = torch.stack([torch.tensor(f["pixel_values"]) for f in features])
@@ -73,7 +101,7 @@ def donut_data_collator(features):
     return {"pixel_values": pixel_values, "labels": labels}
 
 # -----------------------------
-# Step 5: Training arguments
+# Step 6: Training arguments
 # -----------------------------
 training_args = Seq2SeqTrainingArguments(
     output_dir="./donut-finetuned",
@@ -99,7 +127,7 @@ training_args = Seq2SeqTrainingArguments(
 )
 
 # -----------------------------
-# Step 6: Trainer
+# Step 7: Trainer
 # -----------------------------
 trainer = Seq2SeqTrainer(
     model=model,
@@ -113,7 +141,7 @@ trainer = Seq2SeqTrainer(
 print("Train steps:", len(trainer.get_train_dataloader()))
 
 # -----------------------------
-# Step 7: Train
+# Step 8: Train
 # -----------------------------
 if torch.cuda.is_available():
     torch.cuda.empty_cache()
@@ -121,7 +149,7 @@ if torch.cuda.is_available():
 trainer.train()
 
 # -----------------------------
-# Step 8: Save model + processor
+# Step 9: Save model + processor
 # -----------------------------
 model.save_pretrained("./donut-finetuned")
 processor.save_pretrained("./donut-finetuned")
