@@ -4,13 +4,14 @@ from PIL import Image
 from transformers import DonutProcessor, VisionEncoderDecoderModel
 import torch
 import json
+from json_repair import repair_json
 
 processor = DonutProcessor.from_pretrained("./donut-finetuned")
 model = VisionEncoderDecoderModel.from_pretrained("./donut-finetuned")
 device = "cuda" if torch.cuda.is_available() else "cpu"
 model.to(device)
 
-# ensure config tokens are consistent (in case)
+# ensure config tokens are consistent
 model.config.decoder_start_token_id = processor.tokenizer.bos_token_id
 model.config.eos_token_id = processor.tokenizer.eos_token_id
 model.config.pad_token_id = processor.tokenizer.pad_token_id
@@ -26,7 +27,6 @@ def process_pdf_with_donut(pdf_path):
 
         pixel_values = processor(image, return_tensors="pt").pixel_values.to(device)
 
-        # Use generate() with decoder_start_token_id and eos_token_id
         outputs = model.generate(
             pixel_values,
             max_length=512,
@@ -40,23 +40,33 @@ def process_pdf_with_donut(pdf_path):
 
         decoded = processor.tokenizer.decode(outputs[0], skip_special_tokens=True).strip()
 
-        # Try to load JSON; if fails, print diagnostics
+        # Try JSON parsing with repair
+        parsed_json = {}
         try:
-            page_json = json.loads(decoded)
-        except json.JSONDecodeError as e:
-            print("❗ JSON decode failed for page", page_num+1)
-            print("Decoded string (raw):\n", decoded[:1000])
-            # print token-level debug info
-            token_ids = outputs[0].tolist()
-            print("Token ids:", token_ids[:40], "...")
-            tokens = processor.tokenizer.convert_ids_to_tokens(token_ids)[:60]
-            print("Tokens:", tokens, "...")
-            page_json = {"raw_output": decoded}
-        all_page_data.append({"page": page_num + 1, "data": page_json})
+            parsed_json = json.loads(decoded)
+        except json.JSONDecodeError:
+            try:
+                repaired = repair_json(decoded)
+                parsed_json = json.loads(repaired)
+                print(f"✅ JSON repaired successfully on page {page_num+1}")
+            except Exception:
+                print(f"❗ JSON repair failed on page {page_num+1}")
+                parsed_json = {}
+
+        # Store both parsed JSON (if any) and raw output
+        page_result = {
+            "page": page_num + 1,
+            "data": {
+                "parsed": parsed_json,
+                "raw_output": decoded
+            }
+        }
+        all_page_data.append(page_result)
 
     pdf_document.close()
     return {"document_data": all_page_data}
 
 if __name__ == "__main__":
     out = process_pdf_with_donut("pdf11.pdf")
+    print("Q" * 100)
     print(json.dumps(out, ensure_ascii=False, indent=2))
