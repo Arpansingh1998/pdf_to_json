@@ -40,7 +40,10 @@ def process_pdf_with_donut(pdf_path):
         "<s_etc>", "</s_etc>",
         "<s_tax_price>", "</s_tax_price>",
         "<s_num>", "</s_num>",
-        "<s_itemsubtotal>", "</s_itemsubtotal>"
+        "<s_itemsubtotal>", "</s_itemsubtotal>",
+        "<s_menuqty_cnt>", "</s_menuqty_cnt>",
+        "<s_cnt>", "</s_cnt>",
+        "<s_total_price>", "</s_total_price>"
     ]
     bad_tokens_ids = [processor.tokenizer.encode(token, add_special_tokens=False) for token in bad_tokens_to_avoid]
 
