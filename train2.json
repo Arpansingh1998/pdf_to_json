@@ -1949,7 +1949,7 @@
   }
 },
 {
-  "image": "train_images/PO-F37505911_page1.png",
+  "image": "train_images/PO#F37505911_page1.png",
   "ground_truth": {
     "po_number": "F37505911",
     "customer_info": "Amazon State",
@@ -2038,7 +2038,7 @@
   }
 },
 {
-  "image": "train_images/PO-F39310774_page1.png",
+  "image": "train_images/PO#F39310774_page1.png",
   "ground_truth": {
     "po_number": "F39310903",
     "customer_info": "Lumberjack",
@@ -2114,7 +2114,7 @@
   }
 },
 {
-  "image": "train_images/PO-F39304873_page1.png",
+  "image": "train_images/PO#F39304873_page1.png",
   "ground_truth": {
     "po_number": "F39304873",
     "customer_info": "Mount Erica Hotel",
