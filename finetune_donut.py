@@ -1,8 +1,9 @@
-from transformers import DonutProcessor, VisionEncoderDecoderModel, Seq2SeqTrainer, Seq2SeqTrainingArguments
+import json
 from datasets import load_dataset
 from PIL import Image
 import torch
-import json
+from transformers import DonutProcessor, VisionEncoderDecoderModel, Seq2SeqTrainer, Seq2SeqTrainingArguments
+
 # -----------------------------
 # Step 1: Load model and processor
 # -----------------------------
@@ -39,12 +40,13 @@ def preprocess(example):
     image = Image.open(example["image"]).convert("RGB")
     pixel_values = processor(image, return_tensors="pt").pixel_values.squeeze(0)
 
-    # The ground_truth is now a dictionary, convert it to a string
+    # Convert the ground_truth dictionary to a JSON string and add the special tags
     ground_truth_dict = example["ground_truth"]
     text = json.dumps(ground_truth_dict, ensure_ascii=False)
+    text_with_tags = f"<s_custom>{text}</s_custom>"
 
     labels = processor.tokenizer(
-        text,
+        text_with_tags,
         truncation=True,
         max_length=512,  # allow longer JSON
         return_tensors="pt"
@@ -52,8 +54,7 @@ def preprocess(example):
 
     return {"pixel_values": pixel_values, "labels": labels}
 
-
-# ✅ FIX: actually preprocess the dataset
+# Actually preprocess the dataset
 processed_dataset = raw_dataset.map(
     preprocess,
     remove_columns=raw_dataset["train"].column_names
