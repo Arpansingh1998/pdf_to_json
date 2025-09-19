@@ -21,13 +21,13 @@ model.config.pad_token_id = processor.tokenizer.pad_token_id
 model.config.decoder_start_token_id = processor.tokenizer.convert_tokens_to_ids("<s>")
 
 # -----------------------------
-# Step 2: Load dataset from JSONL
+# Step 2: Load dataset from JSON
 # -----------------------------
 raw_dataset = load_dataset(
     "json",
     data_files={
-        "train": "train.jsonl",
-        "validation": "val.jsonl"
+        "train": "train.json",
+        "validation": "val.json"
     }
 )
 print("Columns in dataset:", raw_dataset["train"].column_names)
@@ -39,19 +39,13 @@ def preprocess(example):
     image = Image.open(example["image"]).convert("RGB")
     pixel_values = processor(image, return_tensors="pt").pixel_values.squeeze(0)
 
-    # ✅ FIX: dataset already has <s_custom> ... </s_custom>, so just clean it
+    # Clean the text from the ground_truth field
     text = example["ground_truth"].strip()
-
-    # normalize: if missing start/end tags, add them
-    if not text.startswith("<s_custom>"):
-        text = f"<s_custom>{text}"
-    if not text.endswith("</s_custom>"):
-        text = f"{text}</s_custom>"
 
     labels = processor.tokenizer(
         text,
         truncation=True,
-        max_length=512,   # allow longer JSON
+        max_length=512,  # allow longer JSON
         return_tensors="pt"
     ).input_ids.squeeze(0)
 

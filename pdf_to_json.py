@@ -40,23 +40,14 @@ def process_pdf_with_donut(pdf_path):
 
             print(f"Processing page {page_num + 1}...")
 
-            # Prepare the image and a text prompt for the model
+            # Prepare the image for the model
             pixel_values = processor(image, return_tensors="pt").pixel_values
             pixel_values = pixel_values.to(device)
 
-            # Create the prompt and its attention mask
-            prompt_text = "<s_custom>"
-            prompt_inputs = processor.tokenizer(
-                prompt_text,
-                add_special_tokens=False,
-                return_tensors="pt"
-            )
-
+            # Generate output from the model (no prompt needed)
             outputs = model.generate(
                 pixel_values.to(device),
-                decoder_input_ids=prompt_inputs.input_ids.to(device),
-                decoder_attention_mask=prompt_inputs.attention_mask.to(device),
-                max_length=512,   # match training length
+                max_length=512,  # match training length
                 pad_token_id=processor.tokenizer.pad_token_id,
                 eos_token_id=processor.tokenizer.eos_token_id,
                 use_cache=True,
@@ -70,9 +61,6 @@ def process_pdf_with_donut(pdf_path):
                 outputs.sequences[0],
                 skip_special_tokens=True
             ).strip()
-
-            # Remove the wrappers <s_custom> ... </s_custom>
-            pred_string = re.sub(r"^<s_custom>|<\/s_custom>$", "", pred_string).strip()
 
             try:
                 page_json = json.loads(pred_string)
