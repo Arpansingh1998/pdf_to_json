@@ -1976,7 +1976,7 @@
 },
 
 {
-  "image": "train_images/Purchase-Order-13422187_page1.png",
+  "image": "train_images/Purchase Order #13422187_page1.png",
   "ground_truth": {
     "po_number": "13422187",
     "customer_info": "Laverton North (FD Ampol Retail)",
