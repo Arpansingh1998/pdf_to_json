@@ -33,7 +33,7 @@ model.config.eos_token_id = processor.tokenizer.eos_token_id
 model.config.pad_token_id = processor.tokenizer.pad_token_id
 
 # load json dataset
-raw_dataset = load_dataset("json", data_files={"train":"train2.json", "validation":"val2.json"})
+raw_dataset = load_dataset("json", data_files={"train":"train3.json", "validation":"val3.json"})
 print("Columns in dataset:", raw_dataset["train"].column_names)
 
 # helper: convert nested ground-truth dict to a JSON string
