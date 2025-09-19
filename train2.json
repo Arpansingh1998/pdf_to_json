@@ -1,4 +1,4 @@
-{
+[{
   "image": "val_images/PO#F37497194_page1.png",
   "ground_truth": {
     "po_number": "F39304259",
@@ -153,7 +153,7 @@
       }
     ]
   }
-}
+},
 {
   "image": "val_images/04E71002125B9B9A900F6543715B881A_WC3HtMN_page1.png",
   "ground_truth": {
@@ -269,7 +269,7 @@
       }
     ]
   }
-}
+},
 {
   "image": "val_images/6_zUNnU0L_page1.png",
   "ground_truth": {
@@ -305,7 +305,7 @@
       }
     ]
   }
-}
+},
 {
   "image": "val_images/7_beUl2iE_page1.png",
   "ground_truth": {
@@ -411,7 +411,7 @@
       }
     ]
   }
-}
+},
 {
   "image": "val_images/32D86B37BA3635CB3E2664D79F7CDF1B-2-_page1.png",
   "ground_truth": {
@@ -467,7 +467,7 @@
       }
     ]
   }
-}
+},
 {
   "image": "val_images/45CE5E96C2EB8A7BD3B9DE1483ED0F2C-2-_page1.png",
   "ground_truth": {
@@ -503,7 +503,7 @@
       }
     ]
   }
-}
+},
 {
 "image": "val_images/PO#F39312725_page1.png",
 "ground_truth": {
@@ -639,9 +639,7 @@
 }
 ]
 }
-}
-
-
+},
 
 {
   "image": "val_images/2416253 (2)_page1.png",
@@ -718,7 +716,7 @@
       }
     ]
   }
-}
+},
 {
   "image": "val_images/2416288 (1)_page1.png",
   "ground_truth": {
@@ -824,7 +822,7 @@
       }
     ]
   }
-}
+},
 {
   "image": "val_images/202504291410_page1.png",
   "ground_truth": {
@@ -900,7 +898,7 @@
       }
     ]
   }
-}
+},
 {
   "image": "val_images/202507020742 (2)_page1.png",
   "ground_truth": {
@@ -1006,7 +1004,7 @@
       }
     ]
   }
-}
+},
 {
   "image": "val_images/Picking Slip F39396595_page1.png",
   "ground_truth": {
@@ -1044,7 +1042,7 @@
       {"Line": "22", "Description": "", "Vendor SKU": "", "Quantity": "1", "UOM": "Bunch", "Unit Price": "", "Amount": "", "product_comments": ""}
     ]
   }
-}
+},
 
 {
   "image": "val_images/Picking Slip F39397983_page1.png",
@@ -1071,7 +1069,7 @@
       }
     ]
   }
-}
+},
 {
   "image": "val_images/Picking Slip F41783672 (3)_page1.png",
   "ground_truth": {
@@ -1287,7 +1285,7 @@
       }
     ]
   }
-}
+},
 {
   "image": "val_images/Picking Slip F41821761 (2)_page1.png",
   "ground_truth": {
@@ -1453,7 +1451,7 @@
       }
     ]
   }
-}
+},
 {
   "image": "val_images/PO#F37497257_page1.png",
   "ground_truth": {
@@ -1489,7 +1487,7 @@
       }
     ]
   }
-}
+},
 
 {
   "image": "val_images/PO#F37498086_page1.png",
@@ -1516,7 +1514,7 @@
       }
     ]
   }
-}
+},
 {
   "image": "val_images/PO#F37498852_page1.png",
   "ground_truth": {
@@ -1542,7 +1540,7 @@
       }
     ]
   }
-}
+},
 {
   "image": "val_images/PO#F37499220_page1.png",
   "ground_truth": {
@@ -1578,7 +1576,7 @@
       }
     ]
   }
-}
+},
 {
   "image": "val_images/PO#F37499617_page1.png",
   "ground_truth": {
@@ -1604,7 +1602,7 @@
       }
     ]
   }
-}
+},
 {
   "image": "val_images/PO#F37500665_page1.png",
   "ground_truth": {
@@ -1690,7 +1688,7 @@
       }
     ]
   }
-}
+},
 {
   "image": "val_images/PO#F37500901_page1.png",
   "ground_truth": {
@@ -1826,7 +1824,7 @@
       }
     ]
   }
-}
+},
 {
   "image": "val_images/PO#F37502861_page1.png",
   "ground_truth": {
@@ -1902,7 +1900,7 @@
       }
     ]
   }
-}
+},
 {
   "image": "val_images/PO#F37503470_page1.png",
   "ground_truth": {
@@ -1998,7 +1996,7 @@
       }
     ]
   }
-}
+},
 {
   "image": "val_images/PO#F37503549_page1.png",
   "ground_truth": {
@@ -2024,7 +2022,7 @@
       }
     ]
   }
-}
+},
 {
   "image": "val_images/PO#F37503570_page1.png",
   "ground_truth": {
@@ -2060,7 +2058,7 @@
       }
     ]
   }
-}
+},
 {
   "image": "val_images/PO#F37503639_page1.png",
   "ground_truth": {
@@ -2086,7 +2084,7 @@
       }
     ]
   }
-}
+},
 {
   "image": "val_images/PO#F39312725_page1.png",
   "ground_truth": {
@@ -2194,11 +2192,10 @@
             "product_comments": ""
           }
         ]
-      },
-   
+      }
     ]
   }
-}
+},
 {
   "image": "val_images/PO-F37505911_page1.png",
   "ground_truth": {
@@ -2224,7 +2221,7 @@
       }
     ]
   }
-}
+},
 
 {
   "image": "val_images/Purchase-Order-13422187_page1.png",
@@ -2251,7 +2248,7 @@
       }
     ]
   }
-}
+},
 {
   "image": "val_images/Purchase-Order-13420859_page1.png",
   "ground_truth": {
@@ -2287,7 +2284,7 @@
       }
     ]
   }
-}
+},
 {
   "image": "val_images/PO-F39310774_page1.png",
   "ground_truth": {
@@ -2363,7 +2360,7 @@
       }
     ]
   }
-}
+},
 {
   "image": "val_images/PO-F39304873_page1.png",
   "ground_truth": {
@@ -2419,5 +2416,5 @@
       }
     ]
   }
-}
+}]
 
