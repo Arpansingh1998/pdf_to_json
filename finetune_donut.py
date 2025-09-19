@@ -25,7 +25,7 @@ processor.tokenizer.add_special_tokens({
 # processor.tokenizer.add_special_tokens({"additional_special_tokens": ["<po_number>", "<customer_info>", ...]})
 
 # resize embeddings for whole model (safer)
-model.resize_token_embeddings(len(processor.tokenizer))
+model.decoder.resize_token_embeddings(len(processor.tokenizer))
 
 # set model config tokens
 model.config.decoder_start_token_id = processor.tokenizer.bos_token_id
