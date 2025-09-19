@@ -33,7 +33,7 @@ model.config.eos_token_id = processor.tokenizer.eos_token_id
 model.config.pad_token_id = processor.tokenizer.pad_token_id
 
 # load json dataset
-raw_dataset = load_dataset("json", data_files={"train":"train.json", "validation":"val.json"})
+raw_dataset = load_dataset("json", data_files={"train2":"train.json", "validation":"val2.json"})
 print("Columns in dataset:", raw_dataset["train"].column_names)
 
 # helper: convert nested ground-truth dict to a JSON string
@@ -83,7 +83,7 @@ training_args = Seq2SeqTrainingArguments(
     gradient_accumulation_steps=8,
     learning_rate=5e-5,
     warmup_steps=100,
-    num_train_epochs=10,
+    num_train_epochs=50,
     logging_dir="./logs",
     logging_strategy="steps",
     logging_steps=50,
