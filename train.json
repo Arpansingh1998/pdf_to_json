@@ -385,7 +385,7 @@
         { "name": "Tomatoes - Cherry Medley", "qty": "13", "uom": "Pn" }
       ]
     }
-  }
+  },
 {
     "image": "train_images/PO#F37497257_page1.png",
     "ground_truth": {
