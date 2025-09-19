@@ -2002,7 +2002,7 @@
   }
 },
 {
-  "image": "train_images/Purchase-Order-13420859_page1.png",
+  "image": "train_images/Purchase Order #13420859_page1.png",
   "ground_truth": {
     "po_number": "13420859",
     "customer_info": "Dandenong (FD Ampol Retail)",
