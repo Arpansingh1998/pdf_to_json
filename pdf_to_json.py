@@ -3,8 +3,9 @@ import fitz
 from PIL import Image
 from transformers import DonutProcessor, VisionEncoderDecoderModel
 import torch
+import re
+import xml.etree.ElementTree as ET
 import json
-from json_repair import repair_json
 
 processor = DonutProcessor.from_pretrained("./donut-finetuned")
 model = VisionEncoderDecoderModel.from_pretrained("./donut-finetuned")
@@ -15,6 +16,31 @@ model.to(device)
 model.config.decoder_start_token_id = processor.tokenizer.bos_token_id
 model.config.eos_token_id = processor.tokenizer.eos_token_id
 model.config.pad_token_id = processor.tokenizer.pad_token_id
+
+
+def clean_output(raw: str) -> str:
+    """
+    Extract <s_custom>...</s_custom> block and ensure valid XML.
+    """
+    match = re.search(r"<s_custom>.*</s_custom>", raw, re.DOTALL)
+    if not match:
+        return ""
+
+    block = match.group(0)
+
+    # Try parsing with XML parser
+    try:
+        ET.fromstring(block)  # validates XML
+        return block
+    except ET.ParseError:
+        # Simple fixes for common issues
+        block = block.replace("&", "&amp;")  # escape bad ampersands
+        try:
+            ET.fromstring(block)
+            return block
+        except ET.ParseError:
+            return ""
+
 
 def process_pdf_with_donut(pdf_path):
     all_page_data = []
@@ -29,7 +55,7 @@ def process_pdf_with_donut(pdf_path):
 
         outputs = model.generate(
             pixel_values,
-            max_length=512,
+            max_length=1024,  # more space for tags
             decoder_start_token_id=processor.tokenizer.bos_token_id,
             eos_token_id=processor.tokenizer.eos_token_id,
             pad_token_id=processor.tokenizer.pad_token_id,
@@ -40,31 +66,21 @@ def process_pdf_with_donut(pdf_path):
 
         decoded = processor.tokenizer.decode(outputs[0], skip_special_tokens=True).strip()
 
-        # Try JSON parsing with repair
-        parsed_json = {}
-        try:
-            parsed_json = json.loads(decoded)
-        except json.JSONDecodeError:
-            try:
-                repaired = repair_json(decoded)
-                parsed_json = json.loads(repaired)
-                print(f"✅ JSON repaired successfully on page {page_num+1}")
-            except Exception:
-                print(f"❗ JSON repair failed on page {page_num+1}")
-                parsed_json = {}
+        # Extract structured block
+        cleaned = clean_output(decoded)
 
-        # Store both parsed JSON (if any) and raw output
         page_result = {
             "page": page_num + 1,
             "data": {
-                "parsed": parsed_json,
-                "raw_output": decoded
+                "raw_output": decoded,
+                "ground_truth_like": cleaned if cleaned else None
             }
         }
         all_page_data.append(page_result)
 
     pdf_document.close()
     return {"document_data": all_page_data}
+
 
 if __name__ == "__main__":
     out = process_pdf_with_donut("pdf11.pdf")
