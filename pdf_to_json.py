@@ -9,6 +9,9 @@ import json
 
 processor = DonutProcessor.from_pretrained("./donut-finetuned")
 model = VisionEncoderDecoderModel.from_pretrained("./donut-finetuned")
+
+model.resize_token_embeddings(len(processor.tokenizer))
+
 device = "cuda" if torch.cuda.is_available() else "cpu"
 model.to(device)
 
