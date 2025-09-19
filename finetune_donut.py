@@ -1,115 +1,88 @@
+# train_donut_fixed.py
 import json
-import re
 from datasets import load_dataset
 from PIL import Image
+import numpy as np
 import torch
 from transformers import DonutProcessor, VisionEncoderDecoderModel, Seq2SeqTrainer, Seq2SeqTrainingArguments
 
-# -----------------------------
-# Step 1: Load model and processor
-# -----------------------------
 model_id = "naver-clova-ix/donut-base-finetuned-cord-v2"
 
-processor = DonutProcessor.from_pretrained(
-    model_id, 
-    use_fast=False, 
-    image_size=[600, 400]
-)
+# load processor + model
+processor = DonutProcessor.from_pretrained(model_id, use_fast=False, image_size=[600, 400])
 model = VisionEncoderDecoderModel.from_pretrained(model_id, use_safetensors=True)
 
-# Ensure tokenizer has pad/eos setup
-processor.tokenizer.pad_token = processor.tokenizer.eos_token
-model.config.pad_token_id = processor.tokenizer.pad_token_id
-model.config.decoder_start_token_id = processor.tokenizer.convert_tokens_to_ids("<s>")
+# ensure tokenizer pad/eos/bos exist and are consistent
+# We'll register both opening and closing custom tags as BOS/EOS special tokens.
+# Also we will avoid adding thousands of long tokens blindly; keep keys short if possible.
+processor.tokenizer.add_special_tokens({
+    "bos_token": "<s_custom>",
+    "eos_token": "</s_custom>"
+})
+# If you want to add domain-specific keys, add only short token forms (recommended):
+# e.g. make mapping {"po_number":"<po_number>", "customer_info":"<customer_info>", ...}
+# then add them as additional_special_tokens. Below is the minimal approach:
+# processor.tokenizer.add_special_tokens({"additional_special_tokens": ["<po_number>", "<customer_info>", ...]})
 
-# -----------------------------
-# Step 2: Load dataset from JSON
-# -----------------------------
-raw_dataset = load_dataset(
-    "json",
-    data_files={
-        "train": "train.json",
-        "validation": "val.json"
-    }
-)
+# resize embeddings for whole model (safer)
+model.resize_token_embeddings(len(processor.tokenizer))
+
+# set model config tokens
+model.config.decoder_start_token_id = processor.tokenizer.bos_token_id
+model.config.eos_token_id = processor.tokenizer.eos_token_id
+model.config.pad_token_id = processor.tokenizer.pad_token_id
+
+# load json dataset
+raw_dataset = load_dataset("json", data_files={"train":"train2.json", "validation":"val2.json"})
 print("Columns in dataset:", raw_dataset["train"].column_names)
 
-# -----------------------------
-# Step 3: Add new tokens to tokenizer and model
-# -----------------------------
-def get_all_keys(data):
-    keys = set()
-    if isinstance(data, dict):
-        for k, v in data.items():
-            keys.add(k)
-            keys.update(get_all_keys(v))
-    elif isinstance(data, list):
-        for item in data:
-            keys.update(get_all_keys(item))
-    return keys
+# helper: convert nested ground-truth dict to a JSON string
+def gt_to_text(gt_dict):
+    return json.dumps(gt_dict, ensure_ascii=False)
 
-all_ground_truth_keys = set()
-for example in raw_dataset["train"]:
-    all_ground_truth_keys.update(get_all_keys(example["ground_truth"]))
-
-new_tokens = list(all_ground_truth_keys)
-print(f"Adding {len(new_tokens)} new tokens to the tokenizer.")
-
-# The most robust way to add tokens and resize embeddings
-processor.tokenizer.add_special_tokens({"additional_special_tokens": ["<s_custom>"] + new_tokens})
-model.decoder.resize_token_embeddings(len(processor.tokenizer))
-
-
-# -----------------------------
-# Step 4: Preprocessing function
-# -----------------------------
+# Preprocess: return numpy arrays / lists (not torch tensors)
 def preprocess(example):
     image = Image.open(example["image"]).convert("RGB")
-    pixel_values = processor(image, return_tensors="pt").pixel_values.squeeze(0)
+    # return_tensors='np' to store numpy arrays in the dataset (safer for mapping)
+    px = processor(image, return_tensors="np").pixel_values[0]  # shape (C,H,W)
+    text = gt_to_text(example["ground_truth"])
+    # wrap with our special BOS/EOS tokens (tokenizer knows them)
+    text_with_tags = f"{processor.tokenizer.bos_token}{text}{processor.tokenizer.eos_token}"
 
-    # Convert the ground_truth dictionary to a JSON string and add the new special tags
-    ground_truth_dict = example["ground_truth"]
-    text = json.dumps(ground_truth_dict, ensure_ascii=False)
-    text_with_tags = f"<s_custom>{text}</s_custom>"
-
-    labels = processor.tokenizer(
+    tokenized = processor.tokenizer(
         text_with_tags,
+        add_special_tokens=False,  # we already manually added BOS/EOS in the string
         truncation=True,
-        max_length=512,
-        return_tensors="pt"
-    ).input_ids.squeeze(0)
+        max_length=512
+    )
+    labels = tokenized["input_ids"]  # plain python list
 
-    return {"pixel_values": pixel_values, "labels": labels}
+    return {"pixel_values": px, "labels": labels}
 
-# Actually preprocess the dataset
-processed_dataset = raw_dataset.map(
-    preprocess,
-    remove_columns=raw_dataset["train"].column_names
-)
+processed_dataset = raw_dataset.map(preprocess, remove_columns=raw_dataset["train"].column_names)
+
 print("Final dataset columns:", processed_dataset["train"].column_names)
 
-# -----------------------------
-# Step 5: Data collator
-# -----------------------------
+# Data collator: pads labels with -100 so loss ignores padding
 def donut_data_collator(features):
+    # pixel_values -> stack into tensor BxCxHxW
     pixel_values = torch.stack([torch.tensor(f["pixel_values"]) for f in features])
-    labels = torch.nn.utils.rnn.pad_sequence(
-        [torch.tensor(f["labels"]) for f in features],
-        batch_first=True,
-        padding_value=-100
-    )
-    return {"pixel_values": pixel_values, "labels": labels}
 
-# -----------------------------
-# Step 6: Training arguments
-# -----------------------------
+    # pad labels to max length in batch with pad_token_id then convert pads to -100
+    label_lists = [torch.tensor(f["labels"], dtype=torch.long) for f in features]
+    padded_labels = torch.nn.utils.rnn.pad_sequence(label_lists, batch_first=True, padding_value=processor.tokenizer.pad_token_id)
+    padded_labels[padded_labels == processor.tokenizer.pad_token_id] = -100
+
+    return {"pixel_values": pixel_values, "labels": padded_labels}
+
+# Training args (keep reasonable)
 training_args = Seq2SeqTrainingArguments(
     output_dir="./donut-finetuned",
     per_device_train_batch_size=1,
     per_device_eval_batch_size=1,
     gradient_accumulation_steps=8,
     learning_rate=5e-5,
-    warmup_steps=500,
+    warmup_steps=100,
     num_train_epochs=10,
     logging_dir="./logs",
     logging_strategy="steps",
@@ -126,30 +99,22 @@ training_args = Seq2SeqTrainingArguments(
     optim="adafactor",
 )
 
-# -----------------------------
-# Step 7: Trainer
-# -----------------------------
 trainer = Seq2SeqTrainer(
     model=model,
     args=training_args,
     train_dataset=processed_dataset["train"],
     eval_dataset=processed_dataset["validation"],
     data_collator=donut_data_collator,
-    processing_class=processor
+    tokenizer=processor.tokenizer,   # pass tokenizer so trainer can handle generation/prediction
 )
 
-print("Train steps:", len(trainer.get_train_dataloader()))
+print("Train steps (dataloader len):", len(trainer.get_train_dataloader()))
 
-# -----------------------------
-# Step 8: Train
-# -----------------------------
 if torch.cuda.is_available():
     torch.cuda.empty_cache()
 
 trainer.train()
 
-# -----------------------------
-# Step 9: Save model + processor
-# -----------------------------
+# save artifacts
 model.save_pretrained("./donut-finetuned")
 processor.save_pretrained("./donut-finetuned")
