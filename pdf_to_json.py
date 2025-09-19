@@ -94,7 +94,7 @@ def process_pdf_with_donut(pdf_path):
 # -----------------------------
 # Step 3 & 4: Run the process and print output
 # -----------------------------
-pdf_file_path = "sydney2.pdf"
+pdf_file_path = "pdf11.pdf"
 final_json_output = process_pdf_with_donut(pdf_file_path)
 
 if final_json_output:
