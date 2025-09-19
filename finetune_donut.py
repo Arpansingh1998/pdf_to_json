@@ -1,4 +1,5 @@
 import json
+import re
 from datasets import load_dataset
 from PIL import Image
 import torch
@@ -34,7 +35,31 @@ raw_dataset = load_dataset(
 print("Columns in dataset:", raw_dataset["train"].column_names)
 
 # -----------------------------
-# Step 3: Preprocessing function
+# Step 3: Add new tokens to tokenizer and model
+# -----------------------------
+def get_all_keys(data):
+    keys = set()
+    if isinstance(data, dict):
+        for k, v in data.items():
+            keys.add(k)
+            keys.update(get_all_keys(v))
+    elif isinstance(data, list):
+        for item in data:
+            keys.update(get_all_keys(item))
+    return keys
+
+all_ground_truth_keys = set()
+for example in raw_dataset["train"]:
+    all_ground_truth_keys.update(get_all_keys(example["ground_truth"]))
+
+new_tokens = list(all_ground_truth_keys)
+print(f"Adding {len(new_tokens)} new tokens to the tokenizer.")
+
+processor.tokenizer.add_tokens(new_tokens)
+model.resize_token_embeddings(len(processor.tokenizer))
+
+# -----------------------------
+# Step 4: Preprocessing function
 # -----------------------------
 def preprocess(example):
     image = Image.open(example["image"]).convert("RGB")
@@ -48,7 +73,7 @@ def preprocess(example):
     labels = processor.tokenizer(
         text_with_tags,
         truncation=True,
-        max_length=512,  # allow longer JSON
+        max_length=512,
         return_tensors="pt"
     ).input_ids.squeeze(0)
 
@@ -62,7 +87,7 @@ processed_dataset = raw_dataset.map(
 print("Final dataset columns:", processed_dataset["train"].column_names)
 
 # -----------------------------
-# Step 4: Data collator
+# Step 5: Data collator
 # -----------------------------
 def donut_data_collator(features):
     pixel_values = torch.stack([torch.tensor(f["pixel_values"]) for f in features])
@@ -74,7 +99,7 @@ def donut_data_collator(features):
     return {"pixel_values": pixel_values, "labels": labels}
 
 # -----------------------------
-# Step 5: Training arguments
+# Step 6: Training arguments
 # -----------------------------
 training_args = Seq2SeqTrainingArguments(
     output_dir="./donut-finetuned",
@@ -83,7 +108,7 @@ training_args = Seq2SeqTrainingArguments(
     gradient_accumulation_steps=8,
     learning_rate=5e-5,
     warmup_steps=500,
-    num_train_epochs=50,
+    num_train_epochs=10,
     logging_dir="./logs",
     logging_strategy="steps",
     logging_steps=50,
@@ -100,7 +125,7 @@ training_args = Seq2SeqTrainingArguments(
 )
 
 # -----------------------------
-# Step 6: Trainer
+# Step 7: Trainer
 # -----------------------------
 trainer = Seq2SeqTrainer(
     model=model,
@@ -114,7 +139,7 @@ trainer = Seq2SeqTrainer(
 print("Train steps:", len(trainer.get_train_dataloader()))
 
 # -----------------------------
-# Step 7: Train
+# Step 8: Train
 # -----------------------------
 if torch.cuda.is_available():
     torch.cuda.empty_cache()
@@ -122,7 +147,7 @@ if torch.cuda.is_available():
 trainer.train()
 
 # -----------------------------
-# Step 8: Save model + processor
+# Step 9: Save model + processor
 # -----------------------------
 model.save_pretrained("./donut-finetuned")
 processor.save_pretrained("./donut-finetuned")
