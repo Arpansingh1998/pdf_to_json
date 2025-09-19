@@ -58,5 +58,5 @@ def process_pdf_with_donut(pdf_path):
     return {"document_data": all_page_data}
 
 if __name__ == "__main__":
-    out = process_pdf_with_donut("sydney2.pdf")
+    out = process_pdf_with_donut("pdf11.pdf")
     print(json.dumps(out, ensure_ascii=False, indent=2))
