@@ -1,4 +1,4 @@
-{
+[{
   "image": "val_images/PO#F39312725_page1.png",
   "ground_truth": {
     "po_number": "F39312646",
@@ -43,8 +43,7 @@
       }
     ]
   }
-}
-
+},
 
 {
   "image": "val_images/PO-F39312725_page1.jpg",
@@ -81,7 +80,7 @@
       }
     ]
   }
-}
+},
 
 {
   "image": "val_images/PO-F39312739_page1.jpg",
@@ -198,7 +197,7 @@
       }
     ]
   }
-}
+},
 
 
 {
@@ -496,7 +495,7 @@
       }
     ]
   }
-}
+},
 
 
 {
@@ -724,7 +723,7 @@
       }
     ]
   }
-}
+},
 
 
 {
@@ -752,7 +751,7 @@
       }
     ]
   }
-}
+},
 
 
 {
@@ -790,7 +789,7 @@
       }
     ]
   }
-}
+},
 
 {
   "image": "val_images/PO-F39315230_page1.png",
@@ -817,7 +816,7 @@
       }
     ]
   }
-}
+},
 
 
 {
@@ -845,7 +844,7 @@
       }
     ]
   }
-}
+},
 
 
 {
@@ -893,7 +892,8 @@
       }
     ]
   }
-}
+},
+
 {
   "image": "val_images/PO-159897-748074-l4y4rf01_1_eLfnsh0_8QUMrEj-1-_page1.png",
   "ground_truth": {
@@ -969,7 +969,8 @@
       }
     ]
   }
-}
+},
+
 {
   "image": "val_images/PO-159897-748074-l4y4rf01_1_eLfnsh0_8QUMrEj_page1.png",
   "ground_truth": {
@@ -1045,7 +1046,8 @@
       }
     ]
   }
-}
+},
+
 {
   "image": "val_images/PO-159897-773017-z0vjf0xs_Csvt11m_page1.png",
   "ground_truth": {
@@ -1191,7 +1193,8 @@
       }
     ]
   }
-}
+},
+
 {
   "image": "val_images/PO-159897-773017-z0vjf0xs_page1.png",
   "ground_truth": {
@@ -1337,7 +1340,8 @@
       }
     ]
   }
-}
+},
+
 {
   "image": "val_images/PO-159897-776690-1t14ztxd-2-_page1.png",
   "ground_truth": {
@@ -1363,7 +1367,8 @@
       }
     ]
   }
-}
+},
+
 {
   "image": "val_images/Purchase Order #13205466_page1.png",
   "ground_truth": {
@@ -1409,7 +1414,8 @@
       }
     ]
   }
-}
+},
+
 {
   "image": "val_images/Purchase-Order-13418242_page1.png",
   "ground_truth": {
@@ -1455,7 +1461,7 @@
       }
     ]
   }
-}
+}]
 
 
 
