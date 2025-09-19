@@ -1,5 +1,5 @@
 [{
-  "image": "val_images/PO#F37497194_page1.png",
+  "image": "train_images/PO#F37497194_page1.png",
   "ground_truth": {
     "po_number": "F39304259",
     "customer_info": "Gabriel",
@@ -155,7 +155,7 @@
   }
 },
 {
-  "image": "val_images/04E71002125B9B9A900F6543715B881A_WC3HtMN_page1.png",
+  "image": "train_images/04E71002125B9B9A900F6543715B881A_WC3HtMN_page1.png",
   "ground_truth": {
     "po_number": "1747740583404",
     "customer_info": "Red Cow Hotel",
@@ -271,7 +271,7 @@
   }
 },
 {
-  "image": "val_images/6_zUNnU0L_page1.png",
+  "image": "train_images/6_zUNnU0L_page1.png",
   "ground_truth": {
     "po_number": "F39279830",
     "customer_info": "The Botanical Hotel",
@@ -307,7 +307,7 @@
   }
 },
 {
-  "image": "val_images/7_beUl2iE_page1.png",
+  "image": "train_images/7_beUl2iE_page1.png",
   "ground_truth": {
     "po_number": "F39304259",
     "customer_info": "Gabriel",
@@ -413,7 +413,7 @@
   }
 },
 {
-  "image": "val_images/32D86B37BA3635CB3E2664D79F7CDF1B-2-_page1.png",
+  "image": "train_images/32D86B37BA3635CB3E2664D79F7CDF1B-2-_page1.png",
   "ground_truth": {
     "po_number": "1751869634496",
     "customer_info": "Via Porta Bakehouse",
@@ -469,7 +469,7 @@
   }
 },
 {
-  "image": "val_images/45CE5E96C2EB8A7BD3B9DE1483ED0F2C-2-_page1.png",
+  "image": "train_images/45CE5E96C2EB8A7BD3B9DE1483ED0F2C-2-_page1.png",
   "ground_truth": {
     "po_number": "F39304311",
     "customer_info": "Maria's Kitchen",
@@ -505,7 +505,7 @@
   }
 },
 {
-"image": "val_images/PO#F39312725_page1.png",
+"image": "train_images/PO#F39312725_page1.png",
 "ground_truth": {
 "po_number": "1751868982088",
 "customer_info": "Via Porta Pty Ltd",
@@ -642,7 +642,7 @@
 },
 
 {
-  "image": "val_images/2416253 (2)_page1.png",
+  "image": "train_images/2416253 (2)_page1.png",
   "ground_truth": {
     "po_number": "2416253",
     "customer_info": "The Coffee Club Plenty Valley",
@@ -718,7 +718,7 @@
   }
 },
 {
-  "image": "val_images/2416288 (1)_page1.png",
+  "image": "train_images/2416288 (1)_page1.png",
   "ground_truth": {
     "po_number": "2416288",
     "customer_info": "The Coffee Club Watergardens",
@@ -824,7 +824,7 @@
   }
 },
 {
-  "image": "val_images/202504291410_page1.png",
+  "image": "train_images/202504291410_page1.png",
   "ground_truth": {
     "po_number": "202504291410",
     "customer_info": "Roll'd - Hawthorn",
@@ -900,7 +900,7 @@
   }
 },
 {
-  "image": "val_images/202507020742 (2)_page1.png",
+  "image": "train_images/202507020742 (2)_page1.png",
   "ground_truth": {
     "po_number": "202507020742",
     "customer_info": "Roll'd - Melbourne Central",
@@ -1006,7 +1006,7 @@
   }
 },
 {
-  "image": "val_images/Picking Slip F39396595_page1.png",
+  "image": "train_images/Picking Slip F39396595_page1.png",
   "ground_truth": {
     "po_number": "F39396595",
     "customer_info": "Cumulus Inc",
@@ -1045,7 +1045,7 @@
 },
 
 {
-  "image": "val_images/Picking Slip F39397983_page1.png",
+  "image": "train_images/Picking Slip F39397983_page1.png",
   "ground_truth": {
     "po_number": "F39397983",
     "customer_info": "Cutler and Co",
@@ -1071,7 +1071,7 @@
   }
 },
 {
-  "image": "val_images/Picking Slip F41783672 (3)_page1.png",
+  "image": "train_images/Picking Slip F41783672 (3)_page1.png",
   "ground_truth": {
     "po_number": "F41783672",
     "customer_info": "Marion Wine Bar",
@@ -1287,7 +1287,7 @@
   }
 },
 {
-  "image": "val_images/Picking Slip F41821761 (2)_page1.png",
+  "image": "train_images/Picking Slip F41821761 (2)_page1.png",
   "ground_truth": {
     "po_number": "F41821761",
     "customer_info": "Supernormal",
@@ -1453,7 +1453,7 @@
   }
 },
 {
-  "image": "val_images/PO#F37497257_page1.png",
+  "image": "train_images/PO#F37497257_page1.png",
   "ground_truth": {
     "po_number": "F37497257",
     "customer_info": "Verbano",
@@ -1490,7 +1490,7 @@
 },
 
 {
-  "image": "val_images/PO#F37498086_page1.png",
+  "image": "train_images/PO#F37498086_page1.png",
   "ground_truth": {
     "po_number": "F37498086",
     "customer_info": "Lincoln Hotel",
@@ -1516,7 +1516,7 @@
   }
 },
 {
-  "image": "val_images/PO#F37498852_page1.png",
+  "image": "train_images/PO#F37498852_page1.png",
   "ground_truth": {
     "po_number": "F37498852",
     "customer_info": "San Telmo",
@@ -1542,7 +1542,7 @@
   }
 },
 {
-  "image": "val_images/PO#F37499220_page1.png",
+  "image": "train_images/PO#F37499220_page1.png",
   "ground_truth": {
     "po_number": "F37499220",
     "customer_info": "48 Eastment",
@@ -1578,7 +1578,7 @@
   }
 },
 {
-  "image": "val_images/PO#F37499617_page1.png",
+  "image": "train_images/PO#F37499617_page1.png",
   "ground_truth": {
     "po_number": "F37499617",
     "customer_info": "The Hardware Societe - Katherine Place",
@@ -1604,7 +1604,7 @@
   }
 },
 {
-  "image": "val_images/PO#F37500665_page1.png",
+  "image": "train_images/PO#F37500665_page1.png",
   "ground_truth": {
     "po_number": "F37500665",
     "customer_info": "Verbano",
@@ -1690,7 +1690,7 @@
   }
 },
 {
-  "image": "val_images/PO#F37500901_page1.png",
+  "image": "train_images/PO#F37500901_page1.png",
   "ground_truth": {
     "po_number": "F37500901",
     "customer_info": "JollyGood Diner & Bar",
@@ -1826,7 +1826,7 @@
   }
 },
 {
-  "image": "val_images/PO#F37502861_page1.png",
+  "image": "train_images/PO#F37502861_page1.png",
   "ground_truth": {
     "po_number": "F37502861",
     "customer_info": "Lumberjack",
@@ -1902,7 +1902,7 @@
   }
 },
 {
-  "image": "val_images/PO#F37503470_page1.png",
+  "image": "train_images/PO#F37503470_page1.png",
   "ground_truth": {
     "po_number": "F37503470",
     "customer_info": "The Hardware Societe - Katherine Place",
@@ -1998,7 +1998,7 @@
   }
 },
 {
-  "image": "val_images/PO#F37503549_page1.png",
+  "image": "train_images/PO#F37503549_page1.png",
   "ground_truth": {
     "po_number": "F37503549",
     "customer_info": "Spread Eagle Hotel",
@@ -2024,7 +2024,7 @@
   }
 },
 {
-  "image": "val_images/PO#F37503570_page1.png",
+  "image": "train_images/PO#F37503570_page1.png",
   "ground_truth": {
     "po_number": "F37503570",
     "customer_info": "Spread Eagle Hotel",
@@ -2060,7 +2060,7 @@
   }
 },
 {
-  "image": "val_images/PO#F37503639_page1.png",
+  "image": "train_images/PO#F37503639_page1.png",
   "ground_truth": {
     "po_number": "F37503639",
     "customer_info": "Spread Eagle Hotel",
@@ -2086,7 +2086,7 @@
   }
 },
 {
-  "image": "val_images/PO#F39312725_page1.png",
+  "image": "train_images/PO#F39312725_page1.png",
   "ground_truth": {
     "po_number": "F39312725",
     "data": [
@@ -2197,7 +2197,7 @@
   }
 },
 {
-  "image": "val_images/PO-F37505911_page1.png",
+  "image": "train_images/PO-F37505911_page1.png",
   "ground_truth": {
     "po_number": "F37505911",
     "customer_info": "Amazon State",
@@ -2224,7 +2224,7 @@
 },
 
 {
-  "image": "val_images/Purchase-Order-13422187_page1.png",
+  "image": "train_images/Purchase-Order-13422187_page1.png",
   "ground_truth": {
     "po_number": "13422187",
     "customer_info": "Laverton North (FD Ampol Retail)",
@@ -2250,7 +2250,7 @@
   }
 },
 {
-  "image": "val_images/Purchase-Order-13420859_page1.png",
+  "image": "train_images/Purchase-Order-13420859_page1.png",
   "ground_truth": {
     "po_number": "13420859",
     "customer_info": "Dandenong (FD Ampol Retail)",
@@ -2286,7 +2286,7 @@
   }
 },
 {
-  "image": "val_images/PO-F39310774_page1.png",
+  "image": "train_images/PO-F39310774_page1.png",
   "ground_truth": {
     "po_number": "F39310903",
     "customer_info": "Lumberjack",
@@ -2362,7 +2362,7 @@
   }
 },
 {
-  "image": "val_images/PO-F39304873_page1.png",
+  "image": "train_images/PO-F39304873_page1.png",
   "ground_truth": {
     "po_number": "F39304873",
     "customer_info": "Mount Erica Hotel",
