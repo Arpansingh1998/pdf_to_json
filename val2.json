@@ -46,7 +46,7 @@
 },
 
 {
-  "image": "val_images/PO-F39312725_page1.jpg",
+  "image": "val_images/PO#F39312725_page1.jpg",
   "ground_truth": {
     "po_number": "F39312725",
     "customer_info": "Mount Erica Hotel",
@@ -83,7 +83,7 @@
 },
 
 {
-  "image": "val_images/PO-F39312739_page1.jpg",
+  "image": "val_images/PO#F39312739_page1.jpg",
   "ground_truth": {
     "po_number": "F39312739",
     "customer_info": "Mount Erica Hotel",
@@ -201,7 +201,7 @@
 
 
 {
-  "image": "val_images/PO-F39312848_page1.jpg, PO-F39312848_page2.png",
+  "image": "val_images/PO#F39312848_page1.jpg, PO#F39312848_page2.png",
   "ground_truth": {
     "po_number": "F39312848",
     "customer_info": "Mount Erica Hotel",
@@ -499,7 +499,7 @@
 
 
 {
-  "image": "val_images/PO-F39313516_page1.jpg",
+  "image": "val_images/PO#F39313516_page1.jpg",
   "ground_truth": {
     "po_number": "F39313516",
     "customer_info": "The Botanical Hotel",
@@ -727,7 +727,7 @@
 
 
 {
-  "image": "val_images/PO-F39313653_page1.png",
+  "image": "val_images/PO#F39313653_page1.png",
   "ground_truth": {
     "po_number": "F39313653",
     "customer_info": "Lincoln Hotel",
@@ -755,7 +755,7 @@
 
 
 {
-  "image": "val_images/PO-F39313676_page1.png",
+  "image": "val_images/PO#F39313676_page1.png",
   "ground_truth": {
     "po_number": "F39313676",
     "customer_info": "The Botanical Hotel",
@@ -792,7 +792,7 @@
 },
 
 {
-  "image": "val_images/PO-F39315230_page1.png",
+  "image": "val_images/PO#F39315230_page1.png",
   "ground_truth": {
     "po_number": "F39315230",
     "customer_info": "Mesa Verde",
@@ -820,7 +820,7 @@
 
 
 {
-  "image": "val_images/PO-F39320577_page1.png",
+  "image": "val_images/PO#F39320577_page1.png",
   "ground_truth": {
     "po_number": "F39320577",
     "customer_info": "San Telmo",
@@ -848,7 +848,7 @@
 
 
 {
-  "image": "val_images/PO-F39321483_page1.png",
+  "image": "val_images/PO#F39321483_page1.png",
   "ground_truth": {
     "po_number": "F39321483",
     "customer_info": "Rustica Sourdough South Yarra",
