@@ -13,7 +13,7 @@ try:
     model = VisionEncoderDecoderModel.from_pretrained("./donut-finetuned")
 except OSError:
     print("Error: The trained model and processor were not found.")
-    print("Please ensure you have run the training script and the files are in './donut-finetuned'.")
+    print("Please ensure you have run the training script and the files are in './donut-finutuned'.")
     exit()
 
 # Move the model to a GPU if available
@@ -23,6 +23,17 @@ model.to(device)
 # -----------------------------
 # Step 2: Define PDF processing function
 # -----------------------------
+def clean_json_string(s):
+    """
+    Attempts to clean up a string to make it a valid JSON object.
+    It removes everything that is not a bracket, quote, number, or letter.
+    This is a last resort to handle garbled output from the model.
+    """
+    # Regex to keep only valid JSON characters:
+    # { } [ ] " : , a-zA-Z0-9
+    s = re.sub(r'[^\{\}\[\]\",:a-zA-Z0-9]', '', s)
+    return s
+
 def process_pdf_with_donut(pdf_path):
     """
     Converts a PDF to images, processes each image with the Donut model,
@@ -44,7 +55,8 @@ def process_pdf_with_donut(pdf_path):
         "<s_menuqty_cnt>", "</s_menuqty_cnt>",
         "<s_cnt>", "</s_cnt>",
         "<s_total_price>", "</s_total_price>",
-        "<s_sub>", "</s_sub>"
+        "<s_sub>", "</s_sub>",
+        "<s_changeprice>", "</s_changeprice>"
     ]
     bad_tokens_ids = [processor.tokenizer.encode(token, add_special_tokens=False) for token in bad_tokens_to_avoid]
 
@@ -92,12 +104,15 @@ def process_pdf_with_donut(pdf_path):
             # Remove the wrappers <s_custom> ... </s_custom>
             pred_string = re.sub(r"^<s_custom>|<\/s_custom>$", "", pred_string).strip()
 
+            # New cleanup step
+            cleaned_string = clean_json_string(pred_string)
+
             try:
-                page_json = json.loads(pred_string)
+                page_json = json.loads(cleaned_string)
                 print("✅ Extracted JSON successfully.")
-            except json.JSONDecodeError:
-                print("⚠️ Could not decode output as JSON. Storing as a string.")
-                page_json = {"raw_output": pred_string}
+            except json.JSONDecodeError as e:
+                print(f"⚠️ Could not decode output as JSON. Storing as a string. Error: {e}")
+                page_json = {"raw_output": cleaned_string}
             
             all_page_data.append({"page": page_num + 1, "data": page_json})
 
