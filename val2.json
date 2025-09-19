@@ -1,0 +1,1462 @@
+{
+  "image": "val_images/PO#F39312725_page1.png",
+  "ground_truth": {
+    "po_number": "F39312646",
+    "customer_info": "Mount Erica Hotel",
+    "delivery_date": "2025-04-28",
+    "order_date": "2025-04-27",
+    "contact_email": "",
+    "address": "Mount Erica Kitchen 0491122384\n420 High St, Prahran VIC 3181",
+    "contact_phone": "0491122384",
+    "additional_notes": "",
+    "delivery_comments": "",
+    "items": [
+      {
+        "Line": "1",
+        "Description": "Blue Grenadier Fillets Skin Off",
+        "Vendor SKU": "",
+        "Quantity": "5",
+        "UOM": "Kg",
+        "Unit Price": "$21.00",
+        "Amount": "$105.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "2",
+        "Description": "Crab Meat Blue Swimmer WA Shark Bay",
+        "Vendor SKU": "",
+        "Quantity": "1",
+        "UOM": "Kg (5kg)",
+        "Unit Price": "$482.00",
+        "Amount": "$482.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "3",
+        "Description": "Squid Tubes Imported Frozen",
+        "Vendor SKU": "",
+        "Quantity": "1",
+        "UOM": "Box",
+        "Unit Price": "$60.00",
+        "Amount": "$60.00",
+        "product_comments": ""
+      }
+    ]
+  }
+}
+
+
+{
+  "image": "val_images/PO-F39312725_page1.jpg",
+  "ground_truth": {
+    "po_number": "F39312725",
+    "customer_info": "Mount Erica Hotel",
+    "delivery_date": "2025-04-28",
+    "order_date": "2025-04-27",
+    "contact_email": "",
+    "address": "Mount Erica Kitchen 0491122384\n420 High St, Prahran VIC 3181",
+    "contact_phone": "0491122384",
+    "additional_notes": "",
+    "delivery_comments": "",
+    "items": [
+      {
+        "Line": "1",
+        "Description": "Chicken Stock Premium",
+        "Vendor SKU": "",
+        "Quantity": "2",
+        "UOM": "Box",
+        "Unit Price": "$13.50",
+        "Amount": "$27.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "2",
+        "Description": "Veal Bones",
+        "Vendor SKU": "",
+        "Quantity": "2",
+        "UOM": "Box",
+        "Unit Price": "$3.90",
+        "Amount": "$7.80",
+        "product_comments": ""
+      }
+    ]
+  }
+}
+
+{
+  "image": "val_images/PO-F39312739_page1.jpg",
+  "ground_truth": {
+    "po_number": "F39312739",
+    "customer_info": "Mount Erica Hotel",
+    "delivery_date": "2025-04-28",
+    "order_date": "2025-04-27",
+    "contact_email": "",
+    "address": "Mount Erica Kitchen 0491122384\n420 High St, Prahran VIC 3181",
+    "contact_phone": "0491122384",
+    "additional_notes": "",
+    "delivery_comments": "",
+    "items": [
+      {
+        "Line": "1",
+        "Description": "Beef - Cheeks Trimmed",
+        "Vendor SKU": "",
+        "Quantity": "5",
+        "UOM": "Kg",
+        "Unit Price": "$22.50",
+        "Amount": "$112.50",
+        "product_comments": ""
+      },
+      {
+        "Line": "2",
+        "Description": "Beef - Cube Roll MB2+ 'Southern Rangers'",
+        "Vendor SKU": "",
+        "Quantity": "2",
+        "UOM": "Box",
+        "Unit Price": "$0.00",
+        "Amount": "$0.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "3",
+        "Description": "Beef - Eye Fillet 'Southern Ranges'",
+        "Vendor SKU": "",
+        "Quantity": "2",
+        "UOM": "Box",
+        "Unit Price": "$0.00",
+        "Amount": "$0.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "4",
+        "Description": "Beef - Striploin 'Southern Rangers Plus'",
+        "Vendor SKU": "",
+        "Quantity": "1",
+        "UOM": "Box",
+        "Unit Price": "$0.00",
+        "Amount": "$0.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "5",
+        "Description": "Beef Rump Caps - *Grain-Fed*",
+        "Vendor SKU": "",
+        "Quantity": "1",
+        "UOM": "Each",
+        "Unit Price": "$0.00",
+        "Amount": "$0.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "6",
+        "Description": "Chicken - Tenderloin",
+        "Vendor SKU": "",
+        "Quantity": "3",
+        "UOM": "Kg",
+        "Unit Price": "$13.90",
+        "Amount": "$41.70",
+        "product_comments": ""
+      },
+      {
+        "Line": "7",
+        "Description": "Chicken - Whole Size 14",
+        "Vendor SKU": "",
+        "Quantity": "5",
+        "UOM": "Each",
+        "Unit Price": "$10.90",
+        "Amount": "$54.50",
+        "product_comments": ""
+      },
+      {
+        "Line": "8",
+        "Description": "Lamb Rumps Cap Off (200g - 250g)",
+        "Vendor SKU": "",
+        "Quantity": "30",
+        "UOM": "Each",
+        "Unit Price": "$0.00",
+        "Amount": "$0.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "9",
+        "Description": "Sausage Mince - Pork Chilli & Fennel",
+        "Vendor SKU": "",
+        "Quantity": "5",
+        "UOM": "Kg",
+        "Unit Price": "$14.80",
+        "Amount": "$74.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "10",
+        "Description": "Sausage Mince Pork Italian",
+        "Vendor SKU": "",
+        "Quantity": "5",
+        "UOM": "Kg",
+        "Unit Price": "$15.40",
+        "Amount": "$77.00",
+        "product_comments": ""
+      }
+    ]
+  }
+}
+
+
+{
+  "image": "val_images/PO-F39312848_page1.jpg, PO-F39312848_page2.png",
+  "ground_truth": {
+    "po_number": "F39312848",
+    "customer_info": "Mount Erica Hotel",
+    "delivery_date": "2025-04-28",
+    "order_date": "2025-04-27",
+    "contact_email": "",
+    "address": "Mount Erica Kitchen 0491122384\n420 High St, Prahran VIC 3181",
+    "contact_phone": "0491122384",
+    "additional_notes": "",
+    "delivery_comments": "",
+    "items": [
+      {
+        "Line": "1",
+        "Description": "Basil",
+        "Vendor SKU": "",
+        "Quantity": "10",
+        "UOM": "Bunch",
+        "Unit Price": "$2.75",
+        "Amount": "$27.50",
+        "product_comments": ""
+      },
+      {
+        "Line": "2",
+        "Description": "Capsicums - Red",
+        "Vendor SKU": "",
+        "Quantity": "1",
+        "UOM": "Box (5kg)",
+        "Unit Price": "$41.00",
+        "Amount": "$41.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "3",
+        "Description": "Carrots",
+        "Vendor SKU": "",
+        "Quantity": "5",
+        "UOM": "Kg",
+        "Unit Price": "$2.50",
+        "Amount": "$12.50",
+        "product_comments": ""
+      },
+      {
+        "Line": "4",
+        "Description": "Carrots Dutch",
+        "Vendor SKU": "",
+        "Quantity": "20",
+        "UOM": "Bunch",
+        "Unit Price": "$3.80",
+        "Amount": "$76.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "5",
+        "Description": "Celery",
+        "Vendor SKU": "",
+        "Quantity": "1",
+        "UOM": "Each",
+        "Unit Price": "$3.50",
+        "Amount": "$3.50",
+        "product_comments": ""
+      },
+      {
+        "Line": "6",
+        "Description": "Chives",
+        "Vendor SKU": "",
+        "Quantity": "3",
+        "UOM": "Bunch",
+        "Unit Price": "$3.35",
+        "Amount": "$10.05",
+        "product_comments": ""
+      },
+      {
+        "Line": "7",
+        "Description": "Coriander",
+        "Vendor SKU": "",
+        "Quantity": "4",
+        "UOM": "Bunch",
+        "Unit Price": "$1.90",
+        "Amount": "$7.60",
+        "product_comments": ""
+      },
+      {
+        "Line": "8",
+        "Description": "Cucumber - Continental",
+        "Vendor SKU": "",
+        "Quantity": "1",
+        "UOM": "Bag (15)",
+        "Unit Price": "$31.00",
+        "Amount": "$31.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "9",
+        "Description": "Eggs - Free Range 700's (Fillers)",
+        "Vendor SKU": "",
+        "Quantity": "2",
+        "UOM": "Box",
+        "Unit Price": "$120.00",
+        "Amount": "$240.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "10",
+        "Description": "Garlic - Peeled",
+        "Vendor SKU": "",
+        "Quantity": "5",
+        "UOM": "Bag (1kg)",
+        "Unit Price": "$7.30",
+        "Amount": "$36.50",
+        "product_comments": ""
+      },
+      {
+        "Line": "11",
+        "Description": "Lemons - Premium",
+        "Vendor SKU": "",
+        "Quantity": "1",
+        "UOM": "Box (13kg)",
+        "Unit Price": "$44.00",
+        "Amount": "$44.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "12",
+        "Description": "Lettuce - Baby Cos Gem",
+        "Vendor SKU": "",
+        "Quantity": "2",
+        "UOM": "Box",
+        "Unit Price": "$26.00",
+        "Amount": "$52.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "13",
+        "Description": "Lettuce - Radicchio",
+        "Vendor SKU": "",
+        "Quantity": "5",
+        "UOM": "Each",
+        "Unit Price": "$8.00",
+        "Amount": "$40.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "14",
+        "Description": "Mint",
+        "Vendor SKU": "",
+        "Quantity": "2",
+        "UOM": "Bunch",
+        "Unit Price": "$2.45",
+        "Amount": "$4.90",
+        "product_comments": ""
+      },
+      {
+        "Line": "15",
+        "Description": "Parsley - Continental",
+        "Vendor SKU": "",
+        "Quantity": "5",
+        "UOM": "Bunch",
+        "Unit Price": "$1.50",
+        "Amount": "$7.50",
+        "product_comments": ""
+      },
+      {
+        "Line": "16",
+        "Description": "Potatoes - Kipfler Washed",
+        "Vendor SKU": "",
+        "Quantity": "1",
+        "UOM": "Box (10kg)",
+        "Unit Price": "$70.00",
+        "Amount": "$70.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "17",
+        "Description": "Radish - Red",
+        "Vendor SKU": "",
+        "Quantity": "10",
+        "UOM": "Bunch",
+        "Unit Price": "$1.95",
+        "Amount": "$19.50",
+        "product_comments": ""
+      },
+      {
+        "Line": "18",
+        "Description": "Rocket - Wild",
+        "Vendor SKU": "",
+        "Quantity": "1",
+        "UOM": "Box (1.5kg)",
+        "Unit Price": "$20.00",
+        "Amount": "$20.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "19",
+        "Description": "Rosemary",
+        "Vendor SKU": "",
+        "Quantity": "3",
+        "UOM": "Bunch",
+        "Unit Price": "$2.75",
+        "Amount": "$8.25",
+        "product_comments": ""
+      },
+      {
+        "Line": "20",
+        "Description": "Salad Mix - Hussey Premium",
+        "Vendor SKU": "",
+        "Quantity": "1",
+        "UOM": "Box (1.5kg)",
+        "Unit Price": "$16.50",
+        "Amount": "$16.50",
+        "product_comments": ""
+      },
+      {
+        "Line": "21",
+        "Description": "Snow Pea Tendrils - Foliage",
+        "Vendor SKU": "",
+        "Quantity": "1",
+        "UOM": "Kg",
+        "Unit Price": "$16.90",
+        "Amount": "$16.90",
+        "product_comments": ""
+      },
+      {
+        "Line": "22",
+        "Description": "Snowpeas",
+        "Vendor SKU": "",
+        "Quantity": "1",
+        "UOM": "Box (5kg)",
+        "Unit Price": "$63.00",
+        "Amount": "$63.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "23",
+        "Description": "Tarragon",
+        "Vendor SKU": "",
+        "Quantity": "6",
+        "UOM": "Bunch",
+        "Unit Price": "$3.75",
+        "Amount": "$22.50",
+        "product_comments": ""
+      },
+      {
+        "Line": "24",
+        "Description": "Thyme",
+        "Vendor SKU": "",
+        "Quantity": "3",
+        "UOM": "Bunch",
+        "Unit Price": "$2.50",
+        "Amount": "$7.50",
+        "product_comments": ""
+      },
+      {
+        "Line": "25",
+        "Description": "Tomatoes - Cherry",
+        "Vendor SKU": "",
+        "Quantity": "2",
+        "UOM": "Tray (15)",
+        "Unit Price": "$47.00",
+        "Amount": "$94.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "26",
+        "Description": "Tomatoes - Cherry Medley",
+        "Vendor SKU": "",
+        "Quantity": "1",
+        "UOM": "Tray (16)",
+        "Unit Price": "$57.00",
+        "Amount": "$57.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "27",
+        "Description": "Wombok",
+        "Vendor SKU": "",
+        "Quantity": "2",
+        "UOM": "Each",
+        "Unit Price": "$9.00",
+        "Amount": "$18.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "28",
+        "Description": "Zucchini 'Value Range'",
+        "Vendor SKU": "",
+        "Quantity": "1",
+        "UOM": "Box (10kg)",
+        "Unit Price": "$35.00",
+        "Amount": "$35.00",
+        "product_comments": ""
+      }
+    ]
+  }
+}
+
+
+{
+  "image": "val_images/PO-F39313516_page1.jpg",
+  "ground_truth": {
+    "po_number": "F39313516",
+    "customer_info": "The Botanical Hotel",
+    "delivery_date": "2025-04-28",
+    "order_date": "2025-04-27",
+    "contact_email": "",
+    "address": "Michael Flemming\n169 Domain Road, South Yarra VIC 3141",
+    "contact_phone": "",
+    "additional_notes": "",
+    "delivery_comments": "",
+    "items": [
+      {
+        "Line": "1",
+        "Description": "Basil",
+        "Vendor SKU": "",
+        "Quantity": "3",
+        "UOM": "Bunch",
+        "Unit Price": "$3.30",
+        "Amount": "$9.90",
+        "product_comments": ""
+      },
+      {
+        "Line": "2",
+        "Description": "Broccolini",
+        "Vendor SKU": "",
+        "Quantity": "3",
+        "UOM": "Box (12)",
+        "Unit Price": "$26.00",
+        "Amount": "$78.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "3",
+        "Description": "Cauliflower",
+        "Vendor SKU": "",
+        "Quantity": "4",
+        "UOM": "Each",
+        "Unit Price": "$5.60",
+        "Amount": "$22.40",
+        "product_comments": ""
+      },
+      {
+        "Line": "4",
+        "Description": "Celery",
+        "Vendor SKU": "",
+        "Quantity": "2",
+        "UOM": "Each",
+        "Unit Price": "$4.20",
+        "Amount": "$8.40",
+        "product_comments": ""
+      },
+      {
+        "Line": "5",
+        "Description": "Chervil",
+        "Vendor SKU": "",
+        "Quantity": "2",
+        "UOM": "Bunch",
+        "Unit Price": "$3.30",
+        "Amount": "$6.60",
+        "product_comments": ""
+      },
+      {
+        "Line": "6",
+        "Description": "Chillies - Long Red",
+        "Vendor SKU": "",
+        "Quantity": "2",
+        "UOM": "Kg",
+        "Unit Price": "$25.00",
+        "Amount": "$50.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "7",
+        "Description": "Chives",
+        "Vendor SKU": "",
+        "Quantity": "3",
+        "UOM": "Bunch",
+        "Unit Price": "$4.05",
+        "Amount": "$12.15",
+        "product_comments": ""
+      },
+      {
+        "Line": "8",
+        "Description": "Cucumber - Lebanese",
+        "Vendor SKU": "",
+        "Quantity": "4",
+        "UOM": "Kg",
+        "Unit Price": "$8.60",
+        "Amount": "$34.40",
+        "product_comments": ""
+      },
+      {
+        "Line": "9",
+        "Description": "Eggs - Free Range 600's",
+        "Vendor SKU": "",
+        "Quantity": "1",
+        "UOM": "Box (15 Doz)",
+        "Unit Price": "$85.00",
+        "Amount": "$85.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "10",
+        "Description": "Fennel - Large",
+        "Vendor SKU": "",
+        "Quantity": "6",
+        "UOM": "Each",
+        "Unit Price": "$3.50",
+        "Amount": "$21.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "11",
+        "Description": "Juice - Lemon",
+        "Vendor SKU": "",
+        "Quantity": "1",
+        "UOM": "Btle (2L)",
+        "Unit Price": "$10.00",
+        "Amount": "$10.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "12",
+        "Description": "Leeks",
+        "Vendor SKU": "",
+        "Quantity": "3",
+        "UOM": "Each",
+        "Unit Price": "$3.40",
+        "Amount": "$10.20",
+        "product_comments": ""
+      },
+      {
+        "Line": "13",
+        "Description": "Lemons",
+        "Vendor SKU": "",
+        "Quantity": "1",
+        "UOM": "Box (13-15kg)",
+        "Unit Price": "$39.00",
+        "Amount": "$39.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "14",
+        "Description": "Lettuce - Baby Cos Gem",
+        "Vendor SKU": "",
+        "Quantity": "3",
+        "UOM": "Box",
+        "Unit Price": "$30.00",
+        "Amount": "$90.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "15",
+        "Description": "Lettuce - Radicchio",
+        "Vendor SKU": "",
+        "Quantity": "2",
+        "UOM": "Box",
+        "Unit Price": "$50.00",
+        "Amount": "$100.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "16",
+        "Description": "Lovage",
+        "Vendor SKU": "",
+        "Quantity": "2",
+        "UOM": "Pn",
+        "Unit Price": "$12.00",
+        "Amount": "$24.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "17",
+        "Description": "Potatoes - Kipfler Washed",
+        "Vendor SKU": "",
+        "Quantity": "1",
+        "UOM": "Box (10kg)",
+        "Unit Price": "$70.00",
+        "Amount": "$70.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "18",
+        "Description": "Potatoes - Peeled",
+        "Vendor SKU": "",
+        "Quantity": "1",
+        "UOM": "Bag (10kg)",
+        "Unit Price": "$24.00",
+        "Amount": "$24.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "19",
+        "Description": "Sorrel - Red Vein",
+        "Vendor SKU": "",
+        "Quantity": "1",
+        "UOM": "Pn",
+        "Unit Price": "$4.50",
+        "Amount": "$4.50",
+        "product_comments": ""
+      },
+      {
+        "Line": "20",
+        "Description": "Thyme",
+        "Vendor SKU": "",
+        "Quantity": "2",
+        "UOM": "Bunch",
+        "Unit Price": "$3.00",
+        "Amount": "$6.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "21",
+        "Description": "Zucchini - Green",
+        "Vendor SKU": "",
+        "Quantity": "3",
+        "UOM": "Kg",
+        "Unit Price": "$8.10",
+        "Amount": "$24.30",
+        "product_comments": ""
+      }
+    ]
+  }
+}
+
+
+{
+  "image": "val_images/PO-F39313653_page1.png",
+  "ground_truth": {
+    "po_number": "F39313653",
+    "customer_info": "Lincoln Hotel",
+    "delivery_date": "2025-04-28",
+    "order_date": "2025-04-27",
+    "contact_email": "",
+    "address": "The Lincoln 0433553623\n91 Cardigan Street, Carlton VIC 3053",
+    "contact_phone": "0433553623",
+    "additional_notes": "",
+    "delivery_comments": "",
+    "items": [
+      {
+        "Line": "1",
+        "Description": "Lamb Shoulder Oyster Bone In",
+        "Vendor SKU": "",
+        "Quantity": "6",
+        "UOM": "Each",
+        "Unit Price": "$18.90",
+        "Amount": "$113.40",
+        "product_comments": ""
+      }
+    ]
+  }
+}
+
+
+{
+  "image": "val_images/PO-F39313676_page1.png",
+  "ground_truth": {
+    "po_number": "F39313676",
+    "customer_info": "The Botanical Hotel",
+    "delivery_date": "2025-04-28",
+    "order_date": "2025-04-27",
+    "contact_email": "",
+    "address": "Michael Flemming\n169 Domain Road, South Yarra VIC 3141",
+    "contact_phone": "",
+    "additional_notes": "",
+    "delivery_comments": "",
+    "items": [
+      {
+        "Line": "1",
+        "Description": "Green Prawns (RAW) - Tiger U/6",
+        "Vendor SKU": "",
+        "Quantity": "5",
+        "UOM": "Kg",
+        "Unit Price": "$48.00",
+        "Amount": "$240.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "2",
+        "Description": "Roe / Caviar - Salmon Yarra Valley 50g",
+        "Vendor SKU": "",
+        "Quantity": "3",
+        "UOM": "Jar (50g)",
+        "Unit Price": "$24.65",
+        "Amount": "$73.95",
+        "product_comments": ""
+      }
+    ]
+  }
+}
+
+{
+  "image": "val_images/PO-F39315230_page1.png",
+  "ground_truth": {
+    "po_number": "F39315230",
+    "customer_info": "Mesa Verde",
+    "delivery_date": "2025-04-29",
+    "order_date": "2025-04-27",
+    "contact_email": "",
+    "address": "Jacob Green 0415119740\nCurtin House, 252 Swanston Street, Melbourne VIC 3000, Australia",
+    "contact_phone": "0415119740",
+    "additional_notes": "",
+    "delivery_comments": "",
+    "items": [
+      {
+        "Line": "1",
+        "Description": "Frozen Prawns - School",
+        "Vendor SKU": "",
+        "Quantity": "1",
+        "UOM": "Kg",
+        "Unit Price": "$29.90",
+        "Amount": "$29.90",
+        "product_comments": "2kg pack please"
+      }
+    ]
+  }
+}
+
+
+{
+  "image": "val_images/PO-F39320577_page1.png",
+  "ground_truth": {
+    "po_number": "F39320577",
+    "customer_info": "San Telmo",
+    "delivery_date": "2025-04-28",
+    "order_date": "2025-04-28",
+    "contact_email": "",
+    "address": "Chris, Glenn, Oliver Gould, San Telmo, Steve 0410 201 782, 0487811454, 613 9650 5525, 61433 395 338\n14 Meyers Pl, Melbourne VIC 3000",
+    "contact_phone": "0410201782",
+    "additional_notes": "",
+    "delivery_comments": "",
+    "items": [
+      {
+        "Line": "1",
+        "Description": "Cheese - Provolone Piccante DOP",
+        "Vendor SKU": "",
+        "Quantity": "4",
+        "UOM": "Waxed Log (5kg) RW",
+        "Unit Price": "$23.96",
+        "Amount": "$95.84",
+        "product_comments": ""
+      }
+    ]
+  }
+}
+
+
+{
+  "image": "val_images/PO-F39321483_page1.png",
+  "ground_truth": {
+    "po_number": "F39321483",
+    "customer_info": "Rustica Sourdough South Yarra",
+    "delivery_date": "2025-04-28",
+    "order_date": "2025-04-28",
+    "contact_email": "",
+    "address": "Sidney Tor 0449932372\n501 Chapel Street, South Yarra VIC 3141",
+    "contact_phone": "0449932372",
+    "additional_notes": "",
+    "delivery_comments": "",
+    "items": [
+      {
+        "Line": "1",
+        "Description": "Fillets - Salmon Atlantic Skin On",
+        "Vendor SKU": "",
+        "Quantity": "3",
+        "UOM": "Each",
+        "Unit Price": "$0.00",
+        "Amount": "$0.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "2",
+        "Description": "Frozen - Bug Meat 'Casa'",
+        "Vendor SKU": "",
+        "Quantity": "3",
+        "UOM": "Kg",
+        "Unit Price": "$65.00",
+        "Amount": "$195.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "3",
+        "Description": "Prawn Cutlets - Raw 16/20",
+        "Vendor SKU": "",
+        "Quantity": "5",
+        "UOM": "Bag (700g)",
+        "Unit Price": "$20.90",
+        "Amount": "$104.50",
+        "product_comments": ""
+      }
+    ]
+  }
+}
+{
+  "image": "val_images/PO-159897-748074-l4y4rf01_1_eLfnsh0_8QUMrEj-1-_page1.png",
+  "ground_truth": {
+    "po_number": "748074",
+    "customer_info": "Regis Dandenong North",
+    "delivery_date": "2025-02-19",
+    "order_date": "2025-02-17",
+    "contact_email": "dandenongnorth@regis.com.au",
+    "address": "Regis Dandenong North\n5 Bakers Road\nDANDENONG\nVIC 3175",
+    "contact_phone": "03 9701 1244",
+    "additional_notes": "",
+    "delivery_comments": "",
+    "items": [
+      {
+        "Line": "1",
+        "Description": "EGGPLANT by Kg",
+        "Vendor SKU": "EGKG",
+        "Quantity": "2.00",
+        "UOM": "KG",
+        "Unit Price": "$4.90",
+        "Amount": "$9.80",
+        "product_comments": ""
+      },
+      {
+        "Line": "2",
+        "Description": "AVOCADOS RIPE",
+        "Vendor SKU": "AVEA",
+        "Quantity": "2.00",
+        "UOM": "EA",
+        "Unit Price": "$3.90",
+        "Amount": "$7.80",
+        "product_comments": ""
+      },
+      {
+        "Line": "3",
+        "Description": "ZUCCHINI - GREEN LARGE kgs",
+        "Vendor SKU": "ZUKG",
+        "Quantity": "2.00",
+        "UOM": "KG",
+        "Unit Price": "$4.95",
+        "Amount": "$9.90",
+        "product_comments": ""
+      },
+      {
+        "Line": "4",
+        "Description": "ONIONS PEELED (5kg)",
+        "Vendor SKU": "PRONBRPE 5KG",
+        "Quantity": "1.00",
+        "UOM": "BG",
+        "Unit Price": "$14.50",
+        "Amount": "$14.50",
+        "product_comments": ""
+      },
+      {
+        "Line": "5",
+        "Description": "CORIANDER",
+        "Vendor SKU": "BNCH",
+        "Quantity": "1.00",
+        "UOM": "BL",
+        "Unit Price": "$1.90",
+        "Amount": "$1.90",
+        "product_comments": ""
+      },
+      {
+        "Line": "6",
+        "Description": "ROSEMARY",
+        "Vendor SKU": "HEROBU",
+        "Quantity": "1.00",
+        "UOM": "BL",
+        "Unit Price": "$2.20",
+        "Amount": "$2.20",
+        "product_comments": ""
+      }
+    ]
+  }
+}
+{
+  "image": "val_images/PO-159897-748074-l4y4rf01_1_eLfnsh0_8QUMrEj_page1.png",
+  "ground_truth": {
+    "po_number": "748074",
+    "customer_info": "Regis Dandenong North",
+    "delivery_date": "2025-02-19",
+    "order_date": "2025-02-17",
+    "contact_email": "dandenongnorth@regis.com.au",
+    "address": "Regis Dandenong North\n5 Bakers Road\nDANDENONG\nVIC 3175",
+    "contact_phone": "03 9701 1244",
+    "additional_notes": "",
+    "delivery_comments": "",
+    "items": [
+      {
+        "Line": "1",
+        "Description": "EGGPLANT by Kg",
+        "Vendor SKU": "EGKG",
+        "Quantity": "2.00",
+        "UOM": "KG",
+        "Unit Price": "$4.90",
+        "Amount": "$9.80",
+        "product_comments": ""
+      },
+      {
+        "Line": "2",
+        "Description": "AVOCADOS RIPE",
+        "Vendor SKU": "AVEA",
+        "Quantity": "2.00",
+        "UOM": "EA",
+        "Unit Price": "$3.90",
+        "Amount": "$7.80",
+        "product_comments": ""
+      },
+      {
+        "Line": "3",
+        "Description": "ZUCCHINI - GREEN LARGE kgs",
+        "Vendor SKU": "ZUKG",
+        "Quantity": "2.00",
+        "UOM": "KG",
+        "Unit Price": "$4.95",
+        "Amount": "$9.90",
+        "product_comments": ""
+      },
+      {
+        "Line": "4",
+        "Description": "ONIONS PEELED (5kg)",
+        "Vendor SKU": "PRONBRPE 5KG",
+        "Quantity": "1.00",
+        "UOM": "BG",
+        "Unit Price": "$14.50",
+        "Amount": "$14.50",
+        "product_comments": ""
+      },
+      {
+        "Line": "5",
+        "Description": "CORIANDER",
+        "Vendor SKU": "BNCH",
+        "Quantity": "1.00",
+        "UOM": "BL",
+        "Unit Price": "$1.90",
+        "Amount": "$1.90",
+        "product_comments": ""
+      },
+      {
+        "Line": "6",
+        "Description": "ROSEMARY",
+        "Vendor SKU": "HEROBU",
+        "Quantity": "1.00",
+        "UOM": "BL",
+        "Unit Price": "$2.20",
+        "Amount": "$2.20",
+        "product_comments": ""
+      }
+    ]
+  }
+}
+{
+  "image": "val_images/PO-159897-773017-z0vjf0xs_Csvt11m_page1.png",
+  "ground_truth": {
+    "po_number": "773017",
+    "customer_info": "Regis Aged Care",
+    "delivery_date": "2025-06-27",
+    "order_date": "2025-06-19",
+    "contact_email": "shenleyoc@regis.com.au",
+    "address": "Regis Shenley Manor\n440 Camberwell Road\nCAMBERWELL\nVIC 3124",
+    "contact_phone": "03 8807 5300",
+    "additional_notes": "",
+    "delivery_comments": "",
+    "items": [
+      {
+        "Line": "1",
+        "Description": "APPLES GALA by Kg",
+        "Vendor SKU": "APROGAKG",
+        "Quantity": "4.00",
+        "UOM": "KG",
+        "Unit Price": "$3.75",
+        "Amount": "$15.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "2",
+        "Description": "AVOCADOS RIPE",
+        "Vendor SKU": "AVEA",
+        "Quantity": "1.00",
+        "UOM": "EA",
+        "Unit Price": "$1.80",
+        "Amount": "$1.80",
+        "product_comments": ""
+      },
+      {
+        "Line": "3",
+        "Description": "CUCUMBER - CONTINENTAL each",
+        "Vendor SKU": "CUCOEA",
+        "Quantity": "4.00",
+        "UOM": "EA",
+        "Unit Price": "$1.15",
+        "Amount": "$4.60",
+        "product_comments": ""
+      },
+      {
+        "Line": "4",
+        "Description": "KIWIFRUIT GREEN Each",
+        "Vendor SKU": "KIGREA",
+        "Quantity": "32.00",
+        "UOM": "EA",
+        "Unit Price": "$1.15",
+        "Amount": "$36.80",
+        "product_comments": ""
+      },
+      {
+        "Line": "5",
+        "Description": "MELON HONEYDEW EACH",
+        "Vendor SKU": "HODELAEA",
+        "Quantity": "4.00",
+        "UOM": "EA",
+        "Unit Price": "$7.75",
+        "Amount": "$31.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "6",
+        "Description": "ORANGES 3Kg BAG",
+        "Vendor SKU": "ORNE3KG",
+        "Quantity": "2.00",
+        "UOM": "BG",
+        "Unit Price": "$7.80",
+        "Amount": "$15.60",
+        "product_comments": ""
+      },
+      {
+        "Line": "7",
+        "Description": "PEARS SMALL by Kg",
+        "Vendor SKU": "PEPAKG",
+        "Quantity": "1.00",
+        "UOM": "KG",
+        "Unit Price": "$3.15",
+        "Amount": "$3.15",
+        "product_comments": ""
+      },
+      {
+        "Line": "8",
+        "Description": "PINEAPPLES each",
+        "Vendor SKU": "PINEA",
+        "Quantity": "8.00",
+        "UOM": "EA",
+        "Unit Price": "$3.90",
+        "Amount": "$31.20",
+        "product_comments": ""
+      },
+      {
+        "Line": "9",
+        "Description": "POTATOES PEELED 10 Kg",
+        "Vendor SKU": "PRPOPEBA10",
+        "Quantity": "2.00",
+        "UOM": "BG",
+        "Unit Price": "$15.90",
+        "Amount": "$31.80",
+        "product_comments": ""
+      },
+      {
+        "Line": "10",
+        "Description": "PUMPKIN PEELED 5 Kg BAG",
+        "Vendor SKU": "PRPUPEBA5KG",
+        "Quantity": "1.00",
+        "UOM": "BG",
+        "Unit Price": "$14.50",
+        "Amount": "$14.50",
+        "product_comments": ""
+      },
+      {
+        "Line": "11",
+        "Description": "COLESLAW DRY 2.5KG BAG",
+        "Vendor SKU": "PRCOMI2.5BA",
+        "Quantity": "1.00",
+        "UOM": "BG",
+        "Unit Price": "$11.50",
+        "Amount": "$11.50",
+        "product_comments": ""
+      },
+      {
+        "Line": "12",
+        "Description": "STRAWBERRIES MEDIUM",
+        "Vendor SKU": "STMEPU",
+        "Quantity": "8.00",
+        "UOM": "TB",
+        "Unit Price": "$5.95",
+        "Amount": "$47.60",
+        "product_comments": ""
+      },
+      {
+        "Line": "13",
+        "Description": "WATERMELON SEEDLESS (Ordered by KG)",
+        "Vendor SKU": "WASEKG",
+        "Quantity": "10.00",
+        "UOM": "KG",
+        "Unit Price": "$1.95",
+        "Amount": "$19.50",
+        "product_comments": ""
+      }
+    ]
+  }
+}
+{
+  "image": "val_images/PO-159897-773017-z0vjf0xs_page1.png",
+  "ground_truth": {
+    "po_number": "773017",
+    "customer_info": "Regis Aged Care",
+    "delivery_date": "2025-06-27",
+    "order_date": "2025-06-19",
+    "contact_email": "shenleyoc@regis.com.au",
+    "address": "Regis Shenley Manor\n440 Camberwell Road\nCAMBERWELL\nVIC 3124",
+    "contact_phone": "03 8807 5300",
+    "additional_notes": "",
+    "delivery_comments": "",
+    "items": [
+      {
+        "Line": "1",
+        "Description": "APPLES GALA by Kg",
+        "Vendor SKU": "APROGAKG",
+        "Quantity": "4.00",
+        "UOM": "KG",
+        "Unit Price": "$3.75",
+        "Amount": "$15.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "2",
+        "Description": "AVOCADOS RIPE",
+        "Vendor SKU": "AVEA",
+        "Quantity": "1.00",
+        "UOM": "EA",
+        "Unit Price": "$1.80",
+        "Amount": "$1.80",
+        "product_comments": ""
+      },
+      {
+        "Line": "3",
+        "Description": "CUCUMBER - CONTINENTAL each",
+        "Vendor SKU": "CUCOEA",
+        "Quantity": "4.00",
+        "UOM": "EA",
+        "Unit Price": "$1.15",
+        "Amount": "$4.60",
+        "product_comments": ""
+      },
+      {
+        "Line": "4",
+        "Description": "KIWIFRUIT GREEN Each",
+        "Vendor SKU": "KIGREA",
+        "Quantity": "32.00",
+        "UOM": "EA",
+        "Unit Price": "$1.15",
+        "Amount": "$36.80",
+        "product_comments": ""
+      },
+      {
+        "Line": "5",
+        "Description": "MELON HONEYDEW EACH",
+        "Vendor SKU": "HODELAEA",
+        "Quantity": "4.00",
+        "UOM": "EA",
+        "Unit Price": "$7.75",
+        "Amount": "$31.00",
+        "product_comments": ""
+      },
+      {
+        "Line": "6",
+        "Description": "ORANGES 3Kg BAG",
+        "Vendor SKU": "ORNE3KG",
+        "Quantity": "2.00",
+        "UOM": "BG",
+        "Unit Price": "$7.80",
+        "Amount": "$15.60",
+        "product_comments": ""
+      },
+      {
+        "Line": "7",
+        "Description": "PEARS SMALL by Kg",
+        "Vendor SKU": "PEPAKG",
+        "Quantity": "1.00",
+        "UOM": "KG",
+        "Unit Price": "$3.15",
+        "Amount": "$3.15",
+        "product_comments": ""
+      },
+      {
+        "Line": "8",
+        "Description": "PINEAPPLES each",
+        "Vendor SKU": "PINEA",
+        "Quantity": "8.00",
+        "UOM": "EA",
+        "Unit Price": "$3.90",
+        "Amount": "$31.20",
+        "product_comments": ""
+      },
+      {
+        "Line": "9",
+        "Description": "POTATOES PEELED 10 Kg",
+        "Vendor SKU": "PRPOPEBA10",
+        "Quantity": "2.00",
+        "UOM": "BG",
+        "Unit Price": "$15.90",
+        "Amount": "$31.80",
+        "product_comments": ""
+      },
+      {
+        "Line": "10",
+        "Description": "PUMPKIN PEELED 5 Kg BAG",
+        "Vendor SKU": "PRPUPEBA5KG",
+        "Quantity": "1.00",
+        "UOM": "BG",
+        "Unit Price": "$14.50",
+        "Amount": "$14.50",
+        "product_comments": ""
+      },
+      {
+        "Line": "11",
+        "Description": "COLESLAW DRY 2.5KG BAG",
+        "Vendor SKU": "PRCOMI2.5BA",
+        "Quantity": "1.00",
+        "UOM": "BG",
+        "Unit Price": "$11.50",
+        "Amount": "$11.50",
+        "product_comments": ""
+      },
+      {
+        "Line": "12",
+        "Description": "STRAWBERRIES MEDIUM",
+        "Vendor SKU": "STMEPU",
+        "Quantity": "8.00",
+        "UOM": "TB",
+        "Unit Price": "$5.95",
+        "Amount": "$47.60",
+        "product_comments": ""
+      },
+      {
+        "Line": "13",
+        "Description": "WATERMELON SEEDLESS (Ordered by KG)",
+        "Vendor SKU": "WASEKG",
+        "Quantity": "10.00",
+        "UOM": "KG",
+        "Unit Price": "$1.95",
+        "Amount": "$19.50",
+        "product_comments": ""
+      }
+    ]
+  }
+}
+{
+  "image": "val_images/PO-159897-776690-1t14ztxd-2-_page1.png",
+  "ground_truth": {
+    "po_number": "776690",
+    "customer_info": "Regis Brighton",
+    "delivery_date": "2025-08-08",
+    "order_date": "2025-07-07",
+    "contact_email": "baysidefm@regis.com.au",
+    "address": "Regis Brighton\n161 Male Street\nBrighton\nVIC 3186",
+    "contact_phone": "03 9592 0722",
+    "additional_notes": "",
+    "delivery_comments": "",
+    "items": [
+      {
+        "Line": "1",
+        "Description": "Broccoli Florets 5KG",
+        "Vendor SKU": "PRBRFL5KGBA",
+        "Quantity": "3.00",
+        "UOM": "KG",
+        "Unit Price": "$43.70",
+        "Amount": "$131.10",
+        "product_comments": ""
+      }
+    ]
+  }
+}
+{
+  "image": "val_images/Purchase Order #13205466_page1.png",
+  "ground_truth": {
+    "po_number": "13205466",
+    "customer_info": "Winchelsea (FD Ampol Retail)",
+    "delivery_date": "2025-05-06",
+    "order_date": "2025-04-29",
+    "contact_email": "winchelsea@ampolretail.com.au",
+    "address": "Winchelsea (FD Ampol Retail)\n1 Anderson Street\nWinchelsea VIC 3241",
+    "contact_phone": "03 5267 2635",
+    "additional_notes": "",
+    "delivery_comments": "",
+    "items": [
+      {
+        "Line": "1",
+        "Description": "COS LETTUCE TWIN BOX",
+        "Vendor SKU": "LECOTWBONSW",
+        "Quantity": "3",
+        "UOM": "Each",
+        "Unit Price": "103.5",
+        "Amount": "103.5",
+        "product_comments": ""
+      },
+      {
+        "Line": "2",
+        "Description": "KEANS EGGS 700G FILLER FREE",
+        "Vendor SKU": "EG700FRBO",
+        "Quantity": "1",
+        "UOM": "Each",
+        "Unit Price": "95",
+        "Amount": "95",
+        "product_comments": ""
+      },
+      {
+        "Line": "3",
+        "Description": "TOMATO GOURMET BOX 10KG",
+        "Vendor SKU": "",
+        "Quantity": "2",
+        "UOM": "Each",
+        "Unit Price": "76",
+        "Amount": "76",
+        "product_comments": ""
+      }
+    ]
+  }
+}
+{
+  "image": "val_images/Purchase-Order-13418242_page1.png",
+  "ground_truth": {
+    "po_number": "13418242",
+    "customer_info": "Horsham (FD Ampol Retail)",
+    "delivery_date": "2025-07-09",
+    "order_date": "2025-07-07",
+    "contact_email": "Horsham@ampolretail.com.au",
+    "address": "Horsham (FD Ampol Retail)\n88 Stawell Rd Cnr Western Hwy\nHorsham VIC 3400",
+    "contact_phone": "03 53826948",
+    "additional_notes": "",
+    "delivery_comments": "",
+    "items": [
+      {
+        "Line": "1",
+        "Description": "KEANS EGGS 700G FILLER FREE",
+        "Vendor SKU": "EG700FRBO",
+        "Quantity": "2",
+        "UOM": "Each",
+        "Unit Price": "190.0000",
+        "Amount": "190",
+        "product_comments": ""
+      },
+      {
+        "Line": "2",
+        "Description": "LETTUCE ICEBERG",
+        "Vendor SKU": "",
+        "Quantity": "2",
+        "UOM": "Each",
+        "Unit Price": "98.0000",
+        "Amount": "98",
+        "product_comments": ""
+      },
+      {
+        "Line": "3",
+        "Description": "TOMATO GOURMET BOX 10KG",
+        "Vendor SKU": "",
+        "Quantity": "1",
+        "UOM": "Each",
+        "Unit Price": "76.0000",
+        "Amount": "76",
+        "product_comments": ""
+      }
+    ]
+  }
+}
+
+
+
+
