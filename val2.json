@@ -201,7 +201,7 @@
 
 
 {
-  "image": "val_images/PO#F39312848_page1.png, PO#F39312848_page2.png",
+  "image": "val_images/PO#F39312848_page1.png",
   "ground_truth": {
     "po_number": "F39312848",
     "customer_info": "Mount Erica Hotel",
