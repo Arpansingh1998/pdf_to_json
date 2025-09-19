@@ -2,7 +2,7 @@ from transformers import DonutProcessor, VisionEncoderDecoderModel, Seq2SeqTrain
 from datasets import load_dataset
 from PIL import Image
 import torch
-
+import json
 # -----------------------------
 # Step 1: Load model and processor
 # -----------------------------
@@ -39,8 +39,9 @@ def preprocess(example):
     image = Image.open(example["image"]).convert("RGB")
     pixel_values = processor(image, return_tensors="pt").pixel_values.squeeze(0)
 
-    # Clean the text from the ground_truth field
-    text = example["ground_truth"].strip()
+    # The ground_truth is now a dictionary, convert it to a string
+    ground_truth_dict = example["ground_truth"]
+    text = json.dumps(ground_truth_dict, ensure_ascii=False)
 
     labels = processor.tokenizer(
         text,
@@ -50,6 +51,7 @@ def preprocess(example):
     ).input_ids.squeeze(0)
 
     return {"pixel_values": pixel_values, "labels": labels}
+
 
 # ✅ FIX: actually preprocess the dataset
 processed_dataset = raw_dataset.map(
